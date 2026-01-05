@@ -2,7 +2,8 @@
 class Dinosaurio {
     private $id;
     private $nombre;
-    private $id_periodo;
+    private $nombre_era;
+    private $nombre_periodo;
     private $tiempo_vida;
     private $ubicacion;
     private $alimentacion;
