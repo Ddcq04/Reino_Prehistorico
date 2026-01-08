@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . '/../app/tiempo.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -38,8 +41,10 @@
         </nav>
 
         <div class="usuario">
+            <h3><?= $_SESSION["usuario"] ?></h3>
             <a href="../layouts/inicioform.php">
                 <img src="../web/img/home/logousua.png" alt="Perfil de Usuario">
+                
             </a>
         </div>
 

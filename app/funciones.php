@@ -1,6 +1,6 @@
 <?php
 //Métodos auxiliares si fueran necesarios para       simplificar el index.php
-require_once "/Dinobots/app/config.php";
+
 require_once __DIR__ . '/config.php';
 
 function validar_usuario($usuario, $clave) {
