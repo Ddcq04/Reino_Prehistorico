@@ -90,3 +90,32 @@ INSERT INTO Dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion
 ('Cearadactylus', 3, 'Hace 112-108 millones de años', 'Sudamérica', 'Piscívoro', 2, 'Anhangueridae', 'Cearadactylus atrox', 'Volador', 'Descubierto en el estado brasileño de Ceará, su nombre significa "dedo feroz de Ceará".'),
 ('Nyctosaurus', 3, 'Hace 85-84 millones de años', 'Norteamérica', 'Piscívoro', 1, 'Nyctosauridae', 'Nyctosaurus gracilis', 'Volador', 'Tenía una gran cresta en forma de L que no tenía función aerodinámica, solo de exhibición.');
 --Mamiferos--
+INSERT INTO Dinosaurio
+(nombre, id_periodo, tiempo_vida, ubicacion, alimentacion, agresividad, familia, especie, tipo)
+VALUES
+-- ANIMALES VOLADORES 
+('Teratornítido', 6, 'Hace 1 millón – 10.000 años', 'Lagos y llanuras templadas', 'Carroñero', 2, 'Teratornithidae', 'Teratornis merriami', 'Volador'),
+
+('Búho Gigante', 6, 'Hace 1 millón – 10.000 años', 'Bosques templados', 'Carnívoro', 3, 'Strigidae', 'Ornimegalonyx oteroi', 'Volador'),
+
+('Águila de Haast', 6, 'Hace 700.000 – 600 años', 'Llanuras abiertas', 'Carnívoro', 4, 'Accipitridae', 'Harpagornis moorei', 'Volador'),
+
+('Cóndor Gigante', 6, 'Hace 2,5 millones – 13.000 años', 'Zonas abiertas y desérticas', 'Carnívoro / Carroñero', 3, 'Teratornithidae', 'Aiolornis incredibilis', 'Volador'),
+
+-- ANIMALES TERRESTRES
+('Mamut', 6, 'Hace 400.000 – 4.000 años', 'Estepas heladas', 'Herbívoro', 1, 'Elephantidae', 'Mammuthus primigenius', 'Terrestre'),
+
+('Tigre de Dientes de Sable', 6, 'Hace 2,5 millones – 10.000 años', 'Sabana templada', 'Carnívoro', 4, 'Felidae', 'Smilodon fatalis', 'Terrestre'),
+
+('Perezoso Gigante', 6, 'Hace 1,8 millones – 8.000 años', 'Bosques tropicales', 'Herbívoro', 1, 'Megatheriidae', 'Megatherium americanum', 'Terrestre'),
+
+('Glyptodon', 6, 'Hace 2,5 millones – 10.000 años', 'Praderas y sabanas', 'Herbívoro', 1, 'Glyptodontidae', 'Glyptodon clavipes', 'Terrestre'),
+
+-- ANIMALES ACUÁTICOS
+('Morsa Gigante', 6, 'Hace 1 millón de años – actualidad', 'Océanos árticos', 'Carnívoro (molusívoro)', 3, 'Odobenidae', 'Odobenus rosmarus', 'Acuático'),
+
+('Foca Monje Antigua', 6, 'Hace 500.000 años – siglo XX', 'Costas frías', 'Carnívoro (piscívoro)', 3, 'Phocidae', 'Monachus tropicalis', 'Acuático'),
+
+('León Marino Antiguo', 6, 'Hace 2,5 – 0,3 millones de años', 'Aguas templadas', 'Carnívoro (piscívoro)', 3, 'Otariidae', 'Thalassoleon macnallyae', 'Acuático'),
+
+('Vaca Marina de Steller', 6, 'Hace 2 millones de años – 1768 d.C.', 'Aguas frías del Pacífico Norte', 'Herbívoro (algas marinas)', 1, 'Dugongidae', 'Hydrodamalis gigas', 'Acuático');

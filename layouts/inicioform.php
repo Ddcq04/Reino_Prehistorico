@@ -28,7 +28,7 @@
 
         </div>
 
-      
+
 
 
 
@@ -36,28 +36,29 @@
             <form method="post" action="../dat/inicio.php">
 
                 <?php
-                    $msg = "";
-                    if (isset($_GET['error'])) {
-                        $msg = htmlspecialchars($_GET['error']);
-                    }
+                $msg = "";
+                if (isset($_GET['error'])) {
+                    $msg = htmlspecialchars($_GET['error']);
+                }
 
-                    if (!empty($msg)) {
-                        echo "<p style='color:red; text-align:center;'>$msg</p>";
-                    }
+                if (!empty($msg)) {
+                    echo "<p style='color:red; text-align:center;'>$msg</p>";
+                }
                 ?>
                 <label for="">Usuario</label>
                 <input type="text" name="nombre" id="nombre"><br>
                 <label for="">Contraseña</label>
                 <input type="password" name="clave" id="clave">
                 <br>
+                <!-- botones entrar y registrarse -->
                 <input type="submit" name="entrar" value="Entrar"><br>
-
-                <a href="../layouts/registroform.php" class="btn-registro">Registrarse</a>
+                <a href="registroform.php" class="btnreg">Registrarse</a>
 
             </form>
-            
+
         </div>
 
     </div>
 </body>
+
 </html>
