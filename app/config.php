@@ -13,6 +13,7 @@ class AccesoDatos {
     private static $modelo = null;
     private $dbh = null;
     private $stmt_dinosaurios = null;
+    private $stmt_dinosaurio = null;
     private $stmt_creauser = null;
     private $stmt_usuario  = null;
     private $stmt_añadirvoto  = null;
@@ -43,6 +44,9 @@ class AccesoDatos {
         $this->stmt_dinosaurios  = $this->dbh->prepare("select e.nombre as nombre_era, p.nombre as nombre_periodo, d.* 
                                                         from dinosaurio d join periodo p on d.id_periodo = p.id join era e on e.id = p.id_era
                                                                     where d.tipo = :tipo_dinosaurio and e.nombre = :nombre_era order by d.id");
+        $this->stmt_dinosaurio = $this->dbh->prepare("select e.nombre as nombre_era, p.nombre as nombre_periodo, d.* 
+                                                        from dinosaurio d join periodo p on d.id_periodo = p.id join era e on e.id = p.id_era 
+                                                        where d.id =:id_dinosaurio");
         $this->stmt_creauser  = $this->dbh->prepare("insert into Usuario (nombre,hash_contrasena,correo) values(?,?,?)");
         $this->stmt_usuario   = $this->dbh->prepare("select * from Usuario where nombre = :nombre_usuario");
         $this->stmt_añadirvoto   = $this->dbh->prepare("insert into Voto (id_usuario, id_dinosaurio) values(:id_usuario, :id_dinosaurio)");
@@ -77,6 +81,20 @@ class AccesoDatos {
             }
         }
         return $tdinosaurio;
+    }
+
+    //Obtener dinosaurio por el ID
+    public function getDinosaurio($id) {
+        $dino = false; 
+
+        $this->stmt_dinosaurio->setFetchMode(PDO::FETCH_CLASS, 'Dinosaurio');
+        $this->stmt_dinosaurio->bindParam(':id_dinosaurio', $id);
+        if ( $this->stmt_dinosaurio->execute() ){
+             if ( $obj = $this->stmt_dinosaurio->fetch()){
+                $dino= $obj;
+            }
+        }
+        return $dino;
     }
     
     //Dar de alta a un usuario

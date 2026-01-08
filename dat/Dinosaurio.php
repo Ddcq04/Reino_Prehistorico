@@ -10,6 +10,7 @@ class Dinosaurio {
     private $agresividad;
     private $familia;
     private $especie;
+    private $tipo;
 
     function __get($atributo){
         if(property_exists($this, $atributo)) {
