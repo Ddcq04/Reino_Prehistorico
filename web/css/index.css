@@ -135,19 +135,20 @@ nav ul li a {
 /* -media queries menu hamburguesa--- */
 @media (max-width: 997px) {
 
-.usuario {
-   position: absolute;
-        right: 12px; /* Igual espaciado que el menu hamburguesa */
-       
-    }
+  .usuario {
+    position: absolute;
+    right: 12px;
+    /* Igual espaciado que el menu hamburguesa */
 
-    .usuario img {
-        /*  tamaño del usuario*/
-        width: 40px; 
-        height: auto;
-        display: block;
-    }
-    
+  }
+
+  .usuario img {
+    /*  tamaño del usuario*/
+    width: 40px;
+    height: auto;
+    display: block;
+  }
+
   .burger {
     display: flex;
     flex-direction: column;
@@ -299,18 +300,44 @@ nav ul li a {
   /*relleno sin deformarcion*/
 }
 
-/* texto de slider */
-.txt {
+/* Contenedor principal que agrupa texto y botón */
+.contentxtbot {
   position: absolute;
   top: 50%;
-  /* centrado vertical */
   left: 50%;
-  /* centrado horizontal */
   transform: translate(-50%, -50%);
-  /* centrado */
+  width: 90%;
+  /* Evita que el texto toque los bordes en móviles */
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centra todo horizontalmente */
   text-align: center;
+  z-index: 10;
+}
+
+/* Ajustes para el texto */
+.txt {
+  /* Eliminamos el position absolute individual para que fluya con el botón */
   color: white;
-  padding: 0 50px;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  /* Espacio fijo entre texto y botón */
+}
+
+/* Ajustes para el botón */
+.boton {
+  position: relative;
+  /* Cambiado de absolute a relative */
+  top: auto;
+  left: auto;
 }
 
 .txt h2 {
@@ -396,13 +423,7 @@ nav ul li a {
 
 }
 
-.boton {
-  position: absolute;
-  z-index: 100;
-  /* Asegura que esté por encima de la imagen y el texto */
-  justify-content: space-between;
 
-}
 
 .boton a {
   display: inline-block;

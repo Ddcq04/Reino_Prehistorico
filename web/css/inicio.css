@@ -154,28 +154,34 @@ input[type="submit"]:active {
     box-shadow: 0 2px 0 #5d7800;
 }
 
-.btn-registro {
-    display: inline-block;
-    text-decoration: none;
+.btnreg {
+    display: block;        /* PERMITE QUE EL BOTÓN TOME EL 100% DE ANCHO Y RESPETE EL PADDING */
+    width: 100%;           
+    padding: 15px;
     background: #8db600;
+    border: none;
+    border-radius: 50px; 
     color: #1a1a1a;
     font-family: 'Staatliches', cursive;
     font-size: 1.5rem;
-    padding: 15px;
-    border-radius: 50px;
-    margin-top: 15px;
-    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
     transition: all 0.3s ease;
     text-transform: uppercase;
+    
+    /* PROPIEDADES NUEVAS VITALES */
+    text-decoration: none; /* QUITA EL SUBRAYADO AZUL */
+    text-align: center;    /* CENTRA EL TEXTO DENTRO DEL BOTÓN */
+    box-sizing: border-box;/* EVITA QUE EL BOTÓN SE SALGA DEL FORMULARIO */
 }
 
-.btn-registro:hover {
+.btnreg:hover {
     background: #a4d400;
     transform: translateY(-2px);
     box-shadow: 0 7px 0 #5d7800;
 }
 
-.btn-registro:active {
+.btnreg:active {
     transform: translateY(3px);
     box-shadow: 0 2px 0 #5d7800;
 }
