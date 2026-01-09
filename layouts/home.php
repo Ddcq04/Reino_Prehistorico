@@ -98,7 +98,7 @@ require_once __DIR__ . '/../app/tiempo.php';
                     </div>
 
                     <div class="boton">
-                        <a href="../layouts/Dinosaurios/acuaticos.php">Descubrelo</a>
+                        <a href="../layouts/Dinosaurios/tipos_dinosaurios.php?tipo=Acuatico">Descubrelo</a>
                     </div>
 
                 </div>

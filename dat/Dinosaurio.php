@@ -10,6 +10,7 @@ class Dinosaurio {
     private $agresividad;
     private $familia;
     private $especie;
+    private $total_votos;
     private $tipo;
 
     function __get($atributo){

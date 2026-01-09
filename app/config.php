@@ -17,7 +17,7 @@ class AccesoDatos {
     private $stmt_creauser = null;
     private $stmt_usuario  = null;
     private $stmt_añadirvoto  = null;
-    private $stmt_votodinosaurio = null;
+    private $stmt_comprobarvoto = null;
     
     public static function getModelo(){
         if (self::$modelo == null){
@@ -41,15 +41,17 @@ class AccesoDatos {
         //Creacion y preparacion de las consultas
         $this->dbh->setAttribute( PDO::ATTR_EMULATE_PREPARES, FALSE );
         try {
-        $this->stmt_dinosaurios  = $this->dbh->prepare("select e.nombre as nombre_era, p.nombre as nombre_periodo, d.* 
+        $this->stmt_dinosaurios  = $this->dbh->prepare("select e.nombre as nombre_era, p.nombre as nombre_periodo, d.*, count(v.id_dinosaurio) as total_votos
                                                         from dinosaurio d join periodo p on d.id_periodo = p.id join era e on e.id = p.id_era
-                                                                    where d.tipo = :tipo_dinosaurio and e.nombre = :nombre_era order by d.id");
+                                                                left join voto v on v.id_dinosaurio = d.id where d.tipo =:tipo_dinosaurio and e.nombre = :nombre_era
+                                                                group by d.id order by d.id");
         $this->stmt_dinosaurio = $this->dbh->prepare("select e.nombre as nombre_era, p.nombre as nombre_periodo, d.* 
                                                         from dinosaurio d join periodo p on d.id_periodo = p.id join era e on e.id = p.id_era 
                                                         where d.id =:id_dinosaurio");
         $this->stmt_creauser  = $this->dbh->prepare("insert into Usuario (nombre,hash_contrasena,correo) values(?,?,?)");
         $this->stmt_usuario   = $this->dbh->prepare("select * from Usuario where nombre = :nombre_usuario");
         $this->stmt_añadirvoto   = $this->dbh->prepare("insert into Voto (id_usuario, id_dinosaurio) values(:id_usuario, :id_dinosaurio)");
+        $this->stmt_comprobarvoto = $this->dbh->prepare("select * from voto where id_usuario =:id_usuario and id_dinosaurio =:id_dinosaurio");
         } catch ( PDOException $e){
             echo " Error al crear la sentencias ".$e->getMessage();
             exit(); 
@@ -119,11 +121,20 @@ class AccesoDatos {
     }
 
     //Votar por dinosaurio
-    public function votarDinosaurio($usuario,$dinosaurio):bool{
-        $this->stmt_añadirvoto->bindParam(':id_usuario', $usuario->id);
-        $this->stmt_añadirvoto->bindParam(':id_dinosaurio', $dinosaurio->id);
+    public function votarDinosaurio($id_usuario,$id_dinosaurio):bool{
+        $this->stmt_añadirvoto->bindParam(':id_usuario', $id_usuario);
+        $this->stmt_añadirvoto->bindParam(':id_dinosaurio', $id_dinosaurio);
         $this->stmt_añadirvoto->execute();
         $resu = ($this->stmt_añadirvoto->rowCount () == 1);
+        return $resu;
+    }
+
+    //Para verificar si ya voto el usuario
+    public function yaVoto($id_usuario,$id_dinosaurio):bool {
+        $this->stmt_comprobarvoto->bindParam(':id_usuario', $id_usuario);
+        $this->stmt_comprobarvoto->bindParam(':id_dinosaurio', $id_dinosaurio);
+        $this->stmt_comprobarvoto->execute();
+        $resu = ($this->stmt_comprobarvoto->fetch());
         return $resu;
     }
 

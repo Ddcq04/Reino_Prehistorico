@@ -1,4 +1,5 @@
-<?php  
+<?php 
+    session_start();
     require_once "../../app/config.php";
     $modelo = AccesoDatos::getModelo();
     if(strip_tags($_GET["tipo"])) {
@@ -34,8 +35,9 @@
 
     <!-- Menu de navegacion-->
     <section class="menu">
-        <nav>
+        <nav class="navegacion-<?= $tipo ?>">
             <ul>
+                <li><a href="../home.php">Inicio</a></li>
                 <li><a href="../etapaMesozoico.html">Era Antigua</a></li>
                 <li><a href="dinosaurios.html">Dinosaurios</a></li>
                 <li><a href="../etapaCenozoico.html">Era Glaciar</a></li>
@@ -44,17 +46,30 @@
         </nav>
     </section>
 
-    <!-- Contenedor de dinosaurios voladores-->
+    <!-- Contenedor de dinosaurios-->
     <section class="contenedor">
         <?php foreach($dinosaurios as $dinosaurio): ?>
-            <a href="info_dino.php?id=<?= $dinosaurio->id ?>">
-                <div class="dino-tarjeta"> 
-                    <div class="dino-imagen">
-                        <img src="../../web/img/<?= $dinosaurio->id ?>.jpg">
-                    </div>
-                    <h3 class= "nombre nombre-<?=  $tipo ?>"><?= $dinosaurio->nombre ?></h3>
+            <div class="dino-tarjeta">
+                <a href="info_dino.php?id=<?= $dinosaurio->id ?>">
+                <div class="dino-imagen">
+                    <img src="../../web/img/<?= $dinosaurio->id ?>.jpg">
                 </div>
-            </a>
+                </a>
+                <!--Nombre y votos del dinosaurio-->
+                <div class= "nombre-contenedor nombre-<?= $tipo ?>">
+                    <h3><?= $dinosaurio->nombre ?></h3>
+                    <!--Se muestra si el usuario se a logeado -->
+                    <?php if(isset($_SESSION["usuario"])): ?>
+                        <form method="POST" action="../../index.php">
+                            <input type="hidden" name="id_dino" value="<?= $dinosaurio->id ?>">
+                            <button type="submit" class="corazon" name="accion" value="votar">
+                                <i>❤</i>
+                                <span><?= $dinosaurio->total_votos ?></span>
+                            </button>
+                        </form>
+                    <?php endif?>
+                </div>
+            </div>
         <?php endforeach; ?>
     </section>
 </body>

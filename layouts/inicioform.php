@@ -30,10 +30,6 @@
 
         </div>
 
-
-
-
-
         <div class="seccionlogin">
             <div class="logo">
                 <img src="../web/img/home/logo1.png" alt="">
