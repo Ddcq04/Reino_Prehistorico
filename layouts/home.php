@@ -44,7 +44,7 @@ require_once __DIR__ . '/../app/tiempo.php';
             <h3><?= $_SESSION["usuario"] ?></h3>
             <a href="../layouts/inicioform.php">
                 <img src="../web/img/home/logousua.png" alt="Perfil de Usuario">
-                
+
             </a>
         </div>
 

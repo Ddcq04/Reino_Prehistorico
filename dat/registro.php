@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION["usuario"] = $nombre;
             $_SESSION["ultimo_movimiento"] = time();
             
-            header("Location: ../layouts/home.html");
+            header("Location: ../layouts/home.php");
             exit;
         }
     }else{
