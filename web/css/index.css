@@ -3,19 +3,40 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
-
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
 }
 
 /* headerrr----------------------------------------------------- */
 header {
+  position: absolute;
+  /* para que el header flote en el slider*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  /* ayude que este encima de las imágenes  */
+  background-color: hsl(131, 44%, 27%, 0.6);
+  padding: 20px 0;
+  border-bottom: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* header {
   background-color: hsl(131, 44%, 27%);
   width: 100%;
   padding: 16px 0 0 0;
   border-bottom: 3px solid rgb(255, 255, 255);
   box-shadow: 34 56px 18px rgba(0, 0, 0, 0.3);
 
-}
+} */
 
 header h1 {
   font-family: "Bebas Neue", sans-serif;
@@ -132,7 +153,7 @@ nav ul li a {
 
 /* ----------------------------- */
 
-/* -media queries menu hamburguesa--- */
+/* -media queries menu hamburguesa---------------------------- */
 @media (max-width: 997px) {
 
   .usuario {
@@ -235,22 +256,10 @@ nav ul li a {
   .slidbox ul li .boton {
     /* posición menos extrema para que se vean */
     top: 70%;
-    /*botón más abajo pa que no choque con los títulos */
-    /* left: 5%; */
-    /* Mover a la izquierda para dejar más margen */
     font-size: 1.1rem;
     /* Reducir el tamaño de la fuente */
     max-width: 150px;
-    /* Asegurar que no se estiren demasiado si usamos VW */
-  }
-
-  /*botones centrados */
-  .slidbox ul li .boton {
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* centrar el boton horizontal */
-    /* Si usasamos translate para centrarlo necesitamos ajustar el top */
+    /* Asegurar que botn no se estiren demasiado si usamos VW */
   }
 
   /* --texto----------- */
@@ -269,41 +278,74 @@ nav ul li a {
 
 .slidbox {
   width: 100%;
-  overflow: hidden;
-
+  height: 100vh;
+  position: relative;
+  contain: paint;
+  /* Corta el desborde sin usar overflow:hidden */
 }
+
+.slidbox ul {
+  display: flex;
+  list-style: none;
+  width: 600%;
+  /* Para las 6 imágenes */
+  height: 100%;
+  animation: slide 40s infinite;
+}
+
+/* 3. CADA DIAPOSITIVA (Slide) */
+.slidbox li {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  position: relative;
+  /* Clave para que el texto se posicione AQUÍ dentro */
+}
+
+.slidbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .slidbox {
+  width: 100%;
+  overflow: hidden;
+  
+
+} */
 
 
 /* la lista de cada foto */
-.slidbox ul {
+/* .slidbox ul {
   display: flex;
   padding: 0;
   margin: 0;
   width: 600%;
   animation: slide 40s infinite;
-}
+} */
 
 /* Cada slider */
-.slidbox li {
+/* .slidbox li {
   width: 100vw;
   height: calc(100vh - 95px);
   list-style: none;
   position: relative;
   flex-shrink: 0;
-}
+} */
 
 /*imagen individual */
-.slidbox img {
+/* .slidbox img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /*relleno sin deformarcion*/
-}
+ 
+} */
 
 /* Contenedor principal que agrupa texto y botón */
 .contentxtbot {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
@@ -332,14 +374,6 @@ nav ul li a {
   /* Espacio fijo entre texto y botón */
 }
 
-/* Ajustes para el botón */
-.boton {
-  position: relative;
-  /* Cambiado de absolute a relative */
-  top: auto;
-  left: auto;
-}
-
 .txt h2 {
   font-size: 50px;
   margin-bottom: 20px;
@@ -351,82 +385,13 @@ nav ul li a {
 }
 
 
-.t1 {
-  position: absolute;
-  top: 45%;
-  left: 35%;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 0.2rem 0.6rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-}
-
-.sld {
-  width: 100%;
-  height: 100%;
+/* estilo de botones de sliderssss----------------- */
+.boton {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
+  flex-direction: row;
 }
-
-.t2 {
-
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 0.2rem 0.6rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-
-}
-
-
-.t3 {
-
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 0.2rem 0.6rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-
-}
-
-.t4 {
-  position: absolute;
-  top: 45%;
-  left: 35%;
-  text-align: left;
-
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 0.2rem 0.6rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-
-}
-
-
-.t5 {
-
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 0.2rem 0.6rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-
-}
-
-.t6 {
-
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 0.2rem 0.6rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-
-}
-
-
 
 .boton a {
-  display: inline-block;
   padding: 12px 25px;
   background-color: hsl(131, 44%, 27%);
   /* Color verde visible */
@@ -444,11 +409,11 @@ nav ul li a {
   transform: scale(1.10);
 }
 
-.boton a:active {
+/* .boton a:active {
   transform: scale(1.05);
-}
+} */
 
-.b1 {
+/* .b1 {
   top: auto;
   bottom: 29%;
   left: 10%;
@@ -476,7 +441,7 @@ nav ul li a {
   top: auto;
   bottom: 25%;
   left: 45%;
-}
+} */
 
 @keyframes slide {
   0% {
@@ -583,6 +548,20 @@ nav ul li a {
 
 /* footer--------------------------------------------------------- */
 .footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+
+  background-color: #111;
+  color: #eee;
+  padding: 50px 20px;
+  border-top: 3px solid #ffffff;
+  /* Limpia cualquier flotación anterior */
+  clear: both;
+}
+
+/* .footer {
   border-top: 3px solid white;
   background-color: hsl(0, 0%, 9%);
   color: #eee;
@@ -590,7 +569,7 @@ nav ul li a {
   padding: 50px 16px 16px 50px;
   box-sizing: border-box;
 
-}
+} */
 
 .seccion1 {
   display: grid;
@@ -710,7 +689,7 @@ nav ul li a {
 }
 
 
-/* MEDIA QUERIES FOOTER */
+/* MEDIA QUERIES FOOTER--------------------------------------------- */
 @media (max-width: 903px) {
 
   /* 5 FILAS */

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión</title>
     <link rel="stylesheet" href="../web/css/inicio.css">
+    <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -13,16 +15,16 @@
         <div class="seccionvideo">
             <div class="contenedor-videos">
                 <video autoplay muted loop playsinline class="video-dino" id="vid1">
-                    <source src="../web/videos/inicio1.mp4" type="video/mp4">
+                    <source src="../web/videos/videologin/vid1.mp4" type="video/mp4">
                 </video>
                 <video autoplay muted loop playsinline class="video-dino" id="vid2">
-                    <source src="../web/videos/inicio2.mp4" type="video/mp4">
+                    <source src="../web/videos/videologin/vid4.mp4" type="video/mp4">
                 </video>
                 <video autoplay muted loop playsinline class="video-dino" id="vid3">
-                    <source src="../web/videos/inicio3.mp4" type="video/mp4">
+                    <source src="../web/videos/videologin/vid2.mp4" type="video/mp4">
                 </video>
                 <video autoplay muted loop playsinline class="video-dino" id="vid4">
-                    <source src="../web/videos/inicio4.mp4" type="video/mp4">
+                    <source src="../web/videos/videologin/vid5.mp4" type="video/mp4">
                 </video>
             </div>
 
@@ -33,6 +35,12 @@
 
 
         <div class="seccionlogin">
+            <div class="logo">
+                <img src="../web/img/home/logo1.png" alt="">
+                <h1>Reino Prehistórico</h1>
+                <img src="../web/img/home/logo2.png" alt="">
+            </div>
+
             <form method="post" action="../dat/inicio.php">
 
                 <?php

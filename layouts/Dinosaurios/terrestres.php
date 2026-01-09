@@ -1,22 +1,24 @@
-<?php  
-    require_once "../../app/config.php";
-    $modelo = AccesoDatos::getModelo();
-    $dinosaurios_terrestres = $modelo->getDinosaurios("Terrestre", "Mesozoico");
+<?php
+require_once "../../app/config.php";
+$modelo = AccesoDatos::getModelo();
+$dinosaurios_terrestres = $modelo->getDinosaurios("Terrestre", "Mesozoico");
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="StyleSheet" href="../../web/css/terrestres.css" type="text/css">
     <title>Dinosaurios Terrestres</title>
 </head>
+
 <body>
     <video autoplay muted loop id="videoFondo">
         <source src="../../web/videos/fondo-terrestres.mp4" type="video/mp4">
     </video>
 
-    <header>DINOSAURIOS TERRESTRES</header> 
+    <header>DINOSAURIOS TERRESTRES</header>
     <!-- Menu de navegacion-->
     <section class="menu">
         <nav>
@@ -28,11 +30,11 @@
             </ul>
         </nav>
     </section>
-        
+
     <!-- Contenedor de dinosaurios terrestres-->
     <section class="contenedor-terrestres">
-        <?php foreach($dinosaurios_terrestres as $dinosaurio): ?>
-            <div class="dino-tarjeta"> 
+        <?php foreach ($dinosaurios_terrestres as $dinosaurio): ?>
+            <div class="dino-tarjeta">
                 <div class="dino-imagen">
                     <img src="../../web/img/<?= $dinosaurio->id ?>.jpg">
                 </div>
@@ -41,9 +43,9 @@
                     <?= $dinosaurio->nombre_era ?>
                 </div>
             </div>
-        <?php endforeach; ?>   
+        <?php endforeach; ?>
 
-        
+
         <!-- Spinosaurus -->
         <div class="dino-tarjeta">
             <div class="dino-imagen">
@@ -63,4 +65,5 @@
         </div>
     </section>
 </body>
+
 </html>
