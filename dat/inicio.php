@@ -21,8 +21,9 @@ $clave = trim($_POST["clave"]);
 if(validar_usuario($nombre,$clave)){
 
     $_SESSION["usuario"] = $nombre;
+    $_SESSION["ultimo_movimiento"] = time();
 
-    header("Location: ../layouts/home.html");
+    header("Location: ../layouts/home.php");
     exit;
 
 

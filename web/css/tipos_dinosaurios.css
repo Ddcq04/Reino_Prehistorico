@@ -17,10 +17,9 @@ body {
 }
 
 /*--------------------------Encabezado----------------------*/
-header {
+.cabecera {
     margin:0;
     background:rgba(0, 0, 0, 0.6);
-    color:rgb(37, 159, 37);
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
@@ -28,7 +27,15 @@ header {
     letter-spacing: 0.2rem;
     border-bottom: 0.2rem solid #ffffff;
 }
-
+.cabecera.cabecera-terrestres{
+    color:rgb(37, 159, 37);
+}
+.cabecera.cabecera-acuaticos{
+    color:rgb(53, 99, 164);
+}
+.cabecera.cabecera-voladores{
+    color:#ffffff;
+}
 /*Menu de navegación*/
 nav {
     width: 70%;
@@ -49,13 +56,14 @@ nav ul li{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-a {
+nav ul li a {
     font-size: 29px;
     text-decoration: none;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8)
 }
+
 nav ul li:hover {
     background-color: #2a7a0e;
     transform: scale(1.10);
@@ -79,7 +87,8 @@ nav ul li:active {
 }
 
 /*-----------------Contenedor de dinosaurios---------------*/
-.contenedor-terrestres {
+
+.contenedor{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -88,7 +97,9 @@ nav ul li:active {
     max-width: 90rem;
     padding: 2rem;
 }
-
+.contenedor a {
+    text-decoration: none;
+}
 /*Tarjeta*/
 .dino-tarjeta {
     width: 18.75rem;
@@ -111,26 +122,20 @@ nav ul li:active {
     display: block;
 }
 
-/*Título*/
-.dino-tarjeta h3 {
+/*Título del dinosaurio*/
+.nombre{
     color: #ffffff;
-    background-color: #2a7a0e;
     padding: 1rem;
     margin: 0;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
-
-/*Info*/
-.dino-info {
-    text-align: center;
-    padding: 1.5rem;
-    background: #05aa1529;
-    color: #2a7a0e;
+.nombre.nombre-terrestres{
+    background-color: #2a7a0e;
 }
-
-.dino-info p {
-    margin: 0.3rem 0;
-    font-size: 0.95em;
-    line-height: 1.4;
+.nombre.nombre-acuaticos{
+    background-color: #0e287e;
+}
+.nombre.nombre-voladores{
+    background-color: #00c1c1;
 }

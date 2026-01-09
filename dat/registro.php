@@ -21,6 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if(!existe_usuario($nombre)){
         if ($BD->addUsuario($user)) {
 
+            $_SESSION["usuario"] = $nombre;
+            $_SESSION["ultimo_movimiento"] = time();
+            
             header("Location: ../layouts/home.html");
             exit;
         }

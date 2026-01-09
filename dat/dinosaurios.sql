@@ -40,7 +40,6 @@ CREATE TABLE Voto (
     FOREIGN KEY (id_dinosaurio) REFERENCES Dinosaurio(id) ON DELETE CASCADE
 );
 
-
 ------------------INSERCION DE DATOS-------------------
 INSERT INTO Era(nombre) VALUES ("Mesozoico"),("Cenozoico");
 INSERT INTO Periodo (nombre, id_era) VALUES 
@@ -50,8 +49,9 @@ INSERT INTO Periodo (nombre, id_era) VALUES
 ('Paleógeno', 2),
 ('Neógeno', 2),
 ('Cuaternario', 2);
+--DINOSAURIOS--
 INSERT INTO Dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion, agresividad, familia, especie, tipo) VALUES
---Terrestres--
+-- Terrestres --
 ('Tiranosaurio Rex', 3, 'Hace 68-66 millones de años', 'Oeste de Norteamérica', 'Carnívoro', 4, 'Tyrannosauridae', 'Tyrannosaurus rex', 'Terrestre'),
 ('Triceratops', 3, 'Hace 68-66 millones de años', 'Norteamérica', 'Herbívoro', 2, 'Ceratopsidae', 'Triceratops horridus', 'Terrestre'),
 ('Velociraptor', 3, 'Hace 75-71 millones de años', 'Asia', 'Carnívoro', 3, 'Dromaeosauridae', 'Velociraptor mongoliensis', 'Terrestre'),
@@ -64,7 +64,7 @@ INSERT INTO Dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion
 ('Diplodocus', 2, 'Hace 154-152 millones de años', 'Norteamérica', 'Herbívoro', 1, 'Diplodocidae', 'Diplodocus longus', 'Terrestre'),
 ('Stegosaurus', 2, 'Hace 155-150 millones de años', 'Norteamérica', 'Herbívoro', 1, 'Stegosauridae', 'Stegosaurus stenops', 'Terrestre'),
 ('Spinosaurus', 3, 'Hace 112-93 millones de años', 'Norte de África', 'Carnívoro/Piscívoro', 4, 'Spinosauridae', 'Spinosaurus aegyptiacus', 'Terrestre'),
---Acuaticos--
+-- Acuaticos --
 ('Liopleurodon', 2, 'Hace 160-155 millones de años', 'Europa', 'Carnívoro', 4, 'Pliosauridae', 'Liopleurodon ferox', 'Acuatico'),
 ('Mosasaurus', 3, 'Hace 70-66 millones de años', 'Mundial', 'Carnívoro', 4, 'Mosasauridae', 'Mosasaurus hoffmannii', 'Acuatico'),
 ('Plesiosaurus', 2, 'Hace 199-175 millones de años', 'Europa', 'Piscívoro', 2, 'Plesiosauridae', 'Plesiosaurus dolichodeirus', 'Acuatico'),
@@ -77,7 +77,7 @@ INSERT INTO Dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion
 ('Ammonite', 3, 'Hace 400-66 millones de años', 'Mundial', 'Carnívoro', 1, 'Ammonoidea', 'Varias especies', 'Acuatico'),
 ('Megalodon', 3, 'Hace 23-3.6 millones de años', 'Mundial', 'Carnívoro', 4, 'Otodontidae', 'Otodus megalodon', 'Acuatico'),
 ('Archelon', 3, 'Hace 80-74 millones de años', 'Norteamérica', 'Omnívoro', 1, 'Protostegidae', 'Archelon ischyros', 'Acuatico'),
---Voladores--
+-- Voladores --
 ('Hatzegopteryx', 3, 'Hace 66 millones de años', 'Europa', 'Carnívoro', 3, 'Azhdarchidae', 'Hatzegopteryx thambema', 'Volador'),
 ('Pteranodon', 3, 'Hace 86-84 millones de años', 'Norteamérica', 'Piscívoro', 1, 'Pteranodontidae', 'Pteranodon longiceps', 'Volador'),
 ('Quetzalcoatlus', 3, 'Hace 68-66 millones de años', 'Norteamérica', 'Carnívoro', 2, 'Azhdarchidae', 'Quetzalcoatlus northropi', 'Volador'),
@@ -90,33 +90,21 @@ INSERT INTO Dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion
 ('Tupandactylus', 3, 'Hace 112-108 millones de años', 'Sudamérica', 'Frugívoro', 1, 'Tapejaridae', 'Tupandactylus imperator', 'Volador'),
 ('Cearadactylus', 3, 'Hace 112-108 millones de años', 'Sudamérica', 'Piscívoro', 2, 'Anhangueridae', 'Cearadactylus atrox', 'Volador'),
 ('Nyctosaurus', 3, 'Hace 85-84 millones de años', 'Norteamérica', 'Piscívoro', 1, 'Nyctosauridae', 'Nyctosaurus gracilis', 'Volador');
---Mamiferos--
-INSERT INTO Dinosaurio
-(nombre, id_periodo, tiempo_vida, ubicacion, alimentacion, agresividad, familia, especie, tipo)
-VALUES
--- ANIMALES VOLADORES 
+
+--MAMIFEROS--
+INSERT INTO Dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion, agresividad, familia, especie, tipo) VALUES
+--voladores-- 
 ('Teratornítido', 6, 'Hace 1 millón – 10.000 años', 'Lagos y llanuras templadas', 'Carroñero', 2, 'Teratornithidae', 'Teratornis merriami', 'Volador'),
-
 ('Búho Gigante', 6, 'Hace 1 millón – 10.000 años', 'Bosques templados', 'Carnívoro', 3, 'Strigidae', 'Ornimegalonyx oteroi', 'Volador'),
-
 ('Águila de Haast', 6, 'Hace 700.000 – 600 años', 'Llanuras abiertas', 'Carnívoro', 4, 'Accipitridae', 'Harpagornis moorei', 'Volador'),
-
 ('Cóndor Gigante', 6, 'Hace 2,5 millones – 13.000 años', 'Zonas abiertas y desérticas', 'Carnívoro / Carroñero', 3, 'Teratornithidae', 'Aiolornis incredibilis', 'Volador'),
-
--- ANIMALES TERRESTRES
+-- Terrestres--
 ('Mamut', 6, 'Hace 400.000 – 4.000 años', 'Estepas heladas', 'Herbívoro', 1, 'Elephantidae', 'Mammuthus primigenius', 'Terrestre'),
-
 ('Tigre de Dientes de Sable', 6, 'Hace 2,5 millones – 10.000 años', 'Sabana templada', 'Carnívoro', 4, 'Felidae', 'Smilodon fatalis', 'Terrestre'),
-
 ('Perezoso Gigante', 6, 'Hace 1,8 millones – 8.000 años', 'Bosques tropicales', 'Herbívoro', 1, 'Megatheriidae', 'Megatherium americanum', 'Terrestre'),
-
 ('Glyptodon', 6, 'Hace 2,5 millones – 10.000 años', 'Praderas y sabanas', 'Herbívoro', 1, 'Glyptodontidae', 'Glyptodon clavipes', 'Terrestre'),
-
--- ANIMALES ACUÁTICOS
+-- Acuaticos--
 ('Morsa Gigante', 6, 'Hace 1 millón de años – actualidad', 'Océanos árticos', 'Carnívoro (molusívoro)', 3, 'Odobenidae', 'Odobenus rosmarus', 'Acuático'),
-
 ('Foca Monje Antigua', 6, 'Hace 500.000 años – siglo XX', 'Costas frías', 'Carnívoro (piscívoro)', 3, 'Phocidae', 'Monachus tropicalis', 'Acuático'),
-
 ('León Marino Antiguo', 6, 'Hace 2,5 – 0,3 millones de años', 'Aguas templadas', 'Carnívoro (piscívoro)', 3, 'Otariidae', 'Thalassoleon macnallyae', 'Acuático'),
-
 ('Vaca Marina de Steller', 6, 'Hace 2 millones de años – 1768 d.C.', 'Aguas frías del Pacífico Norte', 'Herbívoro (algas marinas)', 1, 'Dugongidae', 'Hydrodamalis gigas', 'Acuático');
