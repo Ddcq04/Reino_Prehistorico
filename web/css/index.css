@@ -566,7 +566,7 @@ nav ul li a {
 }
 
 .footer .seccion2 ul {
-  flex-direction: column;
+  flex-direction: row;
   margin-bottom: 10px;
 }
 
@@ -621,11 +621,6 @@ nav ul li a {
     padding-bottom: 5px;
     border-left: none;
   }
-
-
-
-
-
 
 
 }
