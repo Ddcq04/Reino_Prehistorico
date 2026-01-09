@@ -6,7 +6,7 @@
     height: 100vh;
 }
 
-/* --- SECCIÓN IZQUIERDA (VIDEOS) ----------------------- */
+/* --- SECCIÓN IZQUIERDA (VIDEOS) ------------------------------------------- */
 .seccionvideo {
     flex: 1;
     position: relative;
@@ -16,7 +16,7 @@
     border-right: 5px solid hsl(131, 44%, 27%);
 }
 
-/* --- SECCIÓN DERECHA (LOGIN) --- -------------------------*/
+/* --- SECCIÓN DERECHA (LOGIN) ---------------------------------------------*/
 .seccionlogin {
     flex: 1;
     /* Toma el otro 50% */
@@ -37,7 +37,7 @@ body {
     margin: 0;
 }
 
-/* Contenedor videos-------------------------------------------*/
+/* Contenedor videos---------------------------------------------------------------*/
 .contenedor-videos {
     position: absolute;
     top: 0;
@@ -104,8 +104,7 @@ body {
     }
 }
 
-/*FORMULARIO --------------------------------------------- */
-/* SECCION GENERAL------------------------ */
+/*CONTENEDOR FORMULARIO ----------------------------------------------------------------- */
 .seccionlogin {
     flex: 1;
     background: #1a1a1a;
@@ -113,7 +112,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 .seccionlogin .logo {
@@ -267,7 +266,7 @@ input[type="submit"]:active {
     box-shadow: 0 2px 0 #5d7800;
 }
 
-
+/* MEDIA QUERIESS---------------------------------------------------------------------- */
 @media screen and (max-width: 903px) {
     .seccionlogin .logo {
         display: flex;
@@ -292,7 +291,7 @@ input[type="submit"]:active {
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     }
 
-    /*  Quitamos el flex  */
+    /* DESAPARECEMOS EL FLEX -------------------- */
     body {
         display: block;
         height: auto;
@@ -302,7 +301,7 @@ input[type="submit"]:active {
         padding: 0;
     }
 
-    /* contenedor principal se vuelve un unico bloque */
+    /* SOLO TENEMOS UN CONTENEDOR PRINCIPAL------------*/
     .contenedorP {
         display: block;
         width: 100%;
@@ -310,7 +309,7 @@ input[type="submit"]:active {
         position: relative;
     }
 
-    /* 3.video fondo */
+    /* VIDEOSS--------------------------------*/
     .seccionvideo {
         position: fixed;
         top: 0;
@@ -322,7 +321,7 @@ input[type="submit"]:active {
         /* quitamos el borde */
     }
 
-    /*usuario centrado */
+    /*USUARIO CENTRADO------------------------ */
     .seccionlogin {
         width: 100%;
         min-height: 100vh;
@@ -335,13 +334,13 @@ input[type="submit"]:active {
         box-sizing: border-box;
     }
 
-    /* 5. El Formulario: Ajuste de ancho y bordes */
+    /* ANCHO Y BORDES DE LOS FORMULARIOS---------- */
     form {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
         background: rgba(43, 43, 43, 0.9);
-        /* transparencia */
         box-sizing: border-box !important;
     }
 }
+

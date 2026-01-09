@@ -1,10 +1,3 @@
-@font-face {
-  font-family: 'JurassicPark';
-  src: url('../../tipografia/Jurassic_Park.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-/* ----------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +11,7 @@ body {
   background-color: #000;
 }
 
-/* headerrr----------------------------------------------------- */
+/* HEADERRR----------------------------------------------------- */
 header {
   position: absolute;
   /* para que el header flote en el slider*/
@@ -27,22 +20,14 @@ header {
   width: 100%;
   z-index: 100;
   /* ayude que este encima de las imágenes  */
-  background-color: hsl(131, 44%, 27%, 0.6);
-  padding: 20px 0;
-  border-bottom: 2px solid white;
+  background-color: hsl(131, 44%, 27%, 0.63);
+  padding: 20px 0 0px;
+  border-bottom: 3px solid white;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* header {
-  background-color: hsl(131, 44%, 27%);
-  width: 100%;
-  padding: 16px 0 0 0;
-  border-bottom: 3px solid rgb(255, 255, 255);
-  box-shadow: 34 56px 18px rgba(0, 0, 0, 0.3);
-
-} */
 
 header h1 {
   font-family: "Bebas Neue", sans-serif;
@@ -57,7 +42,7 @@ header h1 {
 
 }
 
-/* logo con sus --------------------------------------- */
+/* LOGO-------------------- --------------------------------------- */
 .logo {
   display: flex;
   flex-direction: row;
@@ -71,12 +56,13 @@ header h1 {
 
 }
 
-/* -----usuario----------------------- */
+/* -----USUARIO-------------------------------------------------- */
 .usuario {
   position: absolute;
   top: 20px;
   right: 30px;
   z-index: 100;
+  text-align: center;
   /* pone por encima de todo para que sea clicable */
 }
 
@@ -92,13 +78,13 @@ header h1 {
   transform: scale(1.3);
 }
 
-.usuario h3{
+.usuario p {
   color: white;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 2px;
 }
 
-/*barra de navegacion--------------------------------------------------*/
+/*BARRA DE NAVEGACION--------------------------------------------------*/
 nav {
   width: 100%;
   margin-top: 7rem;
@@ -154,7 +140,7 @@ nav ul li a {
   display: inline-block;
 }
 
-/* --- ocultar el check--- */
+/* --- OCULTAR LA BARRA DE NAVEGACION...--- */
 #check {
   display: none;
 }
@@ -165,13 +151,34 @@ nav ul li a {
 
 /* ----------------------------- */
 
-/* -media queries menu hamburguesa---------------------------- */
-@media (max-width: 997px) {
+/* MEDIA QUERIES HEADER CON MENU HAMBURGUESA---------------------------- */
+
+
+
+/*----------------------- MÓVILES PEQUEÑOS----------------------------- */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1px
+  }
+
+  .logo img {
+    width: 2.2rem;
+  }
+
+  .usuario img {
+    width: 35px;
+
+  }
+}
+
+@media (max-width: 1207px) {
 
   .usuario {
     position: absolute;
     right: 12px;
-    /* Igual espaciado que el menu hamburguesa */
+    top: 17px
+      /* Igual espaciado que el menu hamburguesa */
 
   }
 
@@ -182,6 +189,8 @@ nav ul li a {
     display: block;
   }
 
+
+  /*LINEAS DEL MENU HAMBURGUESA------------- */
   .burger {
     display: flex;
     flex-direction: column;
@@ -191,12 +200,11 @@ nav ul li a {
     cursor: pointer;
     position: absolute;
     left: 20px;
-    top: 25px;
+    top: 33px;
     z-index: 1001;
     /* para soperponer el menu */
   }
 
-  /*líneas de la hamburguesa */
   .burger span {
     width: 100%;
     height: 4px;
@@ -206,10 +214,10 @@ nav ul li a {
 
   }
 
-  /* Menú oculto lateralmente */
+  /* DESPLIEGUE DEL MENU HABURGUESA---------------- */
   .enlaces {
-    position: fixed;
-    top: 20;
+    position: absolute;
+    top: 50px;
     left: -100%;
     width: 100%;
     height: 100vh;
@@ -223,23 +231,11 @@ nav ul li a {
     z-index: 1000;
     margin: 0;
     padding: 0;
-    gap: 0;
-    /* quitamos espacio vertical entre los textos */
-    /* flex-wrap: nowrap ; */
-    /* Evitar que elementos se "salten" de línea */
+
   }
 
-  /* Ajuste individual de los elementos de la lista */
+  /* AJUSTE INDIVIDUAL DE LA LISTA*/
   .enlaces li {
-    margin: 15px 0;
-    /* espaciado uniforme*/
-    width: 100%;
-    text-align: center;
-    list-style: none;
-  }
-
-  .enlaces li {
-    margin: 20px;
     width: 100%;
     text-align: center;
   }
@@ -251,10 +247,10 @@ nav ul li a {
     width: 100%;
   }
 
-  /* acticavion del menu para ver enlaces*/
+  /* ACTIVACION DEL MENU HAMBURGUESA*/
   #check:checked~.enlaces {
     left: 0;
-    /* se desplegue desde la izquierda */
+    /* DESPLEGAR IZQUIERDA */
   }
 
 }
@@ -262,6 +258,7 @@ nav ul li a {
 
 /* slider------------------------------------------------------------ */
 /* -------mediaqueries slider */
+
 
 @media (max-width: 903px) {
 
@@ -293,7 +290,7 @@ nav ul li a {
   height: 100vh;
   position: relative;
   contain: paint;
-  /* Corta el desborde sin usar overflow:hidden */
+  /* desborde sin usar overflow:hidden */
 }
 
 .slidbox ul {
@@ -301,8 +298,11 @@ nav ul li a {
   list-style: none;
   width: 600%;
   /* Para las 6 imágenes */
+  margin: 0;
+  padding: 0;
+  list-style: none;
   height: 100%;
-  animation: slide 40s infinite;
+  animation: slide 45s infinite;
 }
 
 /* 3. CADA DIAPOSITIVA (Slide) */
@@ -320,41 +320,8 @@ nav ul li a {
   object-fit: cover;
 }
 
-/* .slidbox {
-  width: 100%;
-  overflow: hidden;
-  
 
-} */
-
-
-/* la lista de cada foto */
-/* .slidbox ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  width: 600%;
-  animation: slide 40s infinite;
-} */
-
-/* Cada slider */
-/* .slidbox li {
-  width: 100vw;
-  height: calc(100vh - 95px);
-  list-style: none;
-  position: relative;
-  flex-shrink: 0;
-} */
-
-/*imagen individual */
-/* .slidbox img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
- 
-} */
-
-/* Contenedor principal que agrupa texto y botón */
+/* CONTENEDOR DE TEXTO Y BOTONES-------------------------------------------------------------- */
 .contentxtbot {
   position: absolute;
   top: 60%;
@@ -371,7 +338,7 @@ nav ul li a {
   z-index: 10;
 }
 
-/* Ajustes para el texto */
+/* AJUSTE DE TEXTOS EN EL SLIDER---------------------------------------------------------------------------------- */
 .txt {
   /* Eliminamos el position absolute individual para que fluya con el botón */
   color: white;
@@ -397,10 +364,15 @@ nav ul li a {
 }
 
 
-/* estilo de botones de sliderssss----------------- */
+/* BOTONES DENTRO DE LOS SLIDERS----------------- */
 .boton {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  /* Centra los botones horizontalmente */
+  gap: 20px;
+  /* ESTA ES LA CLAVE: Separación lateral entre botones */
+  margin-top: 15px;
 }
 
 .boton a {
@@ -413,7 +385,9 @@ nav ul li a {
   font-size: 1.2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
-  display: block;
+  display: inline-block;   /* Cambiado de block a inline-block */
+  white-space: nowrap;     /* Evita que el texto del botón se rompa en dos líneas */
+
 }
 
 
@@ -421,141 +395,50 @@ nav ul li a {
   transform: scale(1.10);
 }
 
-/* .boton a:active {
-  transform: scale(1.05);
-} */
-
-/* .b1 {
-  top: auto;
-  bottom: 29%;
-  left: 10%;
-}
-
-.b2 {
-  top: auto;
-  bottom: 24%;
-  left: 40%;
-}
-
-.b3 {
-  top: auto;
-  bottom: 30%;
-  left: 45%;
-}
-
-.b5 {
-  top: auto;
-  bottom: 28%;
-  left: 45%;
-}
-
-.b6 {
-  top: auto;
-  bottom: 25%;
-  left: 45%;
-} */
-
 @keyframes slide {
-  0% {
 
+  /* Imagen 1 (Quieta) */
+  0%,
+  13.3% {
     transform: translateX(0);
   }
 
-  /* slider 1 */
-  13% {
+  /* Transición a Imagen 2 */
+  16.6%,
+  29.9% {
+    transform: translateX(-100vw);
+  }
+
+  /* Transición a Imagen 3 */
+  33.2%,
+  46.5% {
+    transform: translateX(-200vw);
+  }
+
+  /* Transición a Imagen 4 */
+  49.8%,
+  63.1% {
+    transform: translateX(-300vw);
+  }
+
+  /* Transición a Imagen 5 */
+  66.4%,
+  79.7% {
+    transform: translateX(-400vw);
+  }
+
+  /* Imagen 6 (ESTA ES LA QUE FALLABA) - Se queda quieta aquí */
+  83%,
+  97% {
+    transform: translateX(-500vw);
+  }
+
+  /* Regreso al inicio (suave) */
+  100% {
     transform: translateX(0);
-  }
-
-  16% {
-    transform: translateX(-100vw);
-  }
-
-  /* slider 2 */
-  29% {
-    transform: translateX(-100vw);
-  }
-
-  32% {
-    transform: translateX(-200vw);
-  }
-
-  /* slider 3 */
-  45% {
-    transform: translateX(-200vw);
-  }
-
-  48% {
-    transform: translateX(-300vw);
-
-    background-image: url(img/1.jpg);
-  }
-
-  16% {
-    background-image: url(img/1.jpg);
-  }
-
-  21% {
-    background-image: url(img/2.jpg);
-  }
-
-  40% {
-    background-image: url(img/2.jpg);
-  }
-
-  41% {
-    background-image: url(img/3.jpg);
-  }
-
-  60% {
-    background-image: url(img/3.jpg);
-
-  }
-
-  /* slider 4 */
-  61% {
-
-    transform: translateX(-300vw);
-  }
-
-  64% {
-    transform: translateX(-400vw);
-  }
-
-  77% {
-    transform: translateX(-400vw);
-  }
-
-  80% {
-    transform: translateX(-500vw);
-  }
-
-  100% {
-    transform: translateX(-500vw);
-
-    background-image: url(img/4.jpg);
-  }
-
-  80% {
-    background-image: url(img/4.jpg);
-  }
-
-  81% {
-    background-image: url(img/5.jpg);
-  }
-
-  100% {
-    background-image: url(img/5.jpg);
-  }
-
-  101% {
-    background-image: url(img/6.jpg);
-  }
-
-  120% {
-    background-image: url(img/6.jpg);
-
   }
 }
+
 
 
 /* footer--------------------------------------------------------- */
@@ -564,13 +447,12 @@ nav ul li a {
   display: block;
   width: 100%;
   font-family: "Poppins", sans-serif;
-
-  background-color: #111;
+  background-color: hsl(0, 0%, 9%);
   color: #eee;
-  padding: 50px 20px;
   border-top: 3px solid #ffffff;
   /* Limpia cualquier flotación anterior */
-  clear: both;
+  padding: 50px 16px 16px 50px;
+  box-sizing: border-box;
 }
 
 /* .footer {
@@ -583,6 +465,7 @@ nav ul li a {
 
 } */
 
+/* ESTRUCTURA DE SECCION 1 CONTENIDO DEL FOOTER ----------------------------------------------------------- */
 .seccion1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -625,40 +508,12 @@ nav ul li a {
 
 }
 
-
-
-/*formulario-------------------------- */
-/* .form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.form input,
-.form textarea {
-  background: #353434;
-  border: none;
-  padding: 6px;
-  color: white;
-  border-radius: 6px;
-}
-
-.form button {
-  background-color: rgb(17, 215, 156);
-  border: none;
-  color: #020202;
-  padding: 6px;
-  border-radius: 6px;
-  cursor: pointer;
-
-} */
-
-
-/* redesociales--------------------- */
+/* IMAGENES DE ICONOS DE REDES SOCIALES---------------------------------------------------------------- */
 .redesociales {
   display: flex;
-  gap: 9px;
-
+  gap: 12px;
+  justify-content: center;
+  /* ICONOS*/
 }
 
 .redesociales img {
@@ -671,7 +526,9 @@ nav ul li a {
   transform: scale(1.3);
 }
 
-/* seccion2---------------------- */
+
+
+/* ESTRUCTURA SECCION 2 DEL AVISO LEGAL-------------------------------------------------------------------------------- */
 .seccion2 {
   border-top: 1px solid #333;
   padding-top: 15px;
@@ -701,14 +558,56 @@ nav ul li a {
 }
 
 
+
+/* AVISO LEGAL---------------------------------------------------------- */
+.footer .seccion2 {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer .seccion2 ul {
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+
 /* MEDIA QUERIES FOOTER--------------------------------------------- */
+
+
+/* MÓVILES (1 Columna y Centrado) */
+@media (max-width: 600px) {
+  .footer {
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  .seccion1 {
+    grid-template-columns: 1fr;
+    /* Una sola fila */
+    gap: 30px;
+  }
+
+  .content h2 {
+    border-left: none;
+    border-bottom: 3px solid hsl(131, 44%, 43%);
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+  .seccion2 ul {
+    flex-direction: column;
+    /* Enlaces legales en lista vertical */
+    gap: 10px;
+  }
+}
+
 @media (max-width: 903px) {
 
-  /* 5 FILAS */
+  /*LAS 5 FILAS */
   .footer .seccion1 {
     display: grid;
     grid-template-columns: 1fr;
-    /* Una columna */
+    /* 1 COLUMNA */
     gap: 20px;
     padding: 20px 0;
     text-align: center;
@@ -723,25 +622,7 @@ nav ul li a {
     border-left: none;
   }
 
-  /* AVISO LEGAL */
-  .footer .seccion2 {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .footer .seccion2 ul {
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-
-  /* IMAGENES DE ICONOS */
-  .footer .seccion1 .content .redesociales {
-    display: flex;
-    /* FLEXIBLE*/
-    justify-content: center;
-    /* ICONOS*/
-
-  }
 
 
 

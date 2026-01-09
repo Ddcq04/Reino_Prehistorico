@@ -16,13 +16,18 @@ require_once __DIR__ . '/../app/tiempo.php';
 </head>
 
 <body>
+
+    <!-- HEADER Y NAVEGADOR ---------------------------------------------------------------------------->
     <header>
+
+        <!-- LOGO----------------------------------------------- -->
         <div class="logo">
             <img src="../web/img/home/logo1.png" alt="">
             <h1>Reino Prehistórico</h1>
             <img src="../web/img/home/logo2.png" alt="">
         </div>
 
+        <!-- NAVEGACION----------------------------------------------- -->
         <nav>
             <input type="checkbox" id="check">
 
@@ -37,19 +42,23 @@ require_once __DIR__ . '/../app/tiempo.php';
                 <li><a href="../layouts/Dinosaurios/dinosaurios.html">Dinosaurios</a></li>
                 <li><a href="../layouts/etapaCenozoico.html">Era Glaciar</a></li>
                 <li><a href="../layouts/mamiferos.php">Mamíferos</a></li>
+                <li><a href="../layouts/">Extinción</a></li>
+
             </ul>
         </nav>
 
+        <!-- USUARIO--------------------------------------------------- -->
         <div class="usuario">
-            <h3><?= $_SESSION["usuario"] ?></h3>
-            <a href="../layouts/inicioform.php">
-                <img src="../web/img/home/logousua.png" alt="Perfil de Usuario">
-
-            </a>
+            <p><?= $_SESSION["usuario"] ?>
+            <p>
+                <a href="../layouts/inicioform.php">
+                    <img src="../web/img/home/logousua.png" alt="Perfil de Usuario">
+                </a>
         </div>
 
     </header>
 
+    <!-- SLIDER------------------------------------------------------------------------------>
 
     <div class="slidbox">
 
@@ -156,7 +165,7 @@ require_once __DIR__ . '/../app/tiempo.php';
     </div>
 
 
-    <!-- seccion footer -->
+    <!-- FOOTER -------------------------------------------------------------------->
     <footer class="footer">
         <div class="seccion1">
 
@@ -169,25 +178,6 @@ require_once __DIR__ . '/../app/tiempo.php';
                     <li>Alejandro Fernández</li>
                 </ul>
             </div>
-
-            <!-- formulario -->
-            <!-- <div class="content">
-                <h2>Actualiza información</h2>
-                <form class="form" action="#">
-
-                    <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" placeholder="Tu nombre">
-
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="tugmail@.com">
-
-                    <label for="message"></label>
-                    <textarea id="message" rows="3" placeholder="Cuentanos"></textarea>
-
-                    <button type="submit">Enviar</button>
-
-                </form>
-            </div> -->
 
             <div class="content">
                 <h2>Últimas noticias</h2>
@@ -225,6 +215,10 @@ require_once __DIR__ . '/../app/tiempo.php';
                     <li><a href="https://discord.com/login"><img src="../web/img/home/disc.png" alt="Discord"></a></li>
                 </ul>
             </div>
+
+        </div>
+
+
 
         </div>
 
