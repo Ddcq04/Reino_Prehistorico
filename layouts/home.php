@@ -1,5 +1,14 @@
 <?php
+
+session_start();
+
 require_once __DIR__ . '/../app/tiempo.php';
+
+if(!isset($_SESSION["usuario"])){
+    header("Location: inicioform.php");
+    exit;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,9 +47,9 @@ require_once __DIR__ . '/../app/tiempo.php';
             </label>
 
             <ul class="enlaces">
-                <li><a href="etapaMesozoico.html">Era Antigua</a></li>
-                <li><a href="../layouts/Dinosaurios/dinosaurios.html">Dinosaurios</a></li>
-                <li><a href="../layouts/etapaCenozoico.html">Era Glaciar</a></li>
+                <li><a href="etapaMesozoico.php">Era Antigua</a></li>
+                <li><a href="../layouts/Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+                <li><a href="../layouts/etapaCenozoico.php">Era Glaciar</a></li>
                 <li><a href="../layouts/mamiferos.php">Mamíferos</a></li>
                 <li><a href="../layouts/">Extinción</a></li>
 

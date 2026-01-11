@@ -1,3 +1,9 @@
+<?php
+
+require_once __DIR__ . '/../app/tiempo.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -27,10 +33,10 @@
 
     <nav>
         <ul>            
-          <li><a href="etapaMesozoico.html">Era Antigua</a></li>
-          <li><a href="Dinosaurios/dinosaurios.html">Dinosaurios</a></li>
-          <li><a href="etapaCenozoico.html">Era Glaciar</a></li>
-          <li><a href="mamiferos.html">Mamíferos</a></li>
+          <li><a href="etapaMesozoico.php">Era Antigua</a></li>
+          <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+          <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
+          <li><a href="mamiferos.php">Mamíferos</a></li>
         </ul>
     </nav>
 

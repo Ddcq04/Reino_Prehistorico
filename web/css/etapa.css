@@ -81,11 +81,11 @@ nav ul li {
 }
 
 nav ul li:hover {
-<<<<<<< Updated upstream:web/css/etapa.css
+
   background-color: hsla(231, 68%, 37%, 0.8);
-=======
+
   background-color: hsla(229, 95%, 48%, 0.153);
->>>>>>> Stashed changes:enlaces/Era_Glaciar/etapa.css
+
   transform: scale(1.10);
 }
 

@@ -1,3 +1,9 @@
+<?php
+
+require_once __DIR__ . '/../../app/tiempo.php';
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

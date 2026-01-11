@@ -37,7 +37,7 @@
                 <img src="../web/img/home/logo2.png" alt="">
             </div>
 
-            <form method="post" action="../dat/inicio.php">
+            <form method="post" action="../index.php">
 
                 <?php
                 $msg = "";
@@ -55,7 +55,8 @@
                 <input type="password" name="clave" id="clave">
                 <br>
                 <!-- botones entrar y registrarse -->
-                <input type="submit" name="entrar" value="Entrar"><br>
+                <input type="hidden" name="accion" value="inicio_sesion">
+                <input type="submit" value="Entrar"><br>
                 <a href="registroform.php" class="btnreg">Registrarse</a>
 
             </form>

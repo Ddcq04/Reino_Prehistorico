@@ -16,7 +16,7 @@
         <img src="../web/img/home/logo2.png" alt="">
     </div>
 
-    <form method="post" action="../dat/registro.php">
+    <form method="post" action="../index.php">
 
         <?php
         $msg = "";
@@ -35,8 +35,8 @@
         <label for="">Correo</label><br><input type="email" name="email" id="email"><br>
         <label for="">Contraseña</label><br><input type="password" name="clave" id="clave"><br>
 
-
-        <input type="submit" name="regist" value="registrarse"><br>
+        <input type="hidden" name="accion" value="registrarse">
+        <input type="submit" value="registrarse"><br>
     </form>
 </body>
 

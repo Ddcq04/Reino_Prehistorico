@@ -1,5 +1,6 @@
 <?php  
   require_once "../app/config.php";
+  require_once __DIR__ . '/../app/tiempo.php';
   $modelo = AccesoDatos::getModelo();
   $dinosaurios_voladores = $modelo->getDinosaurios("Volador", "Cenozoico");
   $dinosaurios_terrestres = $modelo->getDinosaurios("Terrestre", "Cenozoico");
@@ -21,16 +22,16 @@
   </header>
 
   <video autoplay muted loop id="video-fondo">
-    <source src="../../Dinobots/web/videos/hielo.mp4" type="video/mp4">
+    <source src="../web/videos/hielo.mp4" type="video/mp4">
   </video>
 
       <section class="menu">
         <nav>
           <ul>
-          <li><a href="home.html">Inicio</a></li>
-            <li><a href="../Dinosaurios/dinosaurios.html">Dinosaurios</a></li>
-            <li><a href="etapaMesozoico.html">Era Mesozoica</a></li>
-            <li><a href="etapaCenozoico.html">Era Glaciar</a></li>
+          <li><a href="home.php">Inicio</a></li>
+            <li><a href="../layouts/Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+            <li><a href="etapaMesozoico.php">Era Mesozoica</a></li>
+            <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
           </ul>
         </nav>
     </section>

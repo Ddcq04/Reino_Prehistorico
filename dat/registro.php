@@ -28,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
         }
     }else{
-
+        
         header("Location: ../layouts/registroform.php?error=El usuario ya existe o hubo un problema.");
         exit;
 

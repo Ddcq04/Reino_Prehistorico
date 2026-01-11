@@ -1,5 +1,5 @@
 <?php 
-    session_start();
+    require_once __DIR__ . '/../../app/tiempo.php';
     require_once "../../app/config.php";
     $modelo = AccesoDatos::getModelo();
     if(strip_tags($_GET["tipo"])) {
@@ -38,10 +38,10 @@
         <nav class="navegacion-<?= $tipo ?>">
             <ul>
                 <li><a href="../home.php">Inicio</a></li>
-                <li><a href="../etapaMesozoico.html">Era Antigua</a></li>
-                <li><a href="dinosaurios.html">Dinosaurios</a></li>
-                <li><a href="../etapaCenozoico.html">Era Glaciar</a></li>
-                <li><a href="../mamiferos.html">Mamíferos</a></li>
+                <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
+                <li><a href="dinosaurios.php">Dinosaurios</a></li>
+                <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
+                <li><a href="../mamiferos.php">Mamíferos</a></li>
             </ul>
         </nav>
     </section>

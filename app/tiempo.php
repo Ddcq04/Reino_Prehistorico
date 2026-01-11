@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$timeout = 600; // segundos (10 min serían 600)
+$timeout = 600; 
 
 if (!isset($_SESSION['usuario'])) {
     header("Location: ../layouts/inicioform.php");
@@ -13,7 +13,7 @@ if (isset($_SESSION['ultimo_movimiento']) &&
 
     session_unset();
     session_destroy();
-    header("Location: ../layouts/inicioform.php?timeout=1");
+    header("Location: /Prueba_DINO/Reino_Prehistorico/layouts/inicioform.php?timeout=1");
     exit();
 }
 

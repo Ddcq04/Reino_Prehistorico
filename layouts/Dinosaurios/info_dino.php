@@ -1,4 +1,5 @@
 <?php  
+    require_once __DIR__ . '/../../app/tiempo.php';
     require_once "../../app/config.php";
     $id_dinosaurio = $_GET["id"];
     $modelo = AccesoDatos::getModelo();
