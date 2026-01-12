@@ -12,43 +12,56 @@ require_once __DIR__ . '/../app/tiempo.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Línea de Tiempo - Eras Geológicas</title>
   <link rel="stylesheet" href="../web/css/etapa.css">
+  <link rel="stylesheet" href="../web/css/etapasquery.css">
+
 </head>
 
 <body id="eraMesozoico">
 
 
   <div class="video-background">
-        <video autoplay muted loop id="bg-video">
-            <source src="../Era_Glaciar/video.mp4" type="video/mp4">
-            Tu navegador no soporta videos HTML5.
-        </video>
-    </div>
+    <video autoplay muted loop id="bg-video">
+      <source src="../web/videos/etapa-video.mp4" type="video/mp4">
+      Tu navegador no soporta videos HTML5.
+    </video>
+  </div>
   <header>
-    
-       <!--<span style="  font-family: 'JurassicPark', sans-serif;
+
+    <!--<span style="  font-family: 'JurassicPark', sans-serif;
 ;" >*</span>-->
 
 
-      <h1 class="reini">Reino Prehistorico</h1>
+    <h1 class="reini">Reino Prehistorico</h1>
 
     <nav>
-        <ul>            
-          <li><a href="etapaMesozoico.php">Era Antigua</a></li>
-          <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
-          <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
-          <li><a href="mamiferos.php">Mamíferos</a></li>
-        </ul>
+
+      <input type="checkbox" id="menu-ancla" class="menu-ancla">
+      <label for="menu-ancla" class="hamburguesa">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="menu-text">Menú</span>
+      </label>
+
+    <div class="overlay"></div>
+
+      <ul class="nav-menu">
+        <li><a href="etapaMesozoico.php">Era Antigua</a></li>
+        <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+        <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
+        <li><a href="mamiferos.php">Mamíferos</a></li>
+      </ul>
     </nav>
 
 
-    
-    <h2>Línea de Tiempo: Mesozoico</h2>
-    
-</header>
 
- 
+    <h2>Linea de Tiempo: Mesozoico</h2>
 
-   
+  </header>
+
+
+
+
 
 
 
@@ -56,19 +69,19 @@ require_once __DIR__ . '/../app/tiempo.php';
 
   <section class="timeline">
 
-  
-<div class="timeline-item center-item">
-    <div class="timeline-content">
+
+    <div class="timeline-item center-item">
+      <div class="timeline-content">
         <h2>Era Mesozoica</h2>
         <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de reptiles, aparición de mamíferos tempranos y plantas con flores. Se divide en tres periodos principales:</p>
         <ul>
-            <li><a href="../Etapas_Mezosoico/etapaTriasico.html">Triásico</a></li>
-            <li><a href="../Etapas_Mezosoico/etapaJurasico.html">Jurásico</a></li>
-            <li><a href="../Etapas_Mezosoico/etapaCretacico.html">Cretácico</a></li>
+          <li><a href="../layouts/Etapas_Mezosoico/etapaTriasico.php">Triásico</a></li>
+          <li><a href="../layouts/Etapas_Mezosoico/etapaJurasico.php">Jurásico</a></li>
+          <li><a href="../layouts/Etapas_Mezosoico/etapaCretacico.php">Cretácico</a></li>
         </ul>
-       <!-- <a href="#" class="btn">Ver más</a>-->
+        <!-- <a href="#" class="btn">Ver más</a>-->
+      </div>
     </div>
-</div>
 
     <div class="timeline-item">
       <div class="timeline-content">
@@ -81,7 +94,7 @@ require_once __DIR__ . '/../app/tiempo.php';
         </ul>
 
 
-        <a href="../Etapas_Mezosoico/etapaTriasico.html" class="btn">Ver más</a>
+        <a href="../layouts/Etapas_Mezosoico/etapaTriasico.php" class="btn">Ver más</a>
       </div>
     </div>
 
@@ -90,11 +103,11 @@ require_once __DIR__ . '/../app/tiempo.php';
         <h2 id="jurasico">Jurasico</h2>
         <p>201 – 145 millones de años atrás</p>
         <ul>
-  <li>Los dinosaurios dominan la Tierra.</li>
-  <li>Surgen las primeras aves.</li>
-  <li>Pangea comienza a separarse.</li>
-</ul>
-        <a href="../Etapas_Mezosoico/etapaJurasico.html" class="btn">Ver más</a>
+          <li>Los dinosaurios dominan la Tierra.</li>
+          <li>Surgen las primeras aves.</li>
+          <li>Pangea comienza a separarse.</li>
+        </ul>
+        <a href="../layouts/Etapas_Mezosoico/etapaJurasico.php" class="btn">Ver más</a>
       </div>
     </div>
 
@@ -103,20 +116,20 @@ require_once __DIR__ . '/../app/tiempo.php';
         <h2 id="cretacico">Cretacico</h2>
         <p>145 – 66 millones de años atrás</p>
         <ul>
-  <li>Aparecen las primeras plantas con flores.</li>
-  <li>Gran diversidad de dinosaurios.</li>
-  <li>Termina con la extinción masiva por un meteorito.</li>
-</ul>
-        <a href="../Etapas_Mezosoico/etapaCretacico.html" class="btn">Ver más</a>
+          <li>Aparecen las primeras plantas con flores.</li>
+          <li>Gran diversidad de dinosaurios.</li>
+          <li>Termina con la extinción masiva por un meteorito.</li>
+        </ul>
+        <a href="../layouts/Etapas_Mezosoico/etapaCretacico.php" class="btn">Ver más</a>
       </div>
     </div>
 
 
-<div class="timeline-item center-item">
-  
-        <a href="../Era_Glaciar/etapaHielo.html" class="btn">Era Cenozoica o Era del Hielo</a>
+    <div class="timeline-item center-item btn-eras">
+
+      <a href="../layouts/etapaCenozoico.php" class="btn">Era Cenozoica o Era del Hielo</a>
     </div>
-</div>
+    </div>
 
   </section>
 
