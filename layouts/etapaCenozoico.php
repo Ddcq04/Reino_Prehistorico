@@ -94,6 +94,7 @@ require_once __DIR__ . '/../app/tiempo.php';
 
     <div class="timeline-item">
       <div class="timeline-content">
+        
         <h2 id="cuaternario">Cuaternario</h2>
         <p>2.6 millones de años atrás – Actualidad</p>
         <ul>

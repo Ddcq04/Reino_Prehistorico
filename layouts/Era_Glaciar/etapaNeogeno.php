@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../web/css/etapa.css">
-    <!-- falta css de neogeno poner no olvidarme -->
-    <link rel="stylesheet" href="neogeno.css">
-        <link rel="stylesheet" href="../Era_Glaciar/responsive.css">
 
     <title>Neógeno - Era Cenozoica</title>
 </head>
@@ -148,7 +145,7 @@
 </main>
 
 <footer class="footer">
-    <p>Reino Prehistórico - Proyecto Desarrollo Interfaces Web</p>
+    <p>Reino Prehistórico - Proyecto Desarrollo Interfaces Web daw2</p>
 </footer>
 
 </body>
