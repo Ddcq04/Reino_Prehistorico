@@ -1,5 +1,7 @@
 <?php
-session_start();
+
+
+
 require_once __DIR__ . '/../app/tiempo.php';
 
 if(!isset($_SESSION["usuario"])){
@@ -16,7 +18,6 @@ if(!isset($_SESSION["usuario"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reino Prehistórico</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link rel="stylesheet" href="../web/css/index.css">
     <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">

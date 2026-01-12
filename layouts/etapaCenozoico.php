@@ -19,7 +19,7 @@ require_once __DIR__ . '/../app/tiempo.php';
 
   <div class="video-background">
         <video autoplay muted loop id="bg-video">
-            <source src="../Era_Glaciar/video.mp4" type="video/mp4">
+            <source src="../web/videos/etapa-video.mp4" type="video/mp4">
             Tu navegador no soporta videos HTML5.
         </video>
     </div>
@@ -28,9 +28,8 @@ require_once __DIR__ . '/../app/tiempo.php';
   
 
 
-      <h1>Reino Prehistórico</h1>
 
-      <h1>Reino PrehistoricO</h1>
+      <h1>Reino Prehistorico</h1>
     <nav>
         <ul>
           <li><a href="etapaMesozoico.php">Era Antigua</a></li>
@@ -57,9 +56,9 @@ require_once __DIR__ . '/../app/tiempo.php';
         <p>66 millones de años atrás – Actualidad</p>
         <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de reptiles, aparición de mamíferos tempranos y plantas con flores. Se divide en tres periodos principales:</p>
         <ul>
-            <li><a href="../Era_Glaciar/etapaPaleogeno.html">Paleógeno</a></li>
-            <li><a href="../Era_Glaciar/etapaNeogeno.html">Neógeno</a></li>
-            <li><a href="../Era_Glaciar/etapaCuaternaria.html">Cuaternario</a></li>
+            <li><a href="Era_Glaciar/etapaPaleogeno.php">Paleógeno</a></li>
+            <li><a href="Era_Glaciar/etapaNeogeno.php">Neógeno</a></li>
+            <li><a href="Era_Glaciar/etapaCuaternaria.php">Cuaternario</a></li>
         </ul>
         
     </div>
@@ -76,7 +75,7 @@ require_once __DIR__ . '/../app/tiempo.php';
         </ul>
 
 
-        <a href="../Era_Glaciar/etapaPaleogeno.html" class="btn">Ver más</a>
+        <a href="Era_Glaciar/etapaPaleogeno.php" class="btn">Ver más</a>
       </div>
     </div>
 
@@ -89,12 +88,13 @@ require_once __DIR__ . '/../app/tiempo.php';
   <li>Se forman grandes praderas.</li>
   <li>Aparecen los primeros homínidos (antepasados del ser humano).</li>
 </ul>
-        <a href="../Era_Glaciar/etapaNeogeno.html" class="btn">Ver más</a>
+        <a href="Era_Glaciar/etapaNeogeno.php" class="btn">Ver más</a>
       </div>
     </div>
 
     <div class="timeline-item">
       <div class="timeline-content">
+        
         <h2 id="cuaternario">Cuaternario</h2>
         <p>2.6 millones de años atrás – Actualidad</p>
         <ul>
@@ -102,13 +102,13 @@ require_once __DIR__ . '/../app/tiempo.php';
   <li>Evolución del Homo sapiens.</li>
   <li>Desarrollo de civilizaciones humanas.</li>
 </ul>
-        <a href="../Era_Glaciar/etapaCuaternaria.html" class="btn">Ver más</a>
+        <a href="Era_Glaciar/etapaCuaternaria.php" class="btn">Ver más</a>
       </div>
     </div>
 
-<div class="timeline-item center-item">
+<div class="timeline-item center-item btn-eras">
   
-        <a href="../Etapas_Mezosoico/etapaMesozoico.html" class="btn">Volver a Era Mesozoica</a>
+        <a href="../layouts/etapaMesozoico.php" class="btn">Volver a Era Mesozoica</a>
     </div>
 
   </section>
