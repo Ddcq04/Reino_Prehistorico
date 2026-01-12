@@ -13,10 +13,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animales de la Edad del Hielo</title>
   <link rel="stylesheet" href="../web/css/mamiferos.css">
+      <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
+
 </head>
 <body>
 
   <header>
+
+    <div class="logo">
+      <img src="../web/img/home/logo1.png" alt="">
+      <h1>Reino Prehistórico</h1>
+      <img src="../web/img/home/logo2.png" alt="">
+    </div>
+
     <h1>Animales de la Edad del Hielo</h1>
     <p>Descubre las especies voladoras, terrestres y acuáticas del Pleistoceno</p>
   </header>

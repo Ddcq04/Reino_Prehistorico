@@ -53,7 +53,7 @@ header h1 {
 }
 
 .logo img {
-  width: 3rem;
+  width: 2rem;
   height: auto;
 
 }
@@ -387,8 +387,10 @@ nav ul li a {
   font-size: 1.2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
-  display: inline-block;   /* Cambiado de block a inline-block */
-  white-space: nowrap;     /* Evita que el texto del botón se rompa en dos líneas */
+  display: inline-block;
+  /* Cambiado de block a inline-block */
+  white-space: nowrap;
+  /* Evita que el texto del botón se rompa en dos líneas */
 
 }
 
@@ -514,7 +516,7 @@ nav ul li a {
 .redesociales {
   display: flex;
   gap: 12px;
-  justify-content: center;
+
   /* ICONOS*/
 }
 
@@ -624,5 +626,11 @@ nav ul li a {
     border-left: none;
   }
 
+  .redesociales {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    /* ICONOS*/
+  }
 
 }

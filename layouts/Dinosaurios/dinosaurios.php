@@ -6,14 +6,18 @@ require_once __DIR__ . '/../../app/tiempo.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tipos_Dinosaurios</title>
     <link rel="StyleSheet" href="../../web/css/dinosaurios.css">
+    <link rel="icon" href="../../web/img/home/favicon.png" type="image/x-icon">
+
 </head>
+
 <body>
-    <div class ="contenedor-tipos">
+    <div class="contenedor-tipos">
         <!--Seccion terrestres-->
         <section class="terrestres">
             <video loop autoplay muted id="videoFondo">
@@ -29,7 +33,7 @@ require_once __DIR__ . '/../../app/tiempo.php';
             </video>
             <a href="tipos_dinosaurios.php?tipo=Acuatico">Acuaticos</a>
         </section>
-        
+
         <!--Seccion voladores-->
         <section class="voladores">
             <video loop autoplay muted id="videoFondo">
@@ -40,4 +44,5 @@ require_once __DIR__ . '/../../app/tiempo.php';
 
     </div>
 </body>
+
 </html>

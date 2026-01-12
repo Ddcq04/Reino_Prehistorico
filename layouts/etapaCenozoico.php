@@ -13,6 +13,8 @@ require_once __DIR__ . '/../app/tiempo.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Línea de Tiempo - Eras Geológicas</title>
   <link rel="stylesheet" href="../web/css/etapa.css">
+      <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
+
 </head>
 
 <body id="eraHielo">
@@ -27,9 +29,12 @@ require_once __DIR__ . '/../app/tiempo.php';
       <header>
   
 
+<div class="logo">
+      <img src="../web/img/home/logo1.png" alt="">
+      <h1>Reino Prehistórico</h1>
+      <img src="../web/img/home/logo2.png" alt="">
+    </div>
 
-
-      <h1>Reino Prehistorico</h1>
     <nav>
         <ul>
           <li><a href="etapaMesozoico.php">Era Antigua</a></li>
