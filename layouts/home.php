@@ -1,7 +1,5 @@
 <?php
-
 session_start();
-
 require_once __DIR__ . '/../app/tiempo.php';
 
 if(!isset($_SESSION["usuario"])){
@@ -58,8 +56,7 @@ if(!isset($_SESSION["usuario"])){
 
         <!-- USUARIO--------------------------------------------------- -->
         <div class="usuario">
-            <p><?= $_SESSION["usuario"] ?>
-            <p>
+            <p><?= $_SESSION["usuario"] ?></p>
                 <a href="../layouts/inicioform.php">
                     <img src="../web/img/home/logousua.png" alt="Perfil de Usuario">
                 </a>

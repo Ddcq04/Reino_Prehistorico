@@ -2,6 +2,7 @@
 //Acciones del index
 require_once __DIR__ . '/config.php';
 
+//Validar el usuario
 function validar_usuario($usuario, $clave) {
     $modelo = AccesoDatos::getModelo();
     $usuarioBD = $modelo->getUsuario($usuario);

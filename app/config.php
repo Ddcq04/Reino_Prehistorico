@@ -128,7 +128,7 @@ class AccesoDatos {
         $resu = ($this->stmt_añadirvoto->rowCount () == 1);
         return $resu;
     }
-
+    //EDITAR ESTO
     //Para verificar si ya voto el usuario
     public function yaVoto($id_usuario,$id_dinosaurio):bool {
         $this->stmt_comprobarvoto->bindParam(':id_usuario', $id_usuario);

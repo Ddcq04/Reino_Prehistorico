@@ -1,8 +1,5 @@
 <?php
-
 require_once __DIR__ . '/../../app/tiempo.php';
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,7 +34,6 @@ require_once __DIR__ . '/../../app/tiempo.php';
             </video>
             <a href="tipos_dinosaurios.php?tipo=Volador">Voladores</a>
         </section>
-
     </div>
 </body>
 </html>
