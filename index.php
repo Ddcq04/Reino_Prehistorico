@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     switch ($_POST['accion']) {
-        case "inicio_sesion":
+        case "entrar":
             if (empty($_POST["nombre"]) || empty($_POST["clave"])) {
                 header("Location: layouts/inicioform.php?error=Faltan datos");
                 exit();
@@ -63,17 +63,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             header("Location: layouts/Dinosaurios/tipos_dinosaurios.php?tipo=" .$dinosaurio->tipo);
             exit();
-        break;
+            break;
 
         case "invitado":
-            
             $_SESSION["invitado"] = true;
             $_SESSION["ultimo_movimiento"] = time();
 
             header("Location: layouts/home.php");
-            exit;
-
-        break;
+            exit();
+            break;
+        default:
+            header("Location: layouts/inicioform.php");
+            exit();
     }
 
 

@@ -58,12 +58,8 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
 
         <!-- USUARIO--------------------------------------------------- -->
         <div class="usuario">
-<<<<<<< HEAD
-            <p><?= $_SESSION["usuario"] ?></p>
-=======
             <p><?= isset($_SESSION["usuario"]) ? $_SESSION["usuario"] : "Invitado" ?>
             <p>
->>>>>>> 9c0980769f65130af12ddf41c97677a605b0032d
                 <a href="../layouts/inicioform.php">
                     <img src="../web/img/home/logousua.png" alt="Perfil de Usuario">
                 </a>

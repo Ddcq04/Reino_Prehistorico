@@ -49,8 +49,6 @@
                 <label for="">Contraseña</label>
                 <input type="password" name="clave" id="clave">
                 <br>
-                <!-- botones entrar y registrarse -->
-                
                 <input type="submit" name="accion" value="entrar"><br>
                 
                 <a href="registroform.php" class="btnreg">Registrarse</a>
