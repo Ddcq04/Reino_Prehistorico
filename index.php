@@ -13,9 +13,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
-    switch ($_POST['accion']) {
+    switch (trim($_POST['accion'])) {
 
-        case "inicio_sesion":
+        case "entrar":
 
             if (empty($_POST["nombre"]) || empty($_POST["clave"])) {
                 header("Location: layouts/inicioform.php?error=Faltan datos");
@@ -91,7 +91,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
 
         break;
+
+        case "invitado":
+            
+            $_SESSION["invitado"] = true;
+            $_SESSION["ultimo_movimiento"] = time();
+
+            header("Location: layouts/home.php");
+            exit;
+
+        break;
     }
+
+
 }else {
     
     header("Location: layouts/inicioform.php");

@@ -50,9 +50,12 @@
                 <input type="password" name="clave" id="clave">
                 <br>
                 <!-- botones entrar y registrarse -->
-                <input type="hidden" name="accion" value="inicio_sesion">
-                <input type="submit" value="Entrar"><br>
+                
+                <input type="submit" name="accion" value="entrar"><br>
+                
                 <a href="registroform.php" class="btnreg">Registrarse</a>
+                
+                <input type="submit" name="accion" value="invitado"><br>
 
             </form>
 
