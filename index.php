@@ -64,7 +64,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header("Location: layouts/Dinosaurios/tipos_dinosaurios.php?tipo=" .$dinosaurio->tipo);
             exit();
         break;
+
+        case "invitado":
+            
+            $_SESSION["invitado"] = true;
+            $_SESSION["ultimo_movimiento"] = time();
+
+            header("Location: layouts/home.php");
+            exit;
+
+        break;
     }
+
+
 }else {
     header("Location: layouts/inicioform.php");
 }

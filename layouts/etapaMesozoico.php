@@ -13,6 +13,7 @@ require_once __DIR__ . '/../app/tiempo.php';
   <title>Línea de Tiempo - Eras Geológicas</title>
   <link rel="stylesheet" href="../web/css/etapa.css">
   <link rel="stylesheet" href="../web/css/etapasquery.css">
+  <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
 
 </head>
 
@@ -31,21 +32,27 @@ require_once __DIR__ . '/../app/tiempo.php';
 ;" >*</span>-->
 
 
-    <h1 class="reini">Reino Prehistorico</h1>
+    <!-- LOGO----------------------------------------------- -->
+    <div class="logo">
+      <img src="../web/img/home/logo1.png" alt="">
+      <h1>Reino Prehistórico</h1>
+      <img src="../web/img/home/logo2.png" alt="">
+    </div>
 
-    <nav>
 
-      <input type="checkbox" id="menu-ancla" class="menu-ancla">
-      <label for="menu-ancla" class="hamburguesa">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="menu-text">Menú</span>
-      </label>
+    <input type="checkbox" id="menu-ancla" class="menu-ancla">
+    <label for="menu-ancla" class="hamburguesa">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="menu-text">Menú</span>
+    </label>
 
     <div class="overlay"></div>
 
+    <nav>
       <ul class="nav-menu">
+        <li><a href="home.php">Inicio</a></li>
         <li><a href="etapaMesozoico.php">Era Antigua</a></li>
         <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
         <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
@@ -73,7 +80,8 @@ require_once __DIR__ . '/../app/tiempo.php';
     <div class="timeline-item center-item">
       <div class="timeline-content">
         <h2>Era Mesozoica</h2>
-        <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de reptiles, aparición de mamíferos tempranos y plantas con flores. Se divide en tres periodos principales:</p>
+        <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de
+          reptiles, aparición de mamíferos tempranos y plantas con flores. Se divide en tres periodos principales:</p>
         <ul>
           <li><a href="../layouts/Etapas_Mezosoico/etapaTriasico.php">Triásico</a></li>
           <li><a href="../layouts/Etapas_Mezosoico/etapaJurasico.php">Jurásico</a></li>

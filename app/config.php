@@ -62,11 +62,12 @@ class AccesoDatos {
     public static function closeModelo(){
         if (self::$modelo != null){
             $obj = self::$modelo;
+            $obj->stmt_dinosaurio = null;
             $obj->stmt_dinosaurios = null;
             $obj->stmt_creauser = null;
             $obj->stmt_usuario  = null;
             $obj->stmt_añadirvoto  = null;
-            $obj->dbh = null;
+            $obj->stmt_comprobarvoto = null;
             self::$modelo = null; 
         }
     }
@@ -128,13 +129,16 @@ class AccesoDatos {
         $resu = ($this->stmt_añadirvoto->rowCount () == 1);
         return $resu;
     }
-    //EDITAR ESTO
+
     //Para verificar si ya voto el usuario
     public function yaVoto($id_usuario,$id_dinosaurio):bool {
+        $resu = false;
         $this->stmt_comprobarvoto->bindParam(':id_usuario', $id_usuario);
         $this->stmt_comprobarvoto->bindParam(':id_dinosaurio', $id_dinosaurio);
         $this->stmt_comprobarvoto->execute();
-        $resu = ($this->stmt_comprobarvoto->fetch());
+        if($this->stmt_comprobarvoto->fetch()) {
+            $resu = true;
+        }
         return $resu;
     }
 

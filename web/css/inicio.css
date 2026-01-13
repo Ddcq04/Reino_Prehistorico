@@ -38,16 +38,6 @@ body {
 }
 
 /* Contenedor videos---------------------------------------------------------------*/
-.contenedor-videos {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    /* Lo subimos para que sea visible */
-}
-
 .video-dino {
     position: absolute;
     top: 0;
@@ -56,52 +46,28 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0;
-    /* 40s para que cada uno tenga 10s */
-    animation: secuenciaVideos 40s infinite;
-    visibility: visible;
-    /* ayuda al navegador no 'congelar' el video oculto */
+    /* 20 segundos total: 10s para cada video */
+    animation: videos 20s infinite linear;
 }
 
-/* Tiempos de retraso */
 #vid1 {
     animation-delay: 0s;
 }
 
 #vid2 {
-    animation-delay: 10s;
+    animation-delay: 10s; 
 }
 
-#vid3 {
-    animation-delay: 20s;
-}
+@keyframes videos {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
 
-#vid4 {
-    animation-delay: 30s;
-}
+    /* 40%- 50%: El video sale (Fade out) */
+    40% { opacity: 1; }
+    50% { opacity: 0; }
 
-@keyframes secuenciaVideos {
-    0% {
-        opacity: 0;
-    }
-
-    5% {
-        opacity: 1;
-    }
-
-    /* Aparece suavemente en 2 segundos */
-    20% {
-        opacity: 1;
-    }
-
-    /* Se mantiene firme */
-    30% {
-        opacity: 0;
-    }
-
-    /* Desaparece suavemente mientras el otro entra */
-    100% {
-        opacity: 0;
-    }
+    /* 50%-100% se mantiene en 0 ,dejar ver el 0 */
+    100% { opacity: 0; }
 }
 
 /*CONTENEDOR FORMULARIO ----------------------------------------------------------------- */
@@ -282,7 +248,7 @@ input[type="submit"]:active {
         border-bottom: 2px solid #8db600;
         position: relative;
         z-index: 20;
-    
+
     }
 
 
@@ -343,4 +309,3 @@ input[type="submit"]:active {
         box-sizing: border-box !important;
     }
 }
-

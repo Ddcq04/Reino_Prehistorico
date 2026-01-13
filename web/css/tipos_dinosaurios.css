@@ -17,9 +17,36 @@ body {
 }
 
 /*--------------------------Encabezado----------------------*/
+header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    padding: 0px 11px 0px 13px;
+    font-size: 2.3rem;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    color: #f0f0f0;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+
+}
+
+/* LOGO-------------------- --------------------------------------- */
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.logo img {
+    width: 4rem;
+    height: auto;
+
+}
+
 .cabecera {
-    margin:0;
-    background:rgba(0, 0, 0, 0.6);
+    margin: 0;
+    background: rgba(0, 0, 0, 0.6);
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
@@ -27,13 +54,24 @@ body {
     letter-spacing: 0.2rem;
     border-bottom: 0.2rem solid #ffffff;
 }
-.cabecera.cabecera-terrestres{color:rgb(37, 159, 37)}
-.cabecera.cabecera-acuaticos{color:rgb(53, 99, 164)}
-.cabecera.cabecera-voladores{color:#ffffff;}
+
+.cabecera.cabecera-terrestres {
+    color: rgb(37, 159, 37)
+}
+
+.cabecera.cabecera-acuaticos {
+    color: rgb(53, 99, 164)
+}
+
+.cabecera.cabecera-voladores {
+    color: #ffffff;
+}
+
 /*Menu de navegación*/
 nav {
     width: 70%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Roboto";
+
 }
 
 nav ul {
@@ -44,12 +82,13 @@ nav ul {
     gap: 4rem;
 }
 
-nav ul li{
+nav ul li {
     padding: 0.5rem 1rem;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 nav ul li a {
     font-size: 29px;
     text-decoration: none;
@@ -57,18 +96,22 @@ nav ul li a {
     color: rgba(255, 255, 255, 0.8);
     text-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.8)
 }
+
 .navegacion-terrestres ul li:hover {
     background-color: #2a7a0e;
     transform: scale(1.10);
 }
+
 .navegacion-acuaticos ul li:hover {
     background-color: #0e287e;
     transform: scale(1.10);
 }
+
 .navegacion-voladores ul li:hover {
     background-color: #00c1c1;
     transform: scale(1.10);
 }
+
 nav ul li:active {
     transform: scale(1.05);
 }
@@ -88,7 +131,7 @@ nav ul li:active {
 
 /*-----------------Contenedor de dinosaurios---------------*/
 
-.contenedor{
+.contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -97,9 +140,11 @@ nav ul li:active {
     max-width: 90rem;
     padding: 2rem;
 }
+
 .contenedor a {
     text-decoration: none;
 }
+
 /*Tarjeta*/
 .dino-tarjeta {
     width: 18.75rem;
@@ -130,9 +175,18 @@ nav ul li:active {
     padding: 0.6rem;
     color: white;
 }
-.nombre-terrestres { background: #2a7a0e; }
-.nombre-acuaticos { background: #0e287e; }
-.nombre-voladores { background: #00c1c1; }
+
+.nombre-terrestres {
+    background: #2a7a0e;
+}
+
+.nombre-acuaticos {
+    background: #0e287e;
+}
+
+.nombre-voladores {
+    background: #00c1c1;
+}
 
 .nombre-contenedor h3 {
     margin: 0;

@@ -29,7 +29,7 @@ function votar($nombre_usuario, $id_dinosaurio) {
     $yavoto = $modelo->yaVoto($usuario->id,$id_dinosaurio);
     if(!$yavoto) {
         $modelo->votarDinosaurio($usuario->id, $id_dinosaurio);
-    }else return "fallo";
+    }
 }
 
 ?>

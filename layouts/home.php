@@ -4,10 +4,11 @@
 
 require_once __DIR__ . '/../app/tiempo.php';
 
-if(!isset($_SESSION["usuario"])){
-    header("Location: inicioform.php");
-    exit;
+if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
+    header("Location: ../layouts/inicioform.php");
+    exit();
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -57,7 +58,12 @@ if(!isset($_SESSION["usuario"])){
 
         <!-- USUARIO--------------------------------------------------- -->
         <div class="usuario">
+<<<<<<< HEAD
             <p><?= $_SESSION["usuario"] ?></p>
+=======
+            <p><?= isset($_SESSION["usuario"]) ? $_SESSION["usuario"] : "Invitado" ?>
+            <p>
+>>>>>>> 9c0980769f65130af12ddf41c97677a605b0032d
                 <a href="../layouts/inicioform.php">
                     <img src="../web/img/home/logousua.png" alt="Perfil de Usuario">
                 </a>
