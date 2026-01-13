@@ -50,12 +50,14 @@ require_once __DIR__ . '/../app/tiempo.php';
 
     <div class="overlay"></div>
 
-    <ul class="nav-menu">
-      <li><a href="etapaMesozoico.php">Era Antigua</a></li>
-      <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
-      <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
-      <li><a href="mamiferos.php">Mamíferos</a></li>
-    </ul>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="home.php">Inicio</a></li>
+        <li><a href="etapaMesozoico.php">Era Antigua</a></li>
+        <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+        <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
+        <li><a href="mamiferos.php">Mamíferos</a></li>
+      </ul>
     </nav>
 
 
