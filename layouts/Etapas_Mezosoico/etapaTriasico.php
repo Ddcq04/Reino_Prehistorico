@@ -11,19 +11,23 @@
     
 <div class="video-background">
         <video autoplay muted loop id="bg-video">
-            <source src="../../web/videos/videologin/vid1.mp4" type="video/mp4">
+            <source src="../../web/videos/videologin/vid7.mp4" type="video/mp4">
             Tu navegador no soporta videos HTML5.
         </video>
     </div>
   <header >
-    
-    <h1 class="tituloTriasico">Periodo Triasico</h1>
-    <p>Inicio de los dinosaurios</p>
+        <div class="logo">
+      <img src="../../web/img/home/logo1.png" alt="">
+      <h1>Periodo Triasico</h1>
+      <img src="../../web/img/home/logo2.png" alt="">
+     
+    </div>
+ <p>Inicio de los dinosaurios</p>
   </header>
 
   <main class="contenido">
 
-    <section class="duracion">
+    <section class="duracion" id="vidrio">
       <h2>Duración</h2>
       <p>
         El periodo Triásico se desarrolló entre hace <strong>252 y 201 millones de años</strong>,
@@ -32,7 +36,7 @@
       </p>
     </section>
 
-    <section class="geografia">
+    <section class="geografia" id="vidrio">
       <h2>Geografía y continentes</h2>
       <p>
         Durante el Triásico, todos los continentes estaban unidos formando un solo
@@ -41,7 +45,7 @@
       </p>
     </section>
 
-    <section class="clima">
+    <section class="clima" id="vidrio">
       <h2>Clima</h2>
       <p>
         El clima del Triásico fue mayormente <strong>cálido y seco</strong>, con escasas
@@ -50,7 +54,7 @@
       </p>
     </section>
 
-    <section class="flora">
+    <section class="flora" id="vidrio">
       <h2>Flora</h2>
       <p>Las plantas estaban adaptadas a climas secos:</p>
       <ul>
@@ -61,7 +65,7 @@
       </ul>
     </section>
 
-    <section class="fauna">
+    <section class="fauna" id="vidrio">
       <h2>Fauna</h2>
       <p>
         Durante el Triásico aparecen los primeros dinosaurios pequeños y ágiles,
@@ -71,7 +75,7 @@
       </p>
     </section>
 
-    <section class="importancia">
+    <section class="importancia" id="vidrio">
       <h2>Importancia del Triásico</h2>
       <p>
         El Triásico es un periodo clave en la historia de la Tierra, ya que marca
@@ -81,7 +85,7 @@
     </section>
 
     <nav class="navegacion">
-      <a href="../layouts/etapaMesozoico.php">← Línea de tiempo</a>
+      <a href="../../layouts/etapaMesozoico.php">← Línea de tiempo</a>
       <a href="../Etapas_Mezosoico/etapaJurasico.php">Siguiente: Jurásico →</a>
     </nav>
 

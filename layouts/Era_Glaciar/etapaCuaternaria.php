@@ -12,19 +12,25 @@
     
 <div class="video-background">
     <video autoplay muted loop id="bg-video">
-        <source src="../../web/videos/videologin/vid4.mp4" type="video/mp4">
+        <source src="../../web/videos/videologin/vid10.mp4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
     </video>
 </div>
 
 <header class="header">
-    <h1>Cuaternario</h1>
+    
+        <div class="logo">
+      <img src="../../web/img/home/logo1.png" alt="">
+      <h1>Periodo Cuaternario</h1>
+      <img src="../../web/img/home/logo2.png" alt="">
+     
+    </div>
     <p>La Era del Hielo y el Surgimiento de la Humanidad</p>
 </header>
 
 <main class="contenido">
 
-    <section class="duracion">
+    <section id="vidrio"  class="duracion">
         <h2>Duración</h2>
         <p>
             El Cuaternario abarca desde hace <strong class="texto-cuaternario">2.6 millones de años hasta la actualidad</strong>,
@@ -33,7 +39,7 @@
         </p>
     </section>
 
-    <section class="divisiones">
+    <section  id="vidrio" class="divisiones">
         <h2>Divisiones del Cuaternario</h2>
         <p>El Cuaternario se divide en dos épocas principales:</p>
     
@@ -46,7 +52,7 @@
         </p>
     </section>
 
-    <section class="glaciaciones-cuaternario efecto-glaciar">
+    <section  id="vidrio" class="glaciaciones-cuaternario efecto-glaciar">
         <h2>Las Glaciaciones Cuaternarias</h2>
         <p>
             El Cuaternario se caracteriza por <strong>ciclos glaciares e interglaciares</strong>.
@@ -61,7 +67,7 @@
         </ul>
     </section>
 
-    <section class="clima efecto-frio">
+    <section  id="vidrio" class="clima efecto-frio">
         <h2>Clima</h2>
         <p>
             El clima del Cuaternario ha estado dominado por <strong>oscilaciones extremas</strong>
@@ -70,7 +76,7 @@
         </p>
     </section>
 
-    <section class="megafauna-cuaternario">
+    <section  id="vidrio" class="megafauna-cuaternario">
         <h2>Megafauna del Cuaternario</h2>
         <p>
             Durante el Pleistoceno, el planeta estuvo poblado por una impresionante megafauna:
@@ -86,7 +92,7 @@
         </ul>
     </section>
 
-    <section class="humanos-cuaternario efecto-civilizacion">
+    <section id="vidrio"  class="humanos-cuaternario efecto-civilizacion">
         <h2>Evolución Humana</h2>
         <p>
             El Cuaternario es testigo de la evolución y dispersión del género Homo:
@@ -101,7 +107,7 @@
         </ul>
     </section>
 
-    <section class="migraciones">
+    <section  id="vidrio" class="migraciones">
         <h2>Migraciones Humanas</h2>
         <p>
             Los humanos modernos se dispersaron por todo el planeta:
@@ -114,7 +120,7 @@
         </ul>
     </section>
 
-    <section class="extincion-cuaternario">
+    <section  id="vidrio" class="extincion-cuaternario">
         <h2>Extinción de la Megafauna</h2>
         <p>
             A finales del Pleistoceno y durante el Holoceno, se produjo una
@@ -133,7 +139,7 @@
         </p>
     </section>
 
-    <section class="holoceno">
+    <section  id="vidrio" class="holoceno">
         <h2>El Holoceno y la Revolución Neolítica</h2>
         <p>
             Con el final de la última glaciación (~11,700 años), comenzó el Holoceno,
@@ -148,7 +154,7 @@
         </ul>
     </section>
 
-    <section class="importancia efecto-civilizacion">
+    <section id="vidrio"  class="importancia efecto-civilizacion">
         <h2>Importancia del Cuaternario</h2>
         <p>
             El Cuaternario es el periodo en el que <strong>nuestra especie evolucionó y dominó el planeta</strong>.

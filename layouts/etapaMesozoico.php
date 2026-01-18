@@ -26,6 +26,7 @@ require_once __DIR__ . '/../app/tiempo.php';
       Tu navegador no soporta videos HTML5.
     </video>
   </div>
+
   <header>
 
     <!--<span style="  font-family: 'JurassicPark', sans-serif;
@@ -77,21 +78,21 @@ require_once __DIR__ . '/../app/tiempo.php';
   <section class="timeline">
 
 
-    <div class="timeline-item center-item">
       <div class="timeline-content">
-        <h2>Era Mesozoica</h2>
+        <h2 class="erah2">Era Mesozoica</h2>
         <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de
           reptiles, aparición de mamíferos tempranos y plantas con flores. Se divide en tres periodos principales:</p>
-        <ul>
+        <ul class="centroEtapas">
           <li><a href="../layouts/Etapas_Mezosoico/etapaTriasico.php">Triásico</a></li>
           <li><a href="../layouts/Etapas_Mezosoico/etapaJurasico.php">Jurásico</a></li>
           <li><a href="../layouts/Etapas_Mezosoico/etapaCretacico.php">Cretácico</a></li>
         </ul>
         <!-- <a href="#" class="btn">Ver más</a>-->
       </div>
-    </div>
+    
 
     <div class="timeline-item">
+     
       <div class="timeline-content">
         <h2 id="triasico">Triasico</h2>
         <p>252 – 201 millones de años atrás</p>
@@ -107,7 +108,9 @@ require_once __DIR__ . '/../app/tiempo.php';
     </div>
 
     <div class="timeline-item">
+    
       <div class="timeline-content">
+     
         <h2 id="jurasico">Jurasico</h2>
         <p>201 – 145 millones de años atrás</p>
         <ul>
@@ -120,7 +123,10 @@ require_once __DIR__ . '/../app/tiempo.php';
     </div>
 
     <div class="timeline-item">
+      
+      
       <div class="timeline-content">
+      
         <h2 id="cretacico">Cretacico</h2>
         <p>145 – 66 millones de años atrás</p>
         <ul>

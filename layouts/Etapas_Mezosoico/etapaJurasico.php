@@ -10,20 +10,26 @@
     
 <div class="video-background">
     <video autoplay muted loop id="bg-video">
-        <source src="../../web/videos/videologin/vid2.mp4" type="video/mp4">
+        <source src="../../web/videos/videologin/vid3.mp4" type="video/mp4">
         
         Tu navegador no soporta videos HTML5.
     </video>
 </div>
 
 <header class="header">
-    <h1>Periodo Jurasico</h1>
+     <div class="logo">
+      <img src="../../web/img/home/logo1.png" alt="">
+      <h1>Periodo Jurasico</h1>
+      <img src="../../web/img/home/logo2.png" alt="">
+     
+    </div>
+   
     <p>La Edad de Oro de los Dinosaurios</p>
 </header>
 
 <main class="contenido">
 
-    <section class="duracion">
+    <section class="duracion" id="vidrio">
         <h2>Duración</h2>
         <p>
             El período Jurásico se extendió desde hace <strong>201 hasta 145 millones de años</strong>,
@@ -31,7 +37,7 @@
         </p>
     </section>
 
-    <section class="geografia">
+    <section class="geografia" id="vidrio" >
         <h2>Geografía y continentes</h2>
         <p>
             Durante el Jurásico, el supercontinente <strong>Pangea comenzó a separarse</strong> en dos grandes masas:
@@ -39,7 +45,7 @@
         </p>
     </section>
 
-    <section class="clima">
+    <section class="clima" id="vidrio">
         <h2>Clima</h2>
         <p>
             El clima fue <strong>cálido y húmedo</strong> en general, con lluvias más abundantes que en el Triásico.
@@ -47,7 +53,7 @@
         </p>
     </section>
 
-    <section class="flora">
+    <section class="flora" id="vidrio">
         <h2>Flora</h2>
         <p>La vegetación se volvió más diversa y abundante:</p>
         <ul>
@@ -58,7 +64,7 @@
         </ul>
     </section>
 
-    <section class="fauna">
+    <section class="fauna" id="vidrio">
         <h2>Fauna</h2>
         <p>
             Los dinosaurios alcanzaron su máximo esplendor y tamaño. Aparecieron gigantes como:
@@ -71,20 +77,20 @@
         </ul>
     </section>
 
-    <section class="mar-jurasico">
+    <section class="mar-jurasico" id="vidrio">
         <h2>Vida marina</h2>
         <p>
             Los mares jurásicos estaban dominados por:
         </p>
         <ul>
-            <li><strong>Ictiosaurios</strong> - reptiles marinos con forma de delfín</li>
-            <li><strong>Plesiosaurios</strong> - reptiles de cuello largo</li>
-            <li><strong>Cocodrilos marinos</strong></li>
-            <li><strong>Ammonites</strong> (moluscos) muy abundantes</li>
+            <ol><strong>Ictiosaurios</strong> - reptiles marinos con forma de delfín</ol>
+            <ol><strong>Plesiosaurios</strong> - reptiles de cuello largo</ol>
+            <ol><strong>Cocodrilos marinos</strong></ol>
+            <ol><strong>Ammonites</strong> (moluscos) muy abundantes</ol>
         </ul>
     </section>
 
-    <section class="importancia">
+    <section class="importancia" id="vidrio">
         <h2>Importancia del Jurásico</h2>
         <p>
             El Jurásico representa el <strong>punto álgido de los dinosaurios</strong>, donde alcanzaron su máxima

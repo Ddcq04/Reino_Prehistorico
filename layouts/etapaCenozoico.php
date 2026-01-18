@@ -56,7 +56,21 @@ require_once __DIR__ . '/../app/tiempo.php';
 
 
   <section class="timeline">
-    <div class="timeline-item center-item">
+
+  
+    <div class="timeline-content">
+      <h2 class="erah2">Era Cenozoica o Era de Hielo</h2>
+              <p>66 millones de años atrás – Actualidad</p>
+ <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de
+          reptiles, aparición de mamíferos tempranos y plantas con flores. Se divide en tres periodos principales:</p>
+        <ul class="centroEtapas">
+          <li><a href="Era_Glaciar/etapaPaleogeno.php">Paleógeno</a></li>
+          <li><a href="Era_Glaciar/etapaNeogeno.php">Neógeno</a></li>
+          <li><a href="Era_Glaciar/etapaCuaternaria.php">Cuaternario</a></li>
+      <!-- <a href="#" class="btn">Ver más</a>-->
+    </div>
+    <!--
+    <div id="contenidoCen" class="timeline-item center-item">
       <div class="timeline-content Cenozoico">
         <h2>Era Cenozoica o Era de Hielo</h2>
         <p>66 millones de años atrás – Actualidad</p>
@@ -69,7 +83,7 @@ require_once __DIR__ . '/../app/tiempo.php';
         </ul>
 
       </div>
-    </div>
+    </div> -->
 
     <div class="timeline-item">
       <div class="timeline-content">
@@ -115,7 +129,7 @@ require_once __DIR__ . '/../app/tiempo.php';
 
     <div class="timeline-item center-item btn-eras">
 
-      <a href="../layouts/etapaMesozoico.php" class="btn">Volver a Era Mesozoica</a>
+      <a href="../layouts/etapaMesozoico.php" class="btn">Volver a <br> Era Mesozoica</a>
     </div>
 
   </section>

@@ -16,19 +16,25 @@
 
     <div class="video-background">
         <video autoplay muted loop id="bg-video">
-            <source src="../../web/videos/videologin/vid6.mp4" type="video/mp4">
+            <source src="../../web/videos/videologin/vid8.mp4" type="video/mp4">
             Tu navegador no soporta videos HTML5.
         </video>
     </div>
 
     <header class="header">
-        <h1>Paleogeno</h1>
+        
+        <div class="logo">
+      <img src="../../web/img/home/logo1.png" alt="">
+      <h1>Periodo Paleogeno</h1>
+      <img src="../../web/img/home/logo2.png" alt="">
+     
+    </div>
         <p>La Recuperacion Post-Extincion y el Surgimiento de los Mamiferos</p>
     </header>
 
-    <main class="contenido">
+    <main class="contenido" >
 
-        <section class="duracion">
+        <section class="duracion" id="vidrio" >
             <h2>Duración</h2>
             <p>
                 El Paleógeno abarcó desde hace <strong class="texto-paleogeno">66 hasta 23 millones de años</strong>,
@@ -37,7 +43,7 @@
             </p>
         </section>
 
-        <section class="divisiones divisiones-paleogeno">
+        <section id="vidrio" class="divisiones divisiones-paleogeno">
             <h2>Divisiones del Paleógeno</h2>
             <p>El Paleógeno se divide en tres épocas principales:</p>
 
@@ -49,7 +55,7 @@
             </ul>
         </section>
 
-        <section class="recuperacion-postextincion efecto-recuperacion">
+        <section  id="vidrio" class="recuperacion-postextincion efecto-recuperacion">
             <h2>Recuperación Post-Extinción</h2>
             <p>
                 Tras la extinción de los dinosaurios no avianos, el planeta experimentó
@@ -59,7 +65,7 @@
             </p>
         </section>
 
-        <section class="clima efecto-tierra">
+        <section id="vidrio" class="clima efecto-tierra">
             <h2>Clima</h2>
             <p>
                 El clima del Paleógeno fue generalmente <strong>cálido y húmedo</strong>,
@@ -69,7 +75,7 @@
             </p>
         </section>
 
-        <section class="mamiferos mamiferos-paleogeno">
+        <section id="vidrio" class="mamiferos mamiferos-paleogeno">
             <h2>La Radiación de los Mamíferos</h2>
             <p>
                 Los mamíferos, que habían existido como pequeños animales nocturnos durante
@@ -84,7 +90,7 @@
             </ul>
         </section>
 
-        <section class="flora">
+        <section id="vidrio" class="flora">
             <h2>Flora</h2>
             <p>
                 Las plantas con flores (angiospermas) continuaron diversificándose y
@@ -98,7 +104,7 @@
             </ul>
         </section>
 
-        <section class="fauna">
+        <section id="vidrio" class="fauna">
             <h2>Fauna Característica</h2>
             <p>Además de los mamíferos, destacaron:</p>
             <ul>
@@ -109,7 +115,7 @@
             </ul>
         </section>
 
-        <section class="eventos-importantes">
+        <section id="vidrio" class="eventos-importantes">
             <h2>Eventos Importantes</h2>
             <ul>
                 <li><strong>Máximo Térmico del Paleoceno-Eoceno</strong> - Calentamiento global abrupto</li>
@@ -119,7 +125,7 @@
             </ul>
         </section>
 
-        <section class="importancia">
+        <section id="vidrio" class="importancia">
             <h2>Importancia del Paleógeno</h2>
             <p>
                 El Paleógeno estableció las bases para el mundo moderno. Los mamíferos

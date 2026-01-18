@@ -11,19 +11,26 @@
     
 <div class="video-background">
     <video autoplay muted loop id="bg-video">
-        <source src="../../web/videos/videologin/vid5.mp4" type="video/mp4">
+        <source src="../../web/videos/videologin/vid9.mp4" type="video/mp4">
         Tu navegador no soporta videos HTML5.
     </video>
 </div>
 
 <header class="header">
-    <h1>Neogeno</h1>
+
+        <div class="logo">
+      <img src="../../web/img/home/logo1.png" alt="">
+      <h1>Periodo Paleogeno</h1>
+      <img src="../../web/img/home/logo2.png" alt="">
+     
+    </div>
+
     <p>La Era de las Grandes Transformaciones y la Aparicion de los Primeros Homininos</p>
 </header>
 
 <main class="contenido">
 
-    <section class="duracion">
+    <section id="vidrio" class="duracion">
         <h2>Duración</h2>
         <p>
             El Neógeno abarcó desde hace <strong class="texto-neogeno">23 hasta 2.6 millones de años</strong>,
@@ -32,7 +39,7 @@
         </p>
     </section>
 
-    <section class="divisiones">
+    <section id="vidrio" class="divisiones">
         <h2>Divisiones del Neógeno</h2>
         <p>El Neógeno se divide en dos épocas principales:</p>
         
@@ -42,7 +49,7 @@
         </ul>
     </section>
 
-    <section class="geografia efecto-montanas">
+    <section id="vidrio" class="geografia efecto-montanas">
         <h2>Geografía y Orogénesis</h2>
         <p>
             Durante el Neógeno, los continentes continuaron su deriva hacia sus posiciones actuales.
@@ -56,7 +63,7 @@
         </ul>
     </section>
 
-    <section class="clima">
+    <section id="vidrio" class="clima">
         <h2>Clima</h2>
         <p>
             El clima del Neógeno se caracterizó por un <strong>enfriamiento global progresivo</strong>.
@@ -65,7 +72,7 @@
         </p>
     </section>
 
-    <section class="expansion-pastizales efecto-pastizales">
+    <section  id="vidrio" class="expansion-pastizales efecto-pastizales">
         <h2>Expansión de los Pastizales</h2>
         <p>
             Uno de los cambios más significativos fue la <strong>expansión global de las praderas y sabanas</strong>.
@@ -74,7 +81,7 @@
         </p>
     </section>
 
-    <section class="megafauna-neogeno">
+    <section id="vidrio" class="megafauna-neogeno">
         <h2>Megafauna del Neógeno</h2>
         <p>
             Aparecieron grandes mamíferos en todos los continentes:
@@ -88,7 +95,7 @@
         </ul>
     </section>
 
-    <section class="hominidos-neogeno">
+    <section id="vidrio" class="hominidos-neogeno">
         <h2>Aparición de los Homininos</h2>
         <p>
             A finales del Mioceno, en África, surgieron los primeros primates bípedos,
@@ -102,7 +109,7 @@
         </ul>
     </section>
 
-    <section class="vida-marina">
+    <section  id="vidrio" class="vida-marina">
         <h2>Vida Marina</h2>
         <p>
             Los océanos del Neógeno vieron la evolución de:
@@ -115,7 +122,7 @@
         </ul>
     </section>
 
-    <section class="eventos-importantes">
+    <section  id="vidrio" class="eventos-importantes">
         <h2>Eventos Importantes</h2>
         <ul>
             <li><strong>Gran Intercambio Americano</strong> (cuando se unieron las Américas)</li>
@@ -125,7 +132,7 @@
         </ul>
     </section>
 
-    <section class="importancia">
+    <section  id="vidrio" class="importancia">
         <h2>Importancia del Neógeno</h2>
         <p>
             El Neógeno sentó las bases para el mundo moderno. La geografía, el clima y la
