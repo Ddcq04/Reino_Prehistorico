@@ -62,6 +62,7 @@
             <p><strong>Agresividad:</strong> <?= $dino->agresividad ?></p>
             <p><strong>Tiempo de vida:</strong> <?= $dino->tiempo_vida ?></p>
             <p><strong>Especie:</strong> <?= $dino->especie ?></p>
+            <p> <?= $dino->total_votos ?>
           </div>
         <?php endforeach; ?> 
       </div>

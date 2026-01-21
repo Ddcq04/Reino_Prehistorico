@@ -58,6 +58,10 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
 
         <!-- USUARIO--------------------------------------------------- -->
         <div class="usuario">
+            <!-- Boton para cerrar sesion -->
+            <form action="../index.php" method="post">
+                <button type="submit" name="accion" value="cerrar_sesion">Cerrar sesion</button>
+            </form>
             <p><?= isset($_SESSION["usuario"]) ? $_SESSION["usuario"] : "Invitado" ?>
             <p>
                 <a href="../layouts/inicioform.php">

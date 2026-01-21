@@ -30,7 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit();
             }
             break;
-
+        case "cerrar_sesion":
+            if(isset($_SESSION["usuario"])) {
+                session_destroy();
+                header("Location: layouts/inicioform.php");
+                exit();
+            }else header("Location: layouts/home.php");
+            exit();
+            break;
         case "registrarse":
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $nombre = trim($_POST['nombre']);
