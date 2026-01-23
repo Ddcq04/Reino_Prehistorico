@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#videoFondo {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Boton volver */
+.btn-volver {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    color: white;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.875rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 100;
+}
+.btn-volver.btn-Terrestre{
+    background: #2a7a0e;
+}
+.btn-volver.btn-Acuatico {
+    background: #0d47a1;
+}
+.btn-volver.btn-Volador {
+    background: #00c1c1;
+}
+
+/*Tarjeta*/
+.tarjeta {
+    max-width: 43.75rem;
+    margin: 3.125rem auto;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 0.9375rem;
+    overflow: hidden;
+    box-shadow: 0 0.625rem 1.5625rem rgba(0,0,0,0.3);
+    border: 0.1875rem solid;
+}
+.tarjeta.tarjeta-terrestre {
+    border-color: #2a7a0e;
+}
+.tarjeta.tarjeta-acuatico {
+    border-color: #ece6e6;
+}
+.tarjeta.tarjeta-volador {
+    border-color: #00c1c1;
+}
+
+.cabecera {
+    padding: 1.25rem;
+    text-align: center;
+    color: black;
+}
+.cabecera.cabecera-terrestre{
+    background: #2a7a0e;
+    color: white;
+}
+.cabecera-acuatico{
+    background: #0d47a1;
+    color: white;
+}
+.cabecera.cabecera-volador{
+    background: #00c1c1;
+    color: white;
+}
+.cabecera h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Cuerpo */
+.cuerpo {
+    padding: 1.25rem;
+}
+
+/* Imagen*/
+.imagen {
+    position: relative;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+.imagen img {
+    max-width: 80%; 
+    max-height: 18.75rem;
+    object-fit: contain;
+    border-radius: 0.625rem;
+    border: 0.1875rem solid;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.2);
+}
+.imagen.imagen-terrestre img {
+    border-color: #2a7a0e;
+}
+.imagen.imagen-acuatico img {
+    border-color:#0d47a1;
+}
+.imagen.imagen-volador img {
+    border-color:#00c1c1;
+}
+
+.numero {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 0.3125rem 0.75rem;
+    border-radius: 0.9375rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Informacion basica */
+.info h2 {
+    margin: 0 0 0.9375rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.125rem solid;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.info.info-terrestre h2 {
+    color:#2a7a0e;
+    border-bottom-color: #2a7a0e;
+}
+.info.info-acuatico h2 {
+    color:#0d47a1;
+    border-bottom-color: #0d47a1;
+}
+.info.info-volador h2 {
+    color:#00c1c1;
+    border-bottom-color: #00c1c1;
+}
+/*Dato*/
+.dato {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.dato span:first-child {
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+.dato span:last-child {
+    font-weight: bold;
+    text-align: right;
+    max-width: 50%;
+}
+.dato.dato-terrestre span:last-child {
+    color: #2a7a0e;
+}
+.dato.dato-acuatico span:last-child {
+    color: #0d47a1;
+}
+.dato.dato-volador span:last-child {
+    color: #00c1c1;
+}
+/* Barra agresevidad */
+.agresividad {
+    margin-top: 1.25rem;
+    padding: 0.9375rem;
+    background: #f5f5f5;
+    border-radius: 0.5rem;
+}
+
+.agresividad > span {
+    font-weight: bold;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.barra {
+    display: flex;
+    gap: 0.3125rem;
+    margin: 0.625rem 0;
+    height: 1.25rem;
+}
+
+.segmento {
+    flex: 1;
+    background: #ddd;
+    border-radius: 0.25rem;
+}
+
+.segmento.activo {
+    border: 0.125rem solid #333;
+}
+
+.segmento:nth-child(1).activo { background: #4CAF50; }
+.segmento:nth-child(2).activo { background: #8BC34A; }
+.segmento:nth-child(3).activo { background: #FF9800; }
+.segmento:nth-child(4).activo { background: #F44336; }
+
+.niveles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.3125rem;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.niveles span {
+    flex: 1;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 48rem) {
+    .tarjeta {
+        margin: 1.875rem 0.9375rem;
+        max-width: 95%;
+    }
+    
+    .cabecera h1 {
+        font-size: 1.6rem;
+    }
+    
+    .btn-volver {
+        position: relative;
+        margin: 1.25rem;
+        display: inline-block;
+    }
+    
+    .imagen img {
+        max-width: 90%;
+        max-height: 15.625rem;
+    }
+    
+    .dato span:last-child {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 30rem) {
+    .dato {
+        flex-direction: column;
+        gap: 0.1875rem;
+    }
+    
+    .dato span:last-child {
+        text-align: left;
+        max-width: 100%;
+    }
+    
+    .imagen img {
+        max-height: 12.5rem;
+    }
+    
+    .numero {
+        top: 0.3125rem;
+        right: 0.3125rem;
+        font-size: 0.8rem;
+        padding: 0.1875rem 0.5rem;
+    }
+}
