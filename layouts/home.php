@@ -59,14 +59,16 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
         <!-- USUARIO--------------------------------------------------- -->
         <div class="usuario">
             <!-- Boton para cerrar sesion -->
-            <form action="../index.php" method="post">
-                <button type="submit" name="accion" value="cerrar_sesion">Cerrar sesion</button>
-            </form>
             <p><?= isset($_SESSION["usuario"]) ? $_SESSION["usuario"] : "Invitado" ?>
             <p>
                 <a href="../layouts/inicioform.php">
                     <img src="../web/img/home/logousua.png" alt="Perfil de Usuario">
                 </a>
+
+            <form action="../index.php" method="post">
+                <button  id="sesion" type="submit" name="accion" value="cerrar_sesion">Cerrar sesión</button>
+            </form>
+
         </div>
 
     </header>
@@ -98,7 +100,7 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
                     </div>
 
                     <div class="boton">
-                        <a href="../layouts/Dinosaurios/dinosaurios.html">Dinosaurios</a>
+                        <a href="../layouts/Dinosaurios/dinosaurios.php">Dinosaurios</a>
 
                     </div>
 
@@ -149,9 +151,9 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
                     </div>
 
                     <div class="boton">
-                        <a href="../layouts/etapaMesozoico.html">Etapa antigua</a>
+                        <a href="../layouts/etapaMesozoico.php">Etapa préhistorica</a>
 
-                        <a href="../layouts/etapaCenozoico.html">Etapa glaciar</a>
+                        <a href="../layouts/etapaCenozoico.php">Etapa glaciar</a>
                     </div>
                 </div>
 
@@ -195,10 +197,10 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
             <div class="content">
                 <h2>Últimas noticias</h2>
                 <ul>
-                    <li><a href="#">Museos retira sus fosiles</a></li>
-                    <li><a href="#">Nuevos fosiles</a></li>
-                    <li><a href="#">Teorias de extinción</a></li>
-                    <li><a href="#">Conferencias</a></li>
+                    <li><a href="https://www.elconfidencial.com/espana/madrid/2026-01-23/mercadillo-gratis-minerales-madrid-1tna-1qrt_4289734/">Museos retira sus fosiles</a></li>
+                    <li><a href="https://www.cronista.com/colombia/actualidad-co/el-descubrimiento-que-cambia-la-arqueologia-hallan-un-fosil-inedito-de-dinosaurio-que-obliga-a-reescribir-la-historia/">Nuevos fosiles</a></li>
+                    <li><a href="https://www.nationalgeographic.com.es/ciencia/asteroide-o-actividad-volcanica-teorias-extincion-dinosaurios_18850">Teorias de extinción</a></li>
+                    <li><a href="https://www.educaciontrespuntocero.com/recursos/ted-sobre-dinosaurios/">Conferencias</a></li>
                 </ul>
             </div>
 
