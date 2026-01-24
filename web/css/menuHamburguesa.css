@@ -1,0 +1,90 @@
+/* RESET PARA EL NAV */
+nav {
+    width: 100%;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+#check {
+    display: none;
+}
+
+/* ESTILO ESCRITORIO */
+.enlaces {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; /* Espacio reducido entre enlaces */
+    padding: 0;
+    margin: 0;
+}
+
+.enlaces li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* BURGER ICON (Oculto en escritorio) */
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.burger span {
+    width: 100%;
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* LÓGICA MOBILE */
+@media (max-width: 1207px) {
+    .burger {
+        display: flex;
+        position: absolute;
+        left: 20px;
+        top: -10px; /* Ajustado para que quede centrado en el header */
+    }
+
+    .enlaces {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.95);
+        flex-direction: column;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+        z-index: 1000;
+    }
+
+    .enlaces li {
+        width: 100%;
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    .enlaces li a {
+        font-size: 1.9rem;
+        display: block;
+    }
+
+    /* Abrir menú */
+    #check:checked ~ .enlaces {
+        left: 0;
+    }
+
+    /* Animación X de la hamburguesa */
+    #check:checked ~ .burger span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
+    #check:checked ~ .burger span:nth-child(2) { opacity: 0; }
+    #check:checked ~ .burger span:nth-child(3) { transform: rotate(-45deg) translate(6px, -7px); }
+}

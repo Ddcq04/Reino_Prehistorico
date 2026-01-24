@@ -25,6 +25,7 @@ switch ($tipo) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinosaurios <?= $tipo ?></title>
+    <link rel="stylesheet" href="../../web/css/menuHamburguesa.css">
     <link rel="stylesheet" href="../../web/css/tipos_dinosaurios.css">
         <link rel="icon" href="../../web/img/home/favicon.png" type="image/x-icon">
 
@@ -40,13 +41,20 @@ switch ($tipo) {
             <img src="../../web/img/home/logo1.png" alt="">
             <h1>Reino Prehistórico</h1>
             <img src="../../web/img/home/logo2.png" alt="">
-        </div>DINOSAURIOS <?= strtoupper($tipo) ?>
-    </header>
+        </div>
+        
+        <div class="titulo-seccion">DINOSAURIOS <?= strtoupper($tipo) ?></div>
 
-    <!-- Menu de navegacion-->
-    <section class="menu">
         <nav class="navegacion-<?= $tipo ?>">
-            <ul>
+            <input type="checkbox" id="check">
+
+            <label for="check" class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="enlaces">
                 <li><a href="../home.php">Inicio</a></li>
                 <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
                 <li><a href="dinosaurios.php">Dinosaurios</a></li>
@@ -54,7 +62,8 @@ switch ($tipo) {
                 <li><a href="../mamiferos.php">Mamíferos</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
+
 
     <!-- Contenedor de dinosaurios-->
     <section class="contenedor">
