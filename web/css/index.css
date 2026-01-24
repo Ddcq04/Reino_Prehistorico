@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -60,29 +61,66 @@ header h1 {
 /* -----USUARIO-------------------------------------------------- */
 .usuario {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 22px;
+  right: 38px;
   z-index: 100;
-  text-align: center;
-  /* pone por encima de todo para que sea clicable */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  width: auto;
+}
+
+.usuario p {/*NOMBRE DEL USUARIO  */
+  color: white;
+  text-transform: capitalize;
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .usuario img {
-  width: 2.7rem;
+  width: 3rem;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease;
-  display: block;
 }
 
-.usuario img:hover {
-  transform: scale(1.3);
+.usuario form {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.usuario p {
+/* BOTON DE CERRAR SESION */
+
+#sesion {
+  background-color: hsl(0, 0%, 9%) ;
   color: white;
-  text-transform: capitalize;
-  margin-bottom: 2px;
+  padding: 7px; 
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: auto;           
+  max-width: none;      
+  white-space: nowrap; 
+  display: inline-block;  
+}
+
+#sesion:hover {
+  background-color:  #3a3a3a;
+  transform: scale(1.1);
+}
+
+#sesion:active {
+  transform: scale(0.95);
 }
 
 /*BARRA DE NAVEGACION--------------------------------------------------*/
@@ -177,18 +215,31 @@ nav ul li a {
 
   .usuario {
     position: absolute;
-    right: 12px;
-    top: 17px
-      /* Igual espaciado que el menu hamburguesa */
+    top: 10px; 
+    right: 8px;
+    gap: 3px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .usuario p {
+    font-size: 0.8rem;
   }
 
   .usuario img {
-    /*  tamaño del usuario*/
-    width: 40px;
-    height: auto;
-    display: block;
+    width: 32px; 
   }
+
+  #sesion {
+    padding: 3px 8px; 
+    font-size: 0.6rem; 
+    width: auto;           
+    max-width: none;       
+    white-space: nowrap;  
+    display: inline-block;
+  }
+
 
 
   /*LINEAS DEL MENU HAMBURGUESA------------- */

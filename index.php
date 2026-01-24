@@ -68,9 +68,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 votar($_SESSION["usuario"], $_POST["id_dino"]);
                 $dinosaurio = $BD->getDinosaurio($_POST["id_dino"]);
             }
-            header("Location: layouts/Dinosaurios/tipos_dinosaurios.php?tipo=" .$dinosaurio->tipo);
-            exit();
-            break;
+            
+            if (isset($_POST['url'])) {
+                $ir_a = $_POST['url'];
+            } else {
+                $ir_a = 'layouts/Dinosaurios/tipos_dinosaurios.php?tipo=' . $dinosaurio->tipo;
+            }
+
+            header("Location: " . $ir_a);
+            exit;
+
 
         case "invitado":
             $_SESSION["invitado"] = true;
