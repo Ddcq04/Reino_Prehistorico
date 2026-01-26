@@ -22,6 +22,8 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
 
     <link rel="stylesheet" href="../web/css/index.css">
     <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../../web/css/menuHamburguesa.css">
+
 </head>
 
 <body>
