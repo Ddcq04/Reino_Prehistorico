@@ -28,13 +28,8 @@
 
     <h1>Animales de la Edad del Hielo</h1>
     <p>Descubre las especies voladoras, terrestres y acuáticas del Pleistoceno</p>
-  </header>
 
-  <video autoplay muted loop id="video-fondo">
-    <source src="../web/videos/hielo.mp4" type="video/mp4">
-  </video>
-
-      <section class="menu">
+     <section class="menu">
         <nav>
           <ul>
           <li><a href="home.php">Inicio</a></li>
@@ -45,6 +40,16 @@
         </nav>
     </section>
 
+
+
+  </header>
+
+  <video autoplay muted loop id="video-fondo">
+    <source src="../web/videos/hielo.mp4" type="video/mp4">
+  </video>
+
+     
+
   <main>
 
     <section>
@@ -52,16 +57,22 @@
       <div class="contenedor-animales">
         <?php foreach($dinosaurios_voladores as $dino): ?>
           <div class="tarjeta-animal">
-            <img src="../web/img/Mamiferos/<?= $dino->id ?>.jpg" alt="IMG">
-            <h3><?= $dino->nombre ?></h3>
-            <p><strong>Periodo:</strong> <?= $dino->nombre_periodo ?></p>
-            <p><strong>Era:</strong> <?= $dino->nombre_era ?></p>
-            <p><strong>Familia:</strong> <?= $dino->familia ?></p>
-            <p><strong>Hábitat:</strong> <?= $dino->ubicacion ?></p>
-            <p><strong>Alimentación:</strong> <?= $dino->alimentacion ?></p>
-            <p><strong>Agresividad:</strong> <?= $dino->agresividad ?></p>
-            <p><strong>Tiempo de vida:</strong> <?= $dino->tiempo_vida ?></p>
-            <p><strong>Especie:</strong> <?= $dino->especie ?></p>
+            <a href="info_mamiferos.php?id=<?= $dino->id ?>">
+              <img src="../web/img/Mamiferos/<?= $dino->id ?>.jpg" alt="IMG">
+            </a>
+            <div class="titulo-y-voto">
+              <h3><?= $dino->nombre ?></h3>
+              <?php if (isset($_SESSION["usuario"])): ?>
+                <form method="POST" action="../index.php" class="">
+                  <input type="hidden" name="id_dino" value="<?= $dino->id ?>">
+                  <input type="hidden" name="url" value="layouts/mamiferos.php">
+                  <button type="submit" class="corazon" name="accion" value="votar">
+                    <i>🧊</i>
+                    <span><?= $dino->total_votos ?></span>
+                  </button>
+                </form>
+              <?php endif ?>
+            </div>
           </div>
         <?php endforeach; ?> 
       </div>
@@ -73,16 +84,22 @@
       <div class="contenedor-animales">
         <?php foreach($dinosaurios_terrestres as $dino): ?>
           <div class="tarjeta-animal">
-            <img src="../web/img/Mamiferos/<?= $dino->id ?>.jpg" alt="IMG">
-            <h3><?= $dino->nombre ?></h3>
-            <p><strong>Periodo:</strong> <?= $dino->nombre_periodo ?></p>
-            <p><strong>Era:</strong> <?= $dino->nombre_era ?></p>
-            <p><strong>Familia:</strong> <?= $dino->familia ?></p>
-            <p><strong>Hábitat:</strong> <?= $dino->ubicacion ?></p>
-            <p><strong>Alimentación:</strong> <?= $dino->alimentacion ?></p>
-            <p><strong>Agresividad:</strong> <?= $dino->agresividad ?></p>
-            <p><strong>Tiempo de vida:</strong> <?= $dino->tiempo_vida ?></p>
-            <p><strong>Especie:</strong> <?= $dino->especie ?></p>
+            <a href="info_mamiferos.php?id=<?= $dino->id ?>">
+              <img src="../web/img/Mamiferos/<?= $dino->id ?>.jpg" alt="IMG">
+            </a>
+            <div class="titulo-y-voto">
+              <h3><?= $dino->nombre ?></h3>
+              <?php if (isset($_SESSION["usuario"])): ?>
+                <form method="POST" action="../index.php" class="">
+                  <input type="hidden" name="id_dino" value="<?= $dino->id ?>">
+                  <input type="hidden" name="url" value="layouts/mamiferos.php">
+                  <button type="submit" class="corazon" name="accion" value="votar">
+                    <i>🧊</i>
+                    <span><?= $dino->total_votos ?></span>
+                  </button>
+                </form>
+              <?php endif ?>
+            </div>
           </div>
         <?php endforeach; ?> 
       </div>
@@ -94,16 +111,22 @@
       <div class="contenedor-animales">
         <?php foreach($dinosaurios_acuaticos as $dino): ?>
           <div class="tarjeta-animal">
-            <img src="../web/img/Mamiferos/<?= $dino->id ?>.jpg" alt="IMG">
-            <h3><?= $dino->nombre ?></h3>
-            <p><strong>Periodo:</strong> <?= $dino->nombre_periodo ?></p>
-            <p><strong>Era:</strong> <?= $dino->nombre_era ?></p>
-            <p><strong>Familia:</strong> <?= $dino->familia ?></p>
-            <p><strong>Hábitat:</strong> <?= $dino->ubicacion ?></p>
-            <p><strong>Alimentación:</strong> <?= $dino->alimentacion ?></p>
-            <p><strong>Agresividad:</strong> <?= $dino->agresividad ?></p>
-            <p><strong>Tiempo de vida:</strong> <?= $dino->tiempo_vida ?></p>
-            <p><strong>Especie:</strong> <?= $dino->especie ?></p>
+            <a href="info_mamiferos.php?id=<?= $dino->id ?>">
+              <img src="../web/img/Mamiferos/<?= $dino->id ?>.jpg" alt="IMG">
+            </a>
+            <div class="titulo-y-voto">
+              <h3><?= $dino->nombre ?></h3>
+              <?php if (isset($_SESSION["usuario"])): ?>
+                <form method="POST" action="../index.php" class="">
+                  <input type="hidden" name="id_dino" value="<?= $dino->id ?>">
+                  <input type="hidden" name="url" value="layouts/mamiferos.php">
+                  <button type="submit" class="corazon" name="accion" value="votar">
+                    <i>🧊</i>
+                    <span><?= $dino->total_votos ?></span>
+                  </button>
+                </form>
+              <?php endif ?>
+            </div>
           </div>
         <?php endforeach; ?> 
       </div>

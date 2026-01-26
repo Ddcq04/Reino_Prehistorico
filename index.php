@@ -30,7 +30,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 exit();
             }
             break;
-
+        case "cerrar_sesion":
+            if(isset($_SESSION["usuario"])) {
+                session_destroy();
+                header("Location: layouts/inicioform.php");
+                exit();
+            }else header("Location: layouts/home.php");
+            exit();
+            break;
         case "registrarse":
             if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $nombre = trim($_POST['nombre']);
@@ -61,9 +68,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 votar($_SESSION["usuario"], $_POST["id_dino"]);
                 $dinosaurio = $BD->getDinosaurio($_POST["id_dino"]);
             }
-            header("Location: layouts/Dinosaurios/tipos_dinosaurios.php?tipo=" .$dinosaurio->tipo);
-            exit();
-            break;
+            
+            if (isset($_POST['url'])) {
+                $ir_a = $_POST['url'];
+            } else {
+                $ir_a = 'layouts/Dinosaurios/tipos_dinosaurios.php?tipo=' . $dinosaurio->tipo;
+            }
+
+            header("Location: " . $ir_a);
+            exit;
+
 
         case "invitado":
             $_SESSION["invitado"] = true;
