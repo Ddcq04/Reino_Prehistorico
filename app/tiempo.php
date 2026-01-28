@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$timeout = 600; 
+$timeout = 100; 
 
 if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
     header("Location: /Reino_Prehistorico/layouts/inicioform.php");

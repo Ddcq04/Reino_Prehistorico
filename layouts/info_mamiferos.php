@@ -20,10 +20,9 @@
     <video autoplay muted loop id="videoFondo">
         <source src="../web/videos/hielo.mp4" type="video/mp4">
     </video>
-    <a href="mamiferos.php" class="btn-volver btn-terrestre">
+    <a href="mamiferos.php" class="btn-volver btn-Terrestre">
         <i class="fas fa-arrow-left"></i> Volver
     </a>
-    <?php $tipo = strtolower($tipo) ?>
     <!--Tarjeta-->
     <div class="tarjeta tarjeta-<?= $tipo ?>">
         <div class="cabecera cabecera-<?= $tipo ?>">

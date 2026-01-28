@@ -36,6 +36,7 @@
             <li><a href="../layouts/Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
             <li><a href="etapaMesozoico.php">Era Mesozoica</a></li>
             <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
+            <li><a href="extincion.php">Extincion</a></li>
           </ul>
         </nav>
     </section>

@@ -53,7 +53,7 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
                 <li><a href="../layouts/Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
                 <li><a href="../layouts/etapaCenozoico.php">Era Glaciar</a></li>
                 <li><a href="../layouts/mamiferos.php">Mamíferos</a></li>
-                <li><a href="../layouts/">Extinción</a></li>
+                <li><a href="../layouts/extincion.php">Extinción</a></li>
 
             </ul>
         </nav>
@@ -139,7 +139,9 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
                         <h2>Los dinosaurios no fueron los únicos depredadores </h2>
                         <h3>El final de una era marcó el comienzo de otra</h3>
                     </div>
-
+                    <div class="boton">
+                        <a href="../layouts/extincion.php">Descubre más</a>
+                    </div>
                 </div>
 
             </li>
@@ -166,7 +168,7 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
                 <div class="contentxtbot">
                     <div class="txt">
                         <h2>Los mamíferos también dejaron su huella</h2>
-                        <h3>Especias igual de imponentes como los dinosaurios</h3>
+                        <h3>Especies igual de imponentes como los dinosaurios</h3>
                     </div>
                     <div class="boton">
                         <a href="../layouts/mamiferos.php">Mamíferos</a>

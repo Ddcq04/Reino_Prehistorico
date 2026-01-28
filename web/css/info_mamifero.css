@@ -28,10 +28,10 @@ body {
     z-index: 100;
 }
 .btn-volver.btn-Terrestre{
-    background: #2a7a0e;
+    background: #00c1c1;
 }
 .btn-volver.btn-Acuatico {
-    background: #0d47a1;
+    background: #00c1c1;
 }
 .btn-volver.btn-Volador {
     background: #00c1c1;
@@ -47,13 +47,13 @@ body {
     box-shadow: 0 0.625rem 1.5625rem rgba(0,0,0,0.3);
     border: 0.1875rem solid;
 }
-.tarjeta.tarjeta-terrestre {
-    border-color: #2a7a0e;
+.tarjeta.tarjeta-Terrestre {
+    border-color: #00c1c1;
 }
-.tarjeta.tarjeta-acuatico {
-    border-color: #ece6e6;
+.tarjeta.tarjeta-Acuático {
+    border-color: #00c1c1;
 }
-.tarjeta.tarjeta-volador {
+.tarjeta.tarjeta-Volador {
     border-color: #00c1c1;
 }
 
@@ -62,15 +62,15 @@ body {
     text-align: center;
     color: black;
 }
-.cabecera.cabecera-terrestre{
-    background: #2a7a0e;
+.cabecera.cabecera-Terrestre{
+    background: #00c1c1;
     color: white;
 }
-.cabecera-acuatico{
-    background: #0d47a1;
+.cabecera.cabecera-Acuático{
+    background: #00c1c1;
     color: white;
 }
-.cabecera.cabecera-volador{
+.cabecera.cabecera-Volador{
     background: #00c1c1;
     color: white;
 }
@@ -98,13 +98,13 @@ body {
     border: 0.1875rem solid;
     box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.2);
 }
-.imagen.imagen-terrestre img {
-    border-color: #2a7a0e;
+.imagen.imagen-Terrestre img {
+    border-color: #00c1c1;
 }
-.imagen.imagen-acuatico img {
-    border-color:#0d47a1;
+.imagen.imagen-Acuático img {
+    border-color:#00c1c1;
 }
-.imagen.imagen-volador img {
+.imagen.imagen-Volador img {
     border-color:#00c1c1;
 }
 
@@ -129,15 +129,15 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
-.info.info-terrestre h2 {
-    color:#2a7a0e;
-    border-bottom-color: #2a7a0e;
+.info.info-Terrestre h2 {
+    color:#00c1c1;
+    border-bottom-color: #00c1c1;
 }
-.info.info-acuatico h2 {
-    color:#0d47a1;
-    border-bottom-color: #0d47a1;
+.info.info-Acuático h2 {
+    color:#00c1c1;
+    border-bottom-color: #00c1c1;
 }
-.info.info-volador h2 {
+.info.info-Volador h2 {
     color:#00c1c1;
     border-bottom-color: #00c1c1;
 }
@@ -162,13 +162,13 @@ body {
     text-align: right;
     max-width: 50%;
 }
-.dato.dato-terrestre span:last-child {
-    color: #2a7a0e;
+.dato.dato-Terrestre span:last-child {
+    color: #00c1c1;
 }
-.dato.dato-acuatico span:last-child {
-    color: #0d47a1;
+.dato.dato-Acuático span:last-child {
+    color: #00c1c1;
 }
-.dato.dato-volador span:last-child {
+.dato.dato-Volador span:last-child {
     color: #00c1c1;
 }
 /* Barra agresevidad */
