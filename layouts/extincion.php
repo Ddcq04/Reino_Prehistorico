@@ -25,10 +25,10 @@ require_once __DIR__ . '/../app/tiempo.php';
         </div>
         
         <h1>La Extinción</h1>
-        <p>Todas las teorías sobre la desaparición de los dinosaurios</p>
+        
     </header>
 
-    <nav>
+        <nav>
             <input type="checkbox" id="check">
 
             <label for="check" class="burger">

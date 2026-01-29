@@ -28,13 +28,13 @@ body {
     z-index: 100;
 }
 .btn-volver.btn-Terrestre{
-    background: #00c1c1;
+    background: #0092c1ab;
 }
 .btn-volver.btn-Acuatico {
-    background: #00c1c1;
+    background: #0092c1ab;
 }
 .btn-volver.btn-Volador {
-    background: #00c1c1;
+    background: #0092c1ab;
 }
 
 /*Tarjeta*/
@@ -48,13 +48,13 @@ body {
     border: 0.1875rem solid;
 }
 .tarjeta.tarjeta-Terrestre {
-    border-color: #00c1c1;
+    border-color: #0092c1ab;
 }
 .tarjeta.tarjeta-Acuático {
-    border-color: #00c1c1;
+    border-color: #0092c1ab;
 }
 .tarjeta.tarjeta-Volador {
-    border-color: #00c1c1;
+    border-color: #0092c1ab;
 }
 
 .cabecera {
@@ -63,15 +63,15 @@ body {
     color: black;
 }
 .cabecera.cabecera-Terrestre{
-    background: #00c1c1;
+    background: #0091c170;
     color: white;
 }
 .cabecera.cabecera-Acuático{
-    background: #00c1c1;
+    background: #0091c170;
     color: white;
 }
 .cabecera.cabecera-Volador{
-    background: #00c1c1;
+    background: #0091c170;
     color: white;
 }
 .cabecera h1 {
@@ -99,13 +99,13 @@ body {
     box-shadow: 0 0.3125rem 0.9375rem rgba(0,0,0,0.2);
 }
 .imagen.imagen-Terrestre img {
-    border-color: #00c1c1;
+    border-color: #0091c170;
 }
 .imagen.imagen-Acuático img {
-    border-color:#00c1c1;
+    border-color:#0091c170;
 }
 .imagen.imagen-Volador img {
-    border-color:#00c1c1;
+    border-color:#0091c170;
 }
 
 .numero {
@@ -130,16 +130,16 @@ body {
     gap: 0.5rem;
 }
 .info.info-Terrestre h2 {
-    color:#00c1c1;
-    border-bottom-color: #00c1c1;
+    color:#0091c170;
+    border-bottom-color: #0092c1ab;
 }
 .info.info-Acuático h2 {
-    color:#00c1c1;
-    border-bottom-color: #00c1c1;
+    color:#0091c170;
+    border-bottom-color: #0092c1ab;
 }
 .info.info-Volador h2 {
-    color:#00c1c1;
-    border-bottom-color: #00c1c1;
+    color:#0091c170;
+    border-bottom-color: #0092c1ab;
 }
 /*Dato*/
 .dato {
@@ -163,13 +163,13 @@ body {
     max-width: 50%;
 }
 .dato.dato-Terrestre span:last-child {
-    color: #00c1c1;
+    color: #0091c170;
 }
 .dato.dato-Acuático span:last-child {
-    color: #00c1c1;
+    color: #0091c170;
 }
 .dato.dato-Volador span:last-child {
-    color: #00c1c1;
+    color: #0091c170;
 }
 /* Barra agresevidad */
 .agresividad {
