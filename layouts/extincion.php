@@ -17,6 +17,13 @@ require_once __DIR__ . '/../app/tiempo.php';
 <body>
 
     <header>
+          <!-- LOGO----------------------------------------------- -->
+        <div class="logo">
+            <img src="../web/img/home/logo1.png" alt="">
+            <h1>Reino Prehistórico</h1>
+            <img src="../web/img/home/logo2.png" alt="">
+        </div>
+        
         <h1>La Extinción</h1>
         <p>Todas las teorías sobre la desaparición de los dinosaurios</p>
     </header>

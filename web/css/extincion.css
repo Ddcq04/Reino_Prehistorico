@@ -25,6 +25,21 @@ body {
   z-index: -1;
 }
 
+/* LOGO-------------------- --------------------------------------- */
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+
+}
+
+.logo img {
+  width: 3.5rem;
+  height: auto;
+
+}
+
 /* ───────── HEADER + NAV (MISMO BLOQUE) ───────── */
 header,
 nav {
@@ -147,16 +162,16 @@ main {
 
 .teoria_info {
   flex: 1;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   color: #fff;
 }
 
 .teoria_info h3 {
   margin-bottom: 10px;
-  color: #8b3a3a;
+  color: #b54e4e;
 }
 
 /* ───────── RESPONSIVE ───────── */
