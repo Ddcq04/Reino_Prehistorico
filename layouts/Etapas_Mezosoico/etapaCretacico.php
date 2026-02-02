@@ -15,21 +15,46 @@
     </video>
 </div>
 
-<header class="header">
-    
-     <div class="logo">
+<header class="menu-mezo">
+    <div class="logo">
       <img src="../../web/img/home/logo1.png" alt="">
-      <h1>Periodo Cretacico</h1>
+      <div class="logo-center">
+        <h1>PERIODO JURASICO</h1>
+
+      </div>
       <img src="../../web/img/home/logo2.png" alt="">
-     
     </div>
 
-    <p>El Final de los Dinosaurios y el Nacimiento de un Mundo Nuevo</p>
+  
+
+    <input type="checkbox" id="menu-ancla" class="menu-ancla">
+    <label for="menu-ancla" class="hamburguesa">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="menu-text">Menú</span>
+    </label>
+
+    <div class="overlay"></div>
+
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="../home.php">Inicio</a></li>
+        <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
+        <li><a href="../Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+        <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
+        <li><a href="../mamiferos.php">Mamíferos</a></li>
+      </ul>
+    </nav>
+
+
+    
 </header>
+    <p class="subtitu">El Final de los Dinosaurios y el Nacimiento de un Mundo Nuevo</p>
 
 <main class="contenido">
 
-    <section class="duracion" id="vidrio">
+    <section class="vidrio">
         <h2>Duración</h2>
         <p>
             El período Cretácico abarcó desde hace <strong>145 hasta 66 millones de años</strong>,
@@ -38,7 +63,7 @@
         </p>
     </section>
 
-    <section class="geografia" id="vidrio">
+    <section class="vidrio">
         <h2>Geografía y continentes</h2>
         <p>
             Los continentes continuaron separándose hasta adquirir formas reconocibles:
@@ -48,7 +73,7 @@
         </p>
     </section>
 
-    <section class="clima" id="vidrio">
+    <section class="vidrio">
         <h2>Clima</h2>
         <p>
             El clima fue generalmente <strong>cálido y tropical</strong>, con temperaturas más altas
@@ -57,7 +82,7 @@
         </p>
     </section>
 
-    <section class="flora" id="vidrio">
+    <section class="vidrio">
         <h2>Flora - La Revolución de las Flores</h2>
         <p>La gran innovación del Cretácico fue la aparición y expansión de:</p>
         <ul>
@@ -68,7 +93,7 @@
         </ul>
     </section>
 
-    <section class="fauna fauna-cretacica" id="vidrio">
+    <section class="vidrio">
         <h2>Fauna Terrestre</h2>
         <p>Los dinosaurios alcanzaron su máxima diversidad:</p>
         <ul>
@@ -80,7 +105,7 @@
         </ul>
     </section>
 
-    <section class="mar-cretacico" id="vidrio">
+    <section class="vidrio">
         <h2>Vida Marina</h2>
         <p>Los océanos estaban dominados por reptiles marinos gigantes:</p>
         <ul>
@@ -91,7 +116,7 @@
         </ul>
     </section>
 
-    <section class="aves" id="vidrio">
+    <section class="vidrio">
         <h2>Evolución de las Aves</h2>
         <p>
             Las aves continuaron diversificándose, algunas alcanzando tamaños gigantescos
@@ -100,7 +125,7 @@
         </p>
     </section>
 
-    <section class="extincion" id="vidrio">
+    <section class="vidrio">
         <h2>La Extinción Masiva del Cretácico-Paleógeno</h2>
         <p>
             Hace <strong>66 millones de años</strong>, un asteroide de aproximadamente 10 km
@@ -121,7 +146,7 @@
         </p>
     </section>
 
-    <section class="legado" id="vidrio">
+    <section class="vidrio">
         <h2>Legado del Cretácico</h2>
         <p>
             Aunque terminó en catástrofe, el Cretácico dejó un mundo transformado:
@@ -138,10 +163,6 @@
     </nav>
 
 </main>
-
-<footer class="footer">
-    <p>Reino Prehistórico - Proyecto Desarrollo Interfaces Web</p>
-</footer>
 
 </body>
 </html>

@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../web/css/etapa.css">
-    <!-- falta css de cuaternario a lo mejor ni lo pongo no hace falta -->
     <link rel="stylesheet" href="cuaternario.css">
     <title>Cuaternario - Era Cenozoica</title>
 </head>
-<body class="pagina-cuaternario">
+<body id="eraHielo">
     
 <div class="video-background">
     <video autoplay muted loop id="bg-video">
@@ -17,20 +16,52 @@
     </video>
 </div>
 
-<header class="header">
-    
-        <div class="logo">
+
+
+  <header class="menu-ceno">
+
+
+    <div class="logo">
       <img src="../../web/img/home/logo1.png" alt="">
-      <h1>Periodo Cuaternario</h1>
+      <div class="logo-center">
+        <h1 >Reino Prehistórico</h1>
+      </div>
       <img src="../../web/img/home/logo2.png" alt="">
-     
     </div>
-    <p>La Era del Hielo y el Surgimiento de la Humanidad</p>
-</header>
+
+    
+    <input type="checkbox" id="menu-ancla" class="menu-ancla">
+    <label for="menu-ancla" class="hamburguesa">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="menu-text">Menú</span>
+    </label>
+
+    <div class="overlay"></div>
+
+
+    <nav >
+      <ul class="nav-menu">
+        <li><a href="home.php">Inicio</a></li>
+        <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
+        <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+        <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
+        <li><a href="mamiferos.php">Mamíferos</a></li>
+      </ul>
+    </nav>
+
+
+
+
+
+  </header>
+    <p class="subtitu">La Era del Hielo y el Surgimiento de la Humanidad</p>
+
 
 <main class="contenido">
 
-    <section id="vidrio"  class="duracion">
+    <section class="vidrio">
         <h2>Duración</h2>
         <p>
             El Cuaternario abarca desde hace <strong class="texto-cuaternario">2.6 millones de años hasta la actualidad</strong>,
@@ -39,7 +70,7 @@
         </p>
     </section>
 
-    <section  id="vidrio" class="divisiones">
+    <section class="vidrio">
         <h2>Divisiones del Cuaternario</h2>
         <p>El Cuaternario se divide en dos épocas principales:</p>
     
@@ -47,12 +78,12 @@
             <li>Pleistoceno (2.6 Ma - 11,700 años)</li>
             <li>Holoceno (11,700 años - Actualidad)</li>
         </ul>
-        <p style="margin-top: 10px; font-style: italic;">
+        <p >
             Algunos científicos proponen una nueva época: el <strong>Antropoceno</strong>, marcado por el impacto humano significativo en la Tierra.
         </p>
     </section>
 
-    <section  id="vidrio" class="glaciaciones-cuaternario efecto-glaciar">
+    <section class="vidrio">
         <h2>Las Glaciaciones Cuaternarias</h2>
         <p>
             El Cuaternario se caracteriza por <strong>ciclos glaciares e interglaciares</strong>.
@@ -67,7 +98,7 @@
         </ul>
     </section>
 
-    <section  id="vidrio" class="clima efecto-frio">
+    <section class="vidrio">
         <h2>Clima</h2>
         <p>
             El clima del Cuaternario ha estado dominado por <strong>oscilaciones extremas</strong>
@@ -76,7 +107,7 @@
         </p>
     </section>
 
-    <section  id="vidrio" class="megafauna-cuaternario">
+    <section class="vidrio">
         <h2>Megafauna del Cuaternario</h2>
         <p>
             Durante el Pleistoceno, el planeta estuvo poblado por una impresionante megafauna:
@@ -92,7 +123,7 @@
         </ul>
     </section>
 
-    <section id="vidrio"  class="humanos-cuaternario efecto-civilizacion">
+    <section class="vidrio">
         <h2>Evolución Humana</h2>
         <p>
             El Cuaternario es testigo de la evolución y dispersión del género Homo:
@@ -107,7 +138,7 @@
         </ul>
     </section>
 
-    <section  id="vidrio" class="migraciones">
+    <section class="vidrio">
         <h2>Migraciones Humanas</h2>
         <p>
             Los humanos modernos se dispersaron por todo el planeta:
@@ -120,7 +151,7 @@
         </ul>
     </section>
 
-    <section  id="vidrio" class="extincion-cuaternario">
+    <section class="vidrio">
         <h2>Extinción de la Megafauna</h2>
         <p>
             A finales del Pleistoceno y durante el Holoceno, se produjo una
@@ -139,7 +170,7 @@
         </p>
     </section>
 
-    <section  id="vidrio" class="holoceno">
+    <section  class="vidrio">
         <h2>El Holoceno y la Revolución Neolítica</h2>
         <p>
             Con el final de la última glaciación (~11,700 años), comenzó el Holoceno,
@@ -154,7 +185,7 @@
         </ul>
     </section>
 
-    <section id="vidrio"  class="importancia efecto-civilizacion">
+    <section class="vidrio">
         <h2>Importancia del Cuaternario</h2>
         <p>
             El Cuaternario es el periodo en el que <strong>nuestra especie evolucionó y dominó el planeta</strong>.
@@ -176,10 +207,6 @@
     </nav>
 
 </main>
-
-<footer class="footer">
-    <p>Reino Prehistórico - Proyecto Desarrollo Interfaces Web</p>
-</footer>
 
 </body>
 </html>

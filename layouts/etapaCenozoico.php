@@ -12,7 +12,7 @@ require_once __DIR__ . '/../app/tiempo.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Línea de Tiempo - Eras Geológicas</title>
-  <link rel="stylesheet" href="../web/css/etapa.css">
+  <link rel="stylesheet" href="../web/css/etapa.css?v=<?php echo time(); ?>">
   <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
 
 </head>
@@ -26,17 +26,31 @@ require_once __DIR__ . '/../app/tiempo.php';
     </video>
   </div>
 
-  <header>
+  <header class="menu-ceno">
 
 
     <div class="logo">
       <img src="../web/img/home/logo1.png" alt="">
-      <h1>Reino Prehistórico</h1>
+      <div class="logo-center">
+        <h1 class="ceno">Reino Prehistórico</h1>
+      </div>
       <img src="../web/img/home/logo2.png" alt="">
     </div>
 
-    <nav>
-      <ul>
+    
+    <input type="checkbox" id="menu-ancla" class="menu-ancla">
+    <label for="menu-ancla" class="hamburguesa">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="menu-text">Menú</span>
+    </label>
+
+    <div class="overlay"></div>
+
+
+    <nav >
+      <ul class="nav-menu">
         <li><a href="home.php">Inicio</a></li>
         <li><a href="etapaMesozoico.php">Era Antigua</a></li>
         <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
@@ -47,43 +61,30 @@ require_once __DIR__ . '/../app/tiempo.php';
 
 
 
-    <h2>Línea de Tiempo: Cenozoico (Era del Hielo)</h2>
 
   </header>
 
 
+    <p class="subtitu">Línea de Tiempo: <br>Cenozoico (Era del Hielo)</p>
 
 
 
   <section class="timeline">
 
   
-    <div class="timeline-content">
-      <h2 class="erah2">Era Cenozoica o Era de Hielo</h2>
-              <p>66 millones de años atrás – Actualidad</p>
- <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de
+    <div class="timeline-item center-item">
+      <div class="timeline-content">
+        <h2 class="erah2">Era Cenozoica o Era de Hielo</h2>
+        <p>66 millones de años atrás – Actualidad</p>
+        <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de
           reptiles, aparición de mamíferos tempranos y plantas con flores. Se divide en tres periodos principales:</p>
         <ul class="centroEtapas">
           <li><a href="Era_Glaciar/etapaPaleogeno.php">Paleógeno</a></li>
           <li><a href="Era_Glaciar/etapaNeogeno.php">Neógeno</a></li>
           <li><a href="Era_Glaciar/etapaCuaternaria.php">Cuaternario</a></li>
-      <!-- <a href="#" class="btn">Ver más</a>-->
-    </div>
-    <!--
-    <div id="contenidoCen" class="timeline-item center-item">
-      <div class="timeline-content Cenozoico">
-        <h2>Era Cenozoica o Era de Hielo</h2>
-        <p>66 millones de años atrás – Actualidad</p>
-        <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de
-          reptiles, aparición de mamíferos tempranos y plantas con flores. Se divide en tres periodos principales:</p>
-        <ul>
-          <li><a href="Era_Glaciar/etapaPaleogeno.php">Paleógeno</a></li>
-          <li><a href="Era_Glaciar/etapaNeogeno.php">Neógeno</a></li>
-          <li><a href="Era_Glaciar/etapaCuaternaria.php">Cuaternario</a></li>
         </ul>
-
       </div>
-    </div> -->
+    </div>
 
     <div class="timeline-item">
       <div class="timeline-content">
@@ -94,8 +95,6 @@ require_once __DIR__ . '/../app/tiempo.php';
           <li>Surgen los primeros primates.</li>
           <li>El clima era cálido, aunque comenzó a enfriarse al final.</li>
         </ul>
-
-
         <a href="Era_Glaciar/etapaPaleogeno.php" class="btn">Ver más</a>
       </div>
     </div>
@@ -115,7 +114,6 @@ require_once __DIR__ . '/../app/tiempo.php';
 
     <div class="timeline-item">
       <div class="timeline-content">
-
         <h2 id="cuaternario">Cuaternario</h2>
         <p>2.6 millones de años atrás – Actualidad</p>
         <ul>
@@ -128,7 +126,6 @@ require_once __DIR__ . '/../app/tiempo.php';
     </div>
 
     <div class="timeline-item center-item btn-eras">
-
       <a href="../layouts/etapaMesozoico.php" class="btn">Volver a <br> Era Mesozoica</a>
     </div>
 

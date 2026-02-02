@@ -25,51 +25,42 @@ require_once __DIR__ . '/../app/tiempo.php';
       <source src="../web/videos/etapa-video.mp4" type="video/mp4">
       Tu navegador no soporta videos HTML5.
     </video>
-  </div>
+  </div><header class="menu-mezo">
+  <!-- Mover el checkbox y el hamburguesa fuera de .header-content -->
+  <input type="checkbox" id="menu-ancla" class="menu-ancla">
+  <label for="menu-ancla" class="hamburguesa">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="menu-text">Menú</span>
+  </label>
 
-  <header>
+  <div class="overlay"></div>
 
-    <!--<span style="  font-family: 'JurassicPark', sans-serif;
-;" >*</span>-->
-
-
-    <!-- LOGO----------------------------------------------- -->
+  <div class="header-content">
     <div class="logo">
       <img src="../web/img/home/logo1.png" alt="">
-      <h1>Reino Prehistórico</h1>
+      <div class="logo-center">
+        <h1>Reino Prehistórico</h1>
+      </div>
       <img src="../web/img/home/logo2.png" alt="">
     </div>
+  </div>
 
-
-    <input type="checkbox" id="menu-ancla" class="menu-ancla">
-    <label for="menu-ancla" class="hamburguesa">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="menu-text">Menú</span>
-    </label>
-
-    <div class="overlay"></div>
-
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="home.php">Inicio</a></li>
-        <li><a href="etapaMesozoico.php">Era Antigua</a></li>
-        <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
-        <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
-        <li><a href="mamiferos.php">Mamíferos</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <ul class="nav-menu">
+      <li><a href="home.php">Inicio</a></li>
+      <li><a href="../layouts/etapaMesozoico.php">Era Antigua</a></li>
+      <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+      <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
+      <li><a href="mamiferos.php">Mamíferos</a></li>
+    </ul>
+  </nav>
+</header>
 
 
 
-    <h2>Linea de Tiempo: Mesozoico</h2>
-
-  </header>
-
-
-
-
+  <p class="subtitu">Linea de Tiempo: <br> Mesozoico</p>
 
 
 

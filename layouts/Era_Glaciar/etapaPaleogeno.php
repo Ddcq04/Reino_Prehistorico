@@ -12,7 +12,7 @@
     <title>Paleógeno - Era Cenozoica</title>
 </head>
 
-<body class="pagina-paleogeno">
+<body id="eraHielo">
 
     <div class="video-background">
         <video autoplay muted loop id="bg-video">
@@ -21,20 +21,48 @@
         </video>
     </div>
 
-    <header class="header">
-        
-        <div class="logo">
+  <header class="menu-ceno">
+
+
+    <div class="logo">
       <img src="../../web/img/home/logo1.png" alt="">
-      <h1>Periodo Paleogeno</h1>
+      <div class="logo-center">
+        <h1 >Reino Prehistórico</h1>
+      </div>
       <img src="../../web/img/home/logo2.png" alt="">
-     
     </div>
-        <p>La Recuperacion Post-Extincion y el Surgimiento de los Mamiferos</p>
-    </header>
+
+    
+    <input type="checkbox" id="menu-ancla" class="menu-ancla">
+    <label for="menu-ancla" class="hamburguesa">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="menu-text">Menú</span>
+    </label>
+
+    <div class="overlay"></div>
+
+
+    <nav >
+      <ul class="nav-menu">
+        <li><a href="home.php">Inicio</a></li>
+        <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
+        <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+        <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
+        <li><a href="mamiferos.php">Mamíferos</a></li>
+      </ul>
+    </nav>
+
+
+
+
+  </header>
+
 
     <main class="contenido" >
 
-        <section class="duracion" id="vidrio" >
+        <section class="vidrio">
             <h2>Duración</h2>
             <p>
                 El Paleógeno abarcó desde hace <strong class="texto-paleogeno">66 hasta 23 millones de años</strong>,
@@ -43,7 +71,7 @@
             </p>
         </section>
 
-        <section id="vidrio" class="divisiones divisiones-paleogeno">
+        <section class="vidrio">
             <h2>Divisiones del Paleógeno</h2>
             <p>El Paleógeno se divide en tres épocas principales:</p>
 
@@ -55,7 +83,7 @@
             </ul>
         </section>
 
-        <section  id="vidrio" class="recuperacion-postextincion efecto-recuperacion">
+        <section  class="vidrio">
             <h2>Recuperación Post-Extinción</h2>
             <p>
                 Tras la extinción de los dinosaurios no avianos, el planeta experimentó
@@ -65,7 +93,7 @@
             </p>
         </section>
 
-        <section id="vidrio" class="clima efecto-tierra">
+        <section class="vidrio">
             <h2>Clima</h2>
             <p>
                 El clima del Paleógeno fue generalmente <strong>cálido y húmedo</strong>,
@@ -75,7 +103,7 @@
             </p>
         </section>
 
-        <section id="vidrio" class="mamiferos mamiferos-paleogeno">
+        <section class="vidrio">
             <h2>La Radiación de los Mamíferos</h2>
             <p>
                 Los mamíferos, que habían existido como pequeños animales nocturnos durante
@@ -90,7 +118,7 @@
             </ul>
         </section>
 
-        <section id="vidrio" class="flora">
+        <section class="vidrio">
             <h2>Flora</h2>
             <p>
                 Las plantas con flores (angiospermas) continuaron diversificándose y
@@ -104,7 +132,7 @@
             </ul>
         </section>
 
-        <section id="vidrio" class="fauna">
+        <section class="vidrio">
             <h2>Fauna Característica</h2>
             <p>Además de los mamíferos, destacaron:</p>
             <ul>
@@ -115,7 +143,7 @@
             </ul>
         </section>
 
-        <section id="vidrio" class="eventos-importantes">
+        <section class="vidrio">
             <h2>Eventos Importantes</h2>
             <ul>
                 <li><strong>Máximo Térmico del Paleoceno-Eoceno</strong> - Calentamiento global abrupto</li>
@@ -125,7 +153,7 @@
             </ul>
         </section>
 
-        <section id="vidrio" class="importancia">
+        <section class="vidrio">
             <h2>Importancia del Paleógeno</h2>
             <p>
                 El Paleógeno estableció las bases para el mundo moderno. Los mamíferos
@@ -144,9 +172,6 @@
 
     </main>
 
-    <footer class="footer">
-        <p>Reino Prehistórico - Proyecto Desarrollo Interfaces Web</p>
-    </footer>
 
 </body>
 

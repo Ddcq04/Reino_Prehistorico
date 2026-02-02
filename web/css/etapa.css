@@ -1,1023 +1,936 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* ========== RESET Y BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
 
 body {
-  background: #f7f9fc;
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    min-height: 100vh;
+    position: relative;
+    background: #1a1a2e;
 }
 
-h1 {
-  font-family: "Bebas Neue", sans-serif;
-  padding: 0px 11px 0px 13px;
-  font-size: 2.3rem;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  color: #f0f0f0;
-  position: relative;
-  z-index: 2;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-
-}
-
-/* LOGO-------------------- --------------------------------------- */
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-}
-
-.logo img {
-  width: 5rem;
-  height: auto;
-
-}
-
-header {
-  background-color: hsl(131, 44%, 27%);
-  width: 100%;
-  padding: 20px 0;
-  border-bottom: 3px solid rgb(255, 255, 255);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-header h1 {
-  text-align: center;
-  font-size: 2.3rem;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  color: #f0f0f0;
-  margin: 0;
-  padding: 0;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-}
-
-header h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  color: white;
-  margin: 0.5rem 0 1rem 0;
-  padding: 0;
-  font-weight: 400;
-}
-
-nav {
-  position: center;
-  top: 7rem;
-  width: 100%;
-  font-family: "Roboto";
-
-  margin-top: 7rem;
-  max-width: 100%;
-  z-index: 10;
-  margin: 0;
-  padding: 1rem 0;
-  font-size: 1.7rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 0 1rem;
-  margin: 0;
-  gap: 70px;
-
-}
-
-
-
-nav ul li:hover {
-
-  background-color: hsla(231, 68%, 37%, 0.8);
-
-  background-color: hsla(229, 95%, 48%, 0.153);
-
-  transform: scale(1.10);
-}
-
-nav ul li:active {
-  transform: scale(1.05);
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
-}
-
-nav ul li a:hover {
-  text-decoration: none;
-}
-
-/*FIN NAVEGACION*/
-
-
-
+/* ========== FONDO DE VIDEO ========== */
 .video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
 }
 
 #bg-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-body#eraMesozoico,
-body#eraHielo {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
+/* ========== HEADER GENERAL ========== */
 header {
-  text-align: center;
-  background: transparent;
-  color: white;
-  padding: 2rem 1rem;
-  position: relative;
-  z-index: 1;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-  display: inline-block;
+/* ========== LOGO ========== */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 0;
+    margin-bottom: 10px;
 }
 
-nav ul li a:hover {
-  text-decoration: none;
+.logo img {
+    width: 70px;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
 }
 
-body#eraMesozoico,
-body#eraHielo {
-  background-image: url("../videos/etapa-video.mp4");
-  background-repeat: no-repeat;
-  /* evita el mosaico */
-  background-size: cover;
-  /* hace que cubra toda la pantalla */
-  background-position: center;
-  /* centra la imagen */
-  background-attachment: fixed;
-
+.logo-center h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.5rem;
+    color: #FFD700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-
-header {
-  text-align: center;
-  background: rgba(0, 137, 191, 0.1);
-  color: rgb(207, 160, 160);
-  padding: 1.5rem 1rem;
+#eraHielo .logo-center h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3.5rem;
+    color: #87CEEB;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-header h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  color: white;
-  margin: 0.8rem 0 1.5rem 0;
-  padding: 0;
-  font-weight: 400;
-  letter-spacing: 1px;
+.subtitu {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 1.5rem auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 2rem;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    position: relative;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 45%;
+    max-width: 1000px;
+    display: block;
 }
 
-.reini {
-  margin: 0;
-  font-size: 3.8rem;
-  letter-spacing: 7px;
-  line-height: 1.2;
+/* Era Mesozoica - Estilo dorado */
+#eraMesozoico .subtitu {
+    color: #FFD700;
+    background: linear-gradient(135deg, 
+        rgba(184, 134, 11, 0.3), 
+        rgba(139, 69, 19, 0.3));
+    border: 3px solid rgba(255, 215, 0, 0.5);
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(255, 215, 0, 0.5);
 }
 
+/* Era Cenozoica - Estilo azul glaciar */
+#eraHielo .subtitu {
+    color: #87CEEB;
+    background: linear-gradient(135deg, 
+        rgba(70, 130, 180, 0.3), 
+        rgba(135, 206, 235, 0.3));
+    border: 3px solid rgba(135, 206, 235, 0.5);
+    text-shadow: 
+        2px 2px 4px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(135, 206, 235, 0.5);
+}
+
+/* ========== MENÚ HAMBURGUESA ========== */
+#menu-ancla {
+    display: none !important;
+}
+
+.hamburguesa {
+    display: none;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    width: 65px;
+    height: 65px;
+    background: hsl(131, 44%, 27%);
+    border: 3px solid #FFD700;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1001;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+#eraHielo .hamburguesa {
+    border-color: #87CEEB;
+}
+
+.hamburguesa .bar {
+    width: 35px;
+    height: 5px;
+    background: white;
+    margin: 4px 0;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.hamburguesa .menu-text {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 6px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 998;
+}
+
+/* ========== NAVEGACIÓN ESCRITORIO ========== */
+/* CORRECCIÓN: Eliminar los márgenes y posiciones problemáticas */
+.menu-mezo nav,
+.menu-ceno nav {
+    display: block;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1.2rem 0;
+    border-top: 4px solid #FFD700;
+    border-bottom: 4px solid #FFD700;
+    z-index: 100;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu-ceno nav {
+    border-top: 4px solid #87CEEB;
+    border-bottom: 4px solid #87CEEB;
+}
+
+/* CORRECCIÓN: Centrar el menú de navegación */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; /* Reducido de 90px para mejor ajuste */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.nav-menu li a {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
+    white-space: nowrap; /* Evita que los textos se dividan */
+}
+
+.nav-menu li a:hover {
+    background: linear-gradient(135deg, #FFD700, #FFC300);
+    color: #000;
+    border: 2px solid white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+}
+
+#eraHielo .nav-menu li a {
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.15), rgba(135, 206, 235, 0.05));
+}
+
+#eraHielo .nav-menu li a:hover {
+    background: linear-gradient(135deg, #87CEEB, #87CEEB);
+    color: #000;
+    border: 2px solid white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(135, 206, 235, 0.4);
+}
+
+/* ========== CONTENIDO PÁGINAS DE PERIODOS ========== */
+.contenido {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* ESTILO VIDRIO PARA TODAS LAS SECCIONES */
+.vidrio {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+    will-change: transform;
+    isolation: isolate;
+}
+
+/* Fondo sutil con imagen para efecto vidrio */
+.vidrio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/fondoMesozoico.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.vidrio:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 215, 0, 0.5);
+}
+
+.vidrio h2 {
+    color: #FFD700;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 3px solid rgba(255, 215, 0, 0.5);
+    padding-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.vidrio p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: #f0f0f0;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.vidrio ul {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.vidrio li {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.vidrio strong {
+    color: #FFD700;
+    font-weight: bold;
+}
+
+#eraHielo .vidrio {
+    border: 2px solid rgba(135, 206, 235, 0.3);
+}
+
+#eraHielo .vidrio:hover {
+    border-color: rgba(135, 206, 235, 0.5);
+}
+
+#eraHielo .vidrio h2 {
+    color: #87CEEB;
+    border-bottom: 3px solid rgba(135, 206, 235, 0.5);
+}
+
+#eraHielo .vidrio strong {
+    color: #87CEEB;
+}
+
+#eraHielo .vidrio::before {
+    background-image: url('../img/fondoCenozoico2.jpg');
+}
+
+#eraMesozoico .vidrio {
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+#eraMesozoico .vidrio:hover {
+    border-color: rgba(255, 215, 0, 0.5);
+}
+
+#eraMesozoico .vidrio h2 {
+    color: #FFD700;
+    border-bottom: 3px solid rgba(255, 215, 0, 0.5);
+}
+
+#eraMesozoico .vidrio strong {
+    color: #FFD700;
+}
+
+/* ========== NAVEGACIÓN CENTRADA ========== */
+.navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(255, 215, 0, 0.3);
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.navegacion a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.2), rgba(184, 134, 11, 0.2));
+    color: #FFD700;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 215, 0, 0.4);
+    transition: all 0.3s ease;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-align: center;
+    white-space: nowrap;
+    min-width: 200px;
+}
+
+.navegacion a:hover {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.4), rgba(184, 134, 11, 0.4));
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+/* Para Era Cenozoica */
+#eraHielo .navegacion {
+    border-top: 2px solid rgba(135, 206, 235, 0.3);
+}
+
+#eraHielo .navegacion a {
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.2), rgba(70, 130, 180, 0.2));
+    color: #87CEEB;
+    border: 2px solid rgba(135, 206, 235, 0.4);
+}
+
+#eraHielo .navegacion a:hover {
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.4), rgba(70, 130, 180, 0.4));
+    box-shadow: 0 5px 15px rgba(135, 206, 235, 0.2);
+}
+
+/* ========== TIMELINE GENERAL ========== */
 .timeline {
-  position: relative;
-  margin: 2rem auto;
-  padding: 2rem 0;
-  width: 100%;
-  max-width: 800px;
+    position: relative;
+    margin: 3rem auto;
+    padding: 2rem 0;
+    width: 90%;
+    max-width: 1200px;
 }
 
 .timeline::before {
-  content: "";
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  width: 4px;
-  height: 90%;
-  background: #0078d4;
-  transform: translateX(-50%);
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 6px;
+    height: 90%;
+    transform: translateX(-50%);
 }
 
 .timeline-item {
-  position: relative;
-  width: 50%;
-  padding: 1.5rem;
-  box-sizing: border-box;
+    position: relative;
+    width: 45%;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
-
 .timeline-content {
-  background: white;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
 }
 
 .timeline-item::after {
-  content: "";
-  position: absolute;
-  top: 1.5rem;
-  width: 15px;
-  height: 15px;
-  background: #0078d4;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 0 3px #0078d4;
+    content: "";
+    position: absolute;
+    top: 2rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
 }
 
 .timeline-item:nth-child(odd)::after {
-  right: -9px;
+    right: -12px;
+}
+
+.timeline-item:nth-child(even) {
+    left: 55%;
 }
 
 .timeline-item:nth-child(even)::after {
-  left: -9px;
+    left: -12px;
 }
-
-
 
 .timeline-item.center-item {
-  width: 100%;
-  display: flex;
- justify-content: center;
-  margin: 30px 0;
-
-}
-
-
-.timeline-item.center-item.btn-eras {
-  font-size: 3em;
-  letter-spacing: 7px;
-
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 30px 0;
- 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    left: 0;
+    text-align: center;
 }
 
 .timeline-item.center-item .timeline-content {
-  width: 50%;
-  text-align: center;
+    width: 100%;
+    padding: 2.5rem;
 }
 
 .timeline-item.center-item::after {
-  display: none;
+    display: none;
 }
 
-.timeline-item:nth-child(odd):not(.center-item) {
-  left: 0;
-  text-align: right;
+/* ========== TEXTO TIMELINE ========== */
+.erah2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.timeline-item:nth-child(even):not(.center-item) {
-  left: 50%;
+.timeline-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1.5px;
 }
 
-.timeline-item.center-item {
-  width: 100%;
-  display: flex;
-  text-align: center;
-  margin: 30px 0;
+.timeline-content p {
+    font-size: 1.3rem;
+    color: #f0f0f0;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
-
-.timeline-item.center-item .timeline-content {
-  width: 50%;
-  text-align: center;
-}
-
-.timeline-item.center-item .timeline-content h2 {
-  font-size: 2.8rem;
-  /* Aumenta el tamaño */
-  margin-bottom: 1rem;
-  color: #FFD700;
-  /* Destacar con dorado */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.timeline-item.center-item .timeline-content p {
-  font-size: 1.3rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  text-align: justify;
-  padding: 0 1rem;
-}
-
-.timeline-item.center-item .timeline-content ul {
-  padding-left: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.timeline-item.center-item .timeline-content li {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.5;
-}
-
-.timeline-item.center-item .timeline-content li a {
-  font-size: 1.3rem;
-  color: #FFD700;
-  text-decoration: none;
-  padding: 5px 0;
-  display: inline-block;
-  transition: all 0.3s ease;
-}
-
-.timeline-item.center-item .timeline-content li a:hover {
-  color: #FFE55C;
-  transform: translateX(5px);
-}
-
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 0.5rem 0;
-}
-
-ul li a {
-  color: #0853e8;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  text-decoration: underline;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #0078d4;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn:hover {
-  background: #005fa3;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #010d3e;
-  color: white;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-}
-
-/*FONDO MESOZOICO.HTML*/
-.timeline-content {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../web/img/fondoMesozoico.jpg");
-  background-repeat: no-repeat;
-  /* evita el mosaico */
-  background-size: cover;
-  /* hace que cubra toda la pantalla */
-  background-position: center;
-  /* centra la imagen */
-  background-attachment: fixed;
-  color: #ffffff;
-
-}
-
-/*FONDO CENOZOICO*/
-#eraHielo .timeline-content {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/fondoCenozoico2.jpg");
-  background-repeat: no-repeat;
-  /* evita el mosaico */
-  background-size: cover;
-  /* hace que cubra toda la pantalla */
-  background-position: center;
-  /* centra la imagen */
-  background-attachment: fixed;
-  color: #ffffff;
-
-}
-
-
-.timeline-content .btn {
-  display: inline-block;
-  padding: 12px 28px;
-  background-color: #8B7355;
-
-  color: #FFD700;
-
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
-  border: 2px solid #654321;
-  transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.timeline-content .btn:hover {
-  background-color: #654321;
-  color: #FFE55C;
-  transform: scale(1.05);
-}
-
-
 
 .timeline-content ul {
-  list-style: none;
-  padding-left: 0;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .timeline-content li {
-  margin: 10px 0;
-}
-
-.timeline-content ul a {
-  color: #FFD700;
-  text-decoration: none;
-  font-size: 1.1em;
-  padding: 5px 0;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.timeline-content ul a:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #FFD700;
-  transition: width 0.3s ease;
-}
-
-.timeline-content ul a:hover {
-  color: #FFE55C;
-}
-
-.timeline-content ul a:hover:before {
-  width: 100%;
-}
-
-
-/*ETAPA TRIASICO.html*/
-
-body {
-  font-size: 1.2rem;
-}
-
-
-
-.contenido {
-  background-image: url("../../web/videos/videologin/vid1.mp4");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-
-}
-
-
-
-
-
-header {
-
-  font-family: 'JurassicPark', sans-serif;
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  text-align: center;
-    padding: 0.5rem 0.5rem;
-  text-shadow: none;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-header h1 {
-  letter-spacing: 7px;
-  font-size: 4.5rem;
-  color: #004324 !important;
-  text-shadow:
-    3px 3px 0 #ffffff,
-    0 0 15px #024d00;
-}
-
-.contenido {
-
-  background-size: cover;
-  background-position: center;
-
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem;
-}
-
-#vidrio {
-    position: relative;
-    overflow: hidden;
-
-    /*background-image: url("../../web/img/fondoeras.png");
-    */background-size: cover;
-    background-position: center;
-
-    color: #ffffff;
-    padding: 0.25rem 0.6rem;
-    margin-bottom: 1rem;
-    border-radius: 14px;
-  
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
-
-}
-#vidrio::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-background: rgba(20, 60, 40, 0.35); 
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(10px);
-
-    z-index: 0;
-}
-
-#vidrio > * {
-    position: relative;
-    z-index: 1;
-}
-
-
-.contenido section {
-
-  background-attachment: fixed;
-  color: #ffffff;
-  padding: 0.1rem 0.5rem 0.5rem 0.5rem;
-/* arriba | derecha | abajo | izquierda */
-  margin-bottom: 1rem;
-  border-radius: 12px;
-  backdrop-filter: blur(20px);
-
-}
-#vidrio h2 {
-    color: #7ae088;
-    line-height: 1.6;
-
-        text-shadow: 1px 1px 2px rgb(1, 83, 46); /* sombra para destacar el texto */
-
-}
-
-.contenido h2 {
- /* border-left: 5px solid #ffa9800;*/
-  padding-left: 10px;
-  margin-bottom: 0.8rem;
-}
-
-.erah2 {
-  text-align: center;
-    color: #FFD700;
-
-}
-.centroEtapas {
-  text-align: center;
-
-
-}
-
-h2 {
-  color: #FFD700;
-}
-
-p {
-  font-size: 1.5rem;
-  color: #f4f4f4;
-}
-
-ul {
-  padding-left: 1.5rem;
-  color: #ffffff;
-
-}
-
-li {
-  margin-bottom: 0.4rem;
-}
-
-.navegacion {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
-
-.navegacion a {
-  text-decoration: none;
-  color: #ff9800;
-  font-weight: bold;
-}
-
-.footer {
-  text-align: center;
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.6);
-  margin-top: 2rem;
-}
-
-/*--------FIN TRIASICO.HMTL-------------------*/
-
-
-
-
-/*ETAPA CRETACICA*/
-
-.header h1 {
-  color: #FF5252;
-  text-shadow:
-    3px 3px 0 #ffffff,
-    0 0 15px rgb(255, 255, 255);
-}
-
-/*
-.contenido section {
-  border-left: 5px solid #FF5252;
-}
-*/
-.contenido h2 {
-  color: #ffffff;
-}
-
-.navegacion a {
-  border-color: #FF5252;
-  color: #ffffff;
-  
-  text-shadow:
-    3px 3px 0 #027f68,
-    0 0 15px rgb(255, 255, 255);
-  
-  
-}
-
-
-
-/* extinción */
-.extincion {
-  background: linear-gradient(135deg,
-      rgba(255, 82, 82, 0.15),
-      rgba(139, 0, 0, 0.1));
-  border: 2px solid #FF5252;
-  position: relative;
-  overflow: hidden;
-}
-
-.extincion:before {
-  content: "💥";
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  font-size: 3rem;
-  opacity: 0.3;
-  transform: rotate(25deg);
-}
-
-/*
-.fauna-cretacica {
-  /*background: linear-gradient(135deg,
-      rgba(255, 152, 0, 0.1),
-      rgba(255, 82, 82, 0.1));
-  /*border-left: 5px solid #FF9800;
-  border-right: 5px solid #FF5252;
-/}
-*/
-
-
-/* ==========MENÚ HAMBURGUESA  ========== */
-
-.menu-ancla {
-  display: none;
-}
-
-.hamburguesa {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 10px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-  background-color: hsl(131, 44%, 27%);
-  border-radius: 5px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  min-width: 60px;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 3px 0;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-.menu-text {
-  color: white;
-  font-size: 0.8rem;
-  margin-top: 5px;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.menu-ancla:checked~.nav-menu {
-  transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu-ancla:checked~.overlay {
-  opacity: 1;
-  visibility: visible;
-}
-
-.menu-ancla:checked+.hamburguesa .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-ancla:checked+.hamburguesa .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-ancla:checked+.hamburguesa .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
-}
-
-.menu-ancla:checked+.hamburguesa .menu-text {
-  color: #FFD700;
-  /* Cambia color del texto cuando está activo */
-}
-
-/* Estilos del menú desplegable */
-.nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 0 1rem;
-  margin: 0;
-  gap: 70px;
-  transition: all 0.3s ease;
-}
-
-/* Overlay */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 998;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-}
-
-/* ========== MENÚ HAMBURGUESA========== */
-
-/* Ocultar checkbox */
-.menu-ancla {
-  display: none;
-}
-
-/* Botón hamburguesa en móvil */
-.hamburguesa {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  padding: 12px;
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  z-index: 1000;
-  background-color: hsl(14, 100%, 44%);
-  border-radius: 8px;
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  width: 50px;
-  height: 50px;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 3px 0;
-  border-radius: 2px;
-  transition: 0.3s;
-}
-
-/* Animación  botón X */
-.menu-ancla:checked+.hamburguesa .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-ancla:checked+.hamburguesa .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-ancla:checked+.hamburguesa .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
-}
-
-.nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  padding: 0 1rem;
-  margin: 0;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(130, 8, 8, 0.5);
-  z-index: 998;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-}
-
-
-/* MÓVIL (hasta 767px) */
-@media screen and (max-width: 767px) {
-  header {
-    padding: 60px 15px 20px 15px !important;
-    min-height: auto;
-  }
-
-  header h1.reini {
-    font-size: 2.2rem !important;
-    letter-spacing: 3px !important;
-    line-height: 1.3;
-    margin-top: 10px;
-    padding: 0;
-  }
-
-  header h2 {
-    font-size: 1.3rem !important;
-    margin: 0.5rem 0 1rem 0 !important;
-  }
-
-  .hamburguesa {
-    display: flex;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 280px;
-    height: 100vh;
-    background-color: hsl(131, 44%, 27%);
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 80px;
-    gap: 0;
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 999;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
-  }
-
-  .menu-ancla:checked~.nav-menu {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .menu-ancla:checked~.overlay {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-menu li {
-    width: 100%;
-    padding: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .nav-menu li a {
-    display: block;
-    padding: 18px 20px;
     font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-  }
+    margin-bottom: 0.8rem;
+    color: #f0f0f0;
+}
 
-  .nav-menu li a:hover {
-    background-color: hsla(231, 68%, 37%, 0.8);
-  }
-
-  .timeline::before {
-    left: 20px;
-    height: 95%;
-    top: 5%;
-    transform: none;
-  }
-
-  .timeline-item {
-    width: 100% !important;
-    left: 0 !important;
-    padding: 1rem 1rem 1rem 50px !important;
-    text-align: left !important;
-  }
-
-  .timeline-item::after {
-    left: 12px !important;
-    right: auto !important;
-  }
-
-  .timeline-item.center-item .timeline-content {
-
-    width: 95% !important;
-    padding: 1.5rem !important;
-  }
-
-  .timeline-item.center-item .timeline-content h2 {
-    font-size: 1.8rem !important;
-  }
-
-  .timeline-item.center-item .timeline-content p {
-    font-size: 1.1rem !important;
-    line-height: 1.5;
+.centroEtapas {
+    text-align: center;
+    list-style: none;
     padding: 0;
-  }
-
-  .timeline-item.center-item .timeline-content li {
-    font-size: 1.1rem !important;
-  }
 }
 
-/* TABLET (768px a 1023px) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+.centroEtapas li {
+    margin: 15px 0;
+}
 
-  .hamburguesa,
-  .overlay {
-    display: none !important;
-  }
-
-  .nav-menu {
-    display: flex;
-    gap: 40px;
-  }
-
-  .nav-menu li {
+.centroEtapas li a {
+    text-decoration: none;
     font-size: 1.6rem;
-  }
-
-  .timeline-item.center-item .timeline-content {
-    width: 70% !important;
-  }
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
 }
 
-/* ESCRITORIO (más de 1024px) */
-@media screen and (min-width: 1024px) {
+/* ========== BOTONES ========== */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: "Bebas Neue", sans-serif;
+    text-transform: uppercase;
+}
 
-  .hamburguesa,
-  .overlay {
-    display: none !important;
-  }
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
 
-  .nav-menu {
+/* ========== ERA MESOZOICA ========== */
+#eraMesozoico .timeline-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../web/img/fondoMesozoico.jpg");
+    border: 2px solid rgba(255, 215, 0, 0.4);
+}
+
+#eraMesozoico .timeline::before {
+    background: linear-gradient(to bottom, #FFD700, #B8860B);
+}
+
+#eraMesozoico .timeline-item::after {
+    background: #FFD700;
+    box-shadow: 0 0 0 4px #B8860B;
+}
+
+#eraMesozoico .erah2,
+#eraMesozoico .timeline-content h2 {
+    color: #FFD700;
+}
+
+#eraMesozoico .centroEtapas li a {
+    color: #FFD700;
+    background: rgba(255, 215, 0, 0.15);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+}
+
+#eraMesozoico .centroEtapas li a:hover {
+    color: #000;
+    background: #FFD700;
+    border-color: #FFD700;
+}
+
+#eraMesozoico .btn {
+    background: linear-gradient(135deg, #FFD700, #B8860B);
+    color: #000;
+    border: 3px solid #8B7355;
+}
+
+#eraMesozoico .btn:hover {
+    background: linear-gradient(135deg, #B8860B, #FFD700);
+    color: #000;
+}
+
+/* ========== ERA CENOZOICA ========== */
+#eraHielo .timeline-content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../web/img/fondoCenozoico2.jpg");
+    border: 2px solid rgba(135, 206, 235, 0.4);
+}
+
+#eraHielo .timeline::before {
+    background: linear-gradient(to bottom, #87CEEB, #4682B4);
+}
+
+#eraHielo .timeline-item::after {
+    background: #87CEEB;
+    box-shadow: 0 0 0 4px #4682B4;
+}
+
+#eraHielo .erah2,
+#eraHielo .timeline-content h2 {
+    color: #87CEEB;
+}
+
+#eraHielo .subtitu {
+    color: #87CEEB;
+    border-color: rgba(135, 206, 235, 0.3);
+}
+
+#eraHielo .centroEtapas li a {
+    color: #87CEEB;
+    background: rgba(135, 206, 235, 0.15);
+    border: 2px solid rgba(135, 206, 235, 0.3);
+}
+
+#eraHielo .centroEtapas li a:hover {
+    color: #000;
+    background: #87CEEB;
+    border-color: #87CEEB;
+}
+
+#eraHielo .btn {
+    background: linear-gradient(135deg, #87CEEB, #4682B4);
+    color: #000;
+    border: 3px solid #2F4F4F;
+}
+
+#eraHielo .btn:hover {
+    background: linear-gradient(135deg, #4682B4, #87CEEB);
+    color: #000;
+}
+
+/* ========== CARRUSEL SIMPLE ========== */
+.carrusel-simple {
     display: flex;
-    gap: 70px;
-  }
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    margin: 1rem 0;
+    scroll-behavior: smooth;
+}
+
+.carrusel-simple img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.carrusel-simple img:hover {
+    transform: scale(1.05);
+}
+
+.carrusel-simple::-webkit-scrollbar {
+    display: none;
+}
+
+.carrusel-simple {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* ========== TARJETA FLIP ========== */
+.carta {
+    position: relative;
+    width: 200px;
+    height: 280px;
+    margin: 20px auto;
+    perspective: 1000px;
+}
+
+.carta div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carta .frente {
+    background-color: #bce1e1;
+    transform: rotateY(0deg);
+}
+
+.carta .detras {
+    background-color: #17262b;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.carta:hover .frente {
+    transform: rotateY(-180deg);
+}
+
+.carta:hover .detras {
+    transform: rotateY(0deg);
+}
+
+/* ========== MEDIA QUERIES MÓVIL ========== */
+@media screen and (max-width: 768px) {
+    .hamburguesa {
+        display: flex;
+    }
+    
+    .menu-mezo nav,
+    .menu-ceno nav {
+        position: fixed !important;
+        top: 0;
+        left: -100%;
+        width: 300px !important;
+        height: 100vh !important;
+        background: rgba(0, 0, 0, 0.95) !important;
+        margin: 0 !important;
+        padding: 100px 0 0 0 !important;
+        transition: left 0.4s ease !important;
+        z-index: 1000 !important;
+        border: none !important;
+        box-shadow: 5px 0 20px rgba(0,0,0,0.5) !important;
+        display: block !important;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        max-width: 100%;
+        height: 100%;
+        overflow-y: auto;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-menu li a {
+        display: block;
+        width: 100%;
+        padding: 20px 30px;
+        font-size: 1.5rem;
+        border-radius: 0 !important;
+        text-align: left;
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: white !important;
+    }
+    
+    .nav-menu li a:hover {
+        background: rgba(255, 215, 0, 0.2) !important;
+        transform: none !important;
+        color: white !important;
+    }
+    
+    #eraHielo .nav-menu li a:hover {
+        background: rgba(135, 206, 235, 0.2) !important;
+    }
+    
+    /* CORRECCIÓN CRÍTICA: Cuando el checkbox está marcado, mostrar menú */
+    #menu-ancla:checked ~ nav {
+        left: 0 !important;
+    }
+    
+    #menu-ancla:checked ~ .overlay {
+        display: block;
+    }
+    
+    /* Animación del botón hamburguesa a X */
+    #menu-ancla:checked + .hamburguesa .bar:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    #menu-ancla:checked + .hamburguesa .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #menu-ancla:checked + .hamburguesa .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -7px);
+    }
+    
+    /* Ajustar el header para móvil */
+    header {
+        padding-top: 100px !important;
+        padding-bottom: 20px !important;
+    }
+    
+    /* Ajustar el subtítulo para móvil */
+    .subtitu {
+        width: 90% !important;
+        font-size: 1.5rem !important;
+        margin: 1rem auto !important;
+    }
+    
+    /* Ajustar la timeline para móvil */
+    .timeline-item {
+        width: 100% !important;
+        left: 0 !important;
+        text-align: center !important;
+        padding: 1rem !important;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0 !important;
+    }
+    
+    .timeline-item::after {
+        display: none !important;
+    }
+    
+    .timeline::before {
+        display: none !important;
+    }
+    
+    /* Ajustar logo para móvil */
+    .logo {
+        gap: 20px !important;
+    }
+    
+    .logo img {
+        width: 50px !important;
+    }
+    
+    .logo-center h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    /* Ajustar navegación para móvil */
+    .navegacion {
+        flex-direction: column;
+        gap: 20px;
+        padding: 1.5rem;
+    }
+    
+    .navegacion a {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        white-space: normal;
+        padding: 15px 10px;
+        font-size: 1.1rem;
+        min-width: unset;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hamburguesa,
+    .overlay {
+        display: none !important;
+    }
+    
+    /* CORRECCIÓN: Asegurar que el nav en desktop esté centrado */
+    .menu-mezo nav,
+    .menu-ceno nav {
+        display: block !important;
+        position: relative !important;
+        width: 100% !important;
+        left: auto !important;
+        transform: none !important;
+        margin: 0 auto !important;
+    }
 }

@@ -16,20 +16,49 @@
     </video>
 </div>
 
-<header class="header">
+<header class="menu-mezo">
+  
+    
+
      <div class="logo">
-      <img src="../../web/img/home/logo1.png" alt="">
-      <h1>Periodo Jurasico</h1>
-      <img src="../../web/img/home/logo2.png" alt="">
-     
+    <img src="../../web/img/home/logo1.png" alt="">
+    <div class="logo-center">
+      <h1>PERIODO JURASICO</h1>
+      
     </div>
-   
-    <p>La Edad de Oro de los Dinosaurios</p>
+    <img src="../../web/img/home/logo2.png" alt="">
+  </div>
+
+    
+  
+
+    <input type="checkbox" id="menu-ancla" class="menu-ancla">
+    <label for="menu-ancla" class="hamburguesa">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="menu-text">Menú</span>
+    </label>
+
+    <div class="overlay"></div>
+
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="../home.php">Inicio</a></li>
+        <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
+        <li><a href="../Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+        <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
+        <li><a href="../mamiferos.php">Mamíferos</a></li>
+      </ul>
+    </nav>
+
+
 </header>
+  <p class="subtitu">La Edad de Oro de los Dinosaurios</p>
 
 <main class="contenido">
 
-    <section class="duracion" id="vidrio">
+    <section class="vidrio">
         <h2>Duración</h2>
         <p>
             El período Jurásico se extendió desde hace <strong>201 hasta 145 millones de años</strong>,
@@ -37,7 +66,7 @@
         </p>
     </section>
 
-    <section class="geografia" id="vidrio" >
+    <section class="vidrio">
         <h2>Geografía y continentes</h2>
         <p>
             Durante el Jurásico, el supercontinente <strong>Pangea comenzó a separarse</strong> en dos grandes masas:
@@ -45,7 +74,7 @@
         </p>
     </section>
 
-    <section class="clima" id="vidrio">
+    <section class="vidrio">
         <h2>Clima</h2>
         <p>
             El clima fue <strong>cálido y húmedo</strong> en general, con lluvias más abundantes que en el Triásico.
@@ -53,7 +82,7 @@
         </p>
     </section>
 
-    <section class="flora" id="vidrio">
+    <section class="vidrio">
         <h2>Flora</h2>
         <p>La vegetación se volvió más diversa y abundante:</p>
         <ul>
@@ -64,7 +93,7 @@
         </ul>
     </section>
 
-    <section class="fauna" id="vidrio">
+    <section class="vidrio">
         <h2>Fauna</h2>
         <p>
             Los dinosaurios alcanzaron su máximo esplendor y tamaño. Aparecieron gigantes como:
@@ -77,20 +106,20 @@
         </ul>
     </section>
 
-    <section class="mar-jurasico" id="vidrio">
+    <section class="vidrio">
         <h2>Vida marina</h2>
         <p>
             Los mares jurásicos estaban dominados por:
         </p>
         <ul>
-            <ol><strong>Ictiosaurios</strong> - reptiles marinos con forma de delfín</ol>
-            <ol><strong>Plesiosaurios</strong> - reptiles de cuello largo</ol>
-            <ol><strong>Cocodrilos marinos</strong></ol>
-            <ol><strong>Ammonites</strong> (moluscos) muy abundantes</ol>
+            <li><strong>Ictiosaurios</strong> - reptiles marinos con forma de delfín</li>
+            <li><strong>Plesiosaurios</strong> - reptiles de cuello largo</li>
+            <li><strong>Cocodrilos marinos</strong></li>
+            <li><strong>Ammonites</strong> (moluscos) muy abundantes</li>
         </ul>
     </section>
 
-    <section class="importancia" id="vidrio">
+    <section class="vidrio">
         <h2>Importancia del Jurásico</h2>
         <p>
             El Jurásico representa el <strong>punto álgido de los dinosaurios</strong>, donde alcanzaron su máxima
@@ -107,9 +136,6 @@
 
 </main>
 
-<footer class="footer">
-    <p>Reino Prehistórico - Proyecto Desarrollo Interfaces Web</p>
-</footer>
 
 </body>
 </html>

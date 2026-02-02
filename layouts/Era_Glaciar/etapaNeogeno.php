@@ -7,7 +7,7 @@
 
     <title>Neógeno - Era Cenozoica</title>
 </head>
-<body class="pagina-neogeno">
+<body id="eraHielo">
     
 <div class="video-background">
     <video autoplay muted loop id="bg-video">
@@ -16,21 +16,54 @@
     </video>
 </div>
 
-<header class="header">
 
-        <div class="logo">
+
+
+  <header class="menu-ceno">
+
+
+    <div class="logo">
       <img src="../../web/img/home/logo1.png" alt="">
-      <h1>Periodo Paleogeno</h1>
+      <div class="logo-center">
+        <h1 >Reino Prehistórico</h1>
+      </div>
       <img src="../../web/img/home/logo2.png" alt="">
-     
     </div>
 
-    <p>La Era de las Grandes Transformaciones y la Aparicion de los Primeros Homininos</p>
-</header>
+    
+    <input type="checkbox" id="menu-ancla" class="menu-ancla">
+    <label for="menu-ancla" class="hamburguesa">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="menu-text">Menú</span>
+    </label>
+
+    <div class="overlay"></div>
+
+
+    <nav >
+      <ul class="nav-menu">
+        <li><a href="home.php">Inicio</a></li>
+        <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
+        <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+        <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
+        <li><a href="mamiferos.php">Mamíferos</a></li>
+      </ul>
+    </nav>
+
+
+
+
+
+  </header>
+
+    <p class="subtitu">La Era de las Grandes Transformaciones y la Aparicion de los Primeros Homininos</p>
+
 
 <main class="contenido">
 
-    <section id="vidrio" class="duracion">
+    <section class="vidrio">
         <h2>Duración</h2>
         <p>
             El Neógeno abarcó desde hace <strong class="texto-neogeno">23 hasta 2.6 millones de años</strong>,
@@ -39,7 +72,7 @@
         </p>
     </section>
 
-    <section id="vidrio" class="divisiones">
+    <section class="vidrio">
         <h2>Divisiones del Neógeno</h2>
         <p>El Neógeno se divide en dos épocas principales:</p>
         
@@ -49,7 +82,7 @@
         </ul>
     </section>
 
-    <section id="vidrio" class="geografia efecto-montanas">
+    <section class="vidrio">
         <h2>Geografía y Orogénesis</h2>
         <p>
             Durante el Neógeno, los continentes continuaron su deriva hacia sus posiciones actuales.
@@ -63,7 +96,7 @@
         </ul>
     </section>
 
-    <section id="vidrio" class="clima">
+    <section class="vidrio">
         <h2>Clima</h2>
         <p>
             El clima del Neógeno se caracterizó por un <strong>enfriamiento global progresivo</strong>.
@@ -72,7 +105,7 @@
         </p>
     </section>
 
-    <section  id="vidrio" class="expansion-pastizales efecto-pastizales">
+    <section class="vidrio">
         <h2>Expansión de los Pastizales</h2>
         <p>
             Uno de los cambios más significativos fue la <strong>expansión global de las praderas y sabanas</strong>.
@@ -81,7 +114,7 @@
         </p>
     </section>
 
-    <section id="vidrio" class="megafauna-neogeno">
+    <section class="vidrio">
         <h2>Megafauna del Neógeno</h2>
         <p>
             Aparecieron grandes mamíferos en todos los continentes:
@@ -95,7 +128,7 @@
         </ul>
     </section>
 
-    <section id="vidrio" class="hominidos-neogeno">
+    <section class="vidrio">
         <h2>Aparición de los Homininos</h2>
         <p>
             A finales del Mioceno, en África, surgieron los primeros primates bípedos,
@@ -109,7 +142,7 @@
         </ul>
     </section>
 
-    <section  id="vidrio" class="vida-marina">
+    <section class="vidrio">
         <h2>Vida Marina</h2>
         <p>
             Los océanos del Neógeno vieron la evolución de:
@@ -122,7 +155,7 @@
         </ul>
     </section>
 
-    <section  id="vidrio" class="eventos-importantes">
+    <section class="vidrio">
         <h2>Eventos Importantes</h2>
         <ul>
             <li><strong>Gran Intercambio Americano</strong> (cuando se unieron las Américas)</li>
@@ -132,7 +165,7 @@
         </ul>
     </section>
 
-    <section  id="vidrio" class="importancia">
+    <section class="vidrio">
         <h2>Importancia del Neógeno</h2>
         <p>
             El Neógeno sentó las bases para el mundo moderno. La geografía, el clima y la
@@ -150,10 +183,6 @@
     </nav>
 
 </main>
-
-<footer class="footer">
-    <p>Reino Prehistórico - Proyecto Desarrollo Interfaces Web daw2</p>
-</footer>
 
 </body>
 </html>
