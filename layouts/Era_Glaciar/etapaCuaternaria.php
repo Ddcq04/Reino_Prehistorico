@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="../../web/css/etapa.css">
     <link rel="stylesheet" href="cuaternario.css">
     <title>Cuaternario - Era Cenozoica</title>
+      <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
+
 </head>
 <body id="eraHielo">
     

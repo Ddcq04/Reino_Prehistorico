@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* ========== RESET Y BASE ========== */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +22,6 @@ body {
     background: #1a1a2e;
 }
 
-/* ========== FONDO DE VIDEO ========== */
 .video-background {
     position: fixed;
     top: 0;
@@ -40,7 +38,6 @@ body {
     object-fit: cover;
 }
 
-/* ========== HEADER GENERAL ========== */
 header {
     text-align: center;
     position: relative;
@@ -50,7 +47,6 @@ header {
     backdrop-filter: blur(10px);
 }
 
-/* ========== LOGO ========== */
 .logo {
     display: flex;
     justify-content: center;
@@ -112,7 +108,6 @@ header {
     display: block;
 }
 
-/* Era Mesozoica - Estilo dorado */
 #eraMesozoico .subtitu {
     color: #FFD700;
     background: linear-gradient(135deg, 
@@ -124,7 +119,6 @@ header {
         0 0 10px rgba(255, 215, 0, 0.5);
 }
 
-/* Era Cenozoica - Estilo azul glaciar */
 #eraHielo .subtitu {
     color: #87CEEB;
     background: linear-gradient(135deg, 
@@ -193,7 +187,6 @@ header {
 }
 
 /* ========== NAVEGACIÓN ESCRITORIO ========== */
-/* CORRECCIÓN: Eliminar los márgenes y posiciones problemáticas */
 .menu-mezo nav,
 .menu-ceno nav {
     display: block;
@@ -212,13 +205,12 @@ header {
     border-bottom: 4px solid #87CEEB;
 }
 
-/* CORRECCIÓN: Centrar el menú de navegación */
 .nav-menu {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px; /* Reducido de 90px para mejor ajuste */
+    gap: 60px; 
     padding: 0;
     margin: 0 auto;
     max-width: 1200px;
@@ -238,10 +230,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     background: linear-gradient(135deg, rgba(255, 215, 0, 0.15), rgba(255, 215, 0, 0.05));
-    white-space: nowrap; /* Evita que los textos se dividan */
-}
-
-.nav-menu li a:hover {
+    white-space: nowrap; 
     background: linear-gradient(135deg, #FFD700, #FFC300);
     color: #000;
     border: 2px solid white;
@@ -268,7 +257,6 @@ header {
     padding: 0 1.5rem;
 }
 
-/* ESTILO VIDRIO PARA TODAS LAS SECCIONES */
 .vidrio {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(15px);
@@ -290,7 +278,6 @@ header {
     isolation: isolate;
 }
 
-/* Fondo sutil con imagen para efecto vidrio */
 .vidrio::before {
     content: '';
     position: absolute;
@@ -424,7 +411,6 @@ header {
     box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
 }
 
-/* Para Era Cenozoica */
 #eraHielo .navegacion {
     border-top: 2px solid rgba(135, 206, 235, 0.3);
 }
@@ -527,7 +513,6 @@ header {
     display: none;
 }
 
-/* ========== TEXTO TIMELINE ========== */
 .erah2 {
     text-align: center;
     font-size: 3rem;
@@ -584,7 +569,6 @@ header {
     letter-spacing: 1px;
 }
 
-/* ========== BOTONES ========== */
 .btn {
     display: inline-block;
     padding: 15px 35px;
@@ -697,7 +681,6 @@ header {
     color: #000;
 }
 
-/* ========== CARRUSEL SIMPLE ========== */
 .carrusel-simple {
     display: flex;
     gap: 10px;
@@ -831,7 +814,6 @@ header {
         background: rgba(135, 206, 235, 0.2) !important;
     }
     
-    /* CORRECCIÓN CRÍTICA: Cuando el checkbox está marcado, mostrar menú */
     #menu-ancla:checked ~ nav {
         left: 0 !important;
     }
@@ -840,7 +822,6 @@ header {
         display: block;
     }
     
-    /* Animación del botón hamburguesa a X */
     #menu-ancla:checked + .hamburguesa .bar:nth-child(1) {
         transform: rotate(45deg) translate(6px, 6px);
     }
@@ -853,20 +834,17 @@ header {
         transform: rotate(-45deg) translate(8px, -7px);
     }
     
-    /* Ajustar el header para móvil */
     header {
         padding-top: 100px !important;
         padding-bottom: 20px !important;
     }
     
-    /* Ajustar el subtítulo para móvil */
     .subtitu {
         width: 90% !important;
         font-size: 1.5rem !important;
         margin: 1rem auto !important;
     }
     
-    /* Ajustar la timeline para móvil */
     .timeline-item {
         width: 100% !important;
         left: 0 !important;
@@ -886,7 +864,6 @@ header {
         display: none !important;
     }
     
-    /* Ajustar logo para móvil */
     .logo {
         gap: 20px !important;
     }
@@ -899,7 +876,6 @@ header {
         font-size: 2.5rem !important;
     }
     
-    /* Ajustar navegación para móvil */
     .navegacion {
         flex-direction: column;
         gap: 20px;
@@ -923,7 +899,6 @@ header {
         display: none !important;
     }
     
-    /* CORRECCIÓN: Asegurar que el nav en desktop esté centrado */
     .menu-mezo nav,
     .menu-ceno nav {
         display: block !important;

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../web/css/etapa.css">
-    <!-- falta css de paelogeno creo  -->
     <link rel="stylesheet" href="paleogeno.css">
         <link rel="stylesheet" href="../Era_Glaciar/query.css">
+  <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
 
     <title>Paleógeno - Era Cenozoica</title>
 </head>

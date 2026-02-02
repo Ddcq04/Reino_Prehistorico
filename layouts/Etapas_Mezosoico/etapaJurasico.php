@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../web/css/etapa.css">
     <title>Período Jurásico - Reino Prehistórico</title>
+      <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
+
 </head>
 <body>
     

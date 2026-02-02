@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../web/css/etapa.css">
+      <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
 
     <title>Neógeno - Era Cenozoica</title>
 </head>

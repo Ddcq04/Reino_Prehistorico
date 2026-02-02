@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../web/css/etapa.css">
+    <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
 
   <title>Document</title>
 </head>
@@ -113,7 +114,6 @@
     </section>
 
     <nav class="navegacion">
-      <a href=""></a>
       <a href="../../layouts/etapaMesozoico.php">← Línea de tiempo</a>
       <a href="../Etapas_Mezosoico/etapaJurasico.php">Siguiente: Jurásico →</a>
     </nav>
