@@ -211,10 +211,10 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
             <div class="content">
                 <h2>Enlaces de interés</h2>
                 <ul>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Novedades</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="https://www.instagram.com/">Sobre nosotros</a></li>
+                    <li><a href="https://www.nationalgeographic.com.es/ciencia" target="_blank">Novedades</a></li>
+                    <li><a href="https://github.com/Ddcq04/Gestor_biblioteca">Proyectos</a></li>
+                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=tu-dinoConsulta@gmail.com&su=Consulta sobre Dinosaurios" target="_blank">Contacto</a></li>
                 </ul>
             </div>
 
