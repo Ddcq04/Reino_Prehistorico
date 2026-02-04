@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             break;
         case "cerrar_sesion":
-            if(isset($_SESSION["usuario"])) {
+            if(isset($_SESSION["usuario"]) || isset($_SESSION["invitado"])) {
                 session_destroy();
                 header("Location: layouts/inicioform.php");
                 exit();
