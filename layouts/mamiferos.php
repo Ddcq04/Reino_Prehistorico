@@ -12,6 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animales de la Edad del Hielo</title>
+  <link rel="stylesheet" href="../web/css/menuHamburguesa.css">
   <link rel="stylesheet" href="../web/css/mamiferos.css">
   <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
 </head>

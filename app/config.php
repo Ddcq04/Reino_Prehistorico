@@ -48,9 +48,9 @@ class AccesoDatos {
         $this->stmt_dinosaurio = $this->dbh->prepare("select e.nombre as nombre_era, p.nombre as nombre_periodo, d.* 
                                                         from dinosaurio d join periodo p on d.id_periodo = p.id join era e on e.id = p.id_era 
                                                         where d.id =:id_dinosaurio");
-        $this->stmt_creauser  = $this->dbh->prepare("insert into Usuario (nombre,hash_contrasena,correo) values(?,?,?)");
-        $this->stmt_usuario   = $this->dbh->prepare("select * from Usuario where nombre = :nombre_usuario");
-        $this->stmt_añadirvoto   = $this->dbh->prepare("insert into Voto (id_usuario, id_dinosaurio) values(:id_usuario, :id_dinosaurio)");
+        $this->stmt_creauser  = $this->dbh->prepare("insert into usuario (nombre,hash_contrasena,correo) values(?,?,?)");
+        $this->stmt_usuario   = $this->dbh->prepare("select * from usuario where nombre = :nombre_usuario");
+        $this->stmt_añadirvoto   = $this->dbh->prepare("insert into voto (id_usuario, id_dinosaurio) values(:id_usuario, :id_dinosaurio)");
         $this->stmt_comprobarvoto = $this->dbh->prepare("select * from voto where id_usuario =:id_usuario and id_dinosaurio =:id_dinosaurio");
         } catch ( PDOException $e){
             echo " Error al crear la sentencias ".$e->getMessage();

@@ -1,17 +1,17 @@
 -------------------CREACION DE TABLAS-----------------
-CREATE TABLE Era (
+CREATE TABLE era (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50) UNIQUE NOT NULL
 );
 
-CREATE TABLE Periodo (
+CREATE TABLE periodo (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
     id_era INT NOT NULL,
-    FOREIGN KEY (id_era) REFERENCES Era(id) ON DELETE RESTRICT
+    FOREIGN KEY (id_era) REFERENCES era(id) ON DELETE RESTRICT
 );
 
-CREATE TABLE Dinosaurio (
+CREATE TABLE dinosaurio (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL,
     id_periodo INT NOT NULL,
@@ -22,26 +22,26 @@ CREATE TABLE Dinosaurio (
     familia VARCHAR(50) NOT NULL,
     especie VARCHAR(100) NOT NULL,
     tipo VARCHAR(20) NOT NULL,
-    FOREIGN KEY (id_periodo) REFERENCES Periodo(id) ON DELETE RESTRICT
+    FOREIGN KEY (id_periodo) REFERENCES periodo(id) ON DELETE RESTRICT
 );
 
-CREATE TABLE Usuario (
+CREATE TABLE usuario (
     id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(50) NOT NULL,
     hash_contrasena VARCHAR(255) NOT NULL,
     correo VARCHAR(100) NOT NULL
 );
 
-CREATE TABLE Voto (
+CREATE TABLE voto (
     id_usuario INT NOT NULL,
     id_dinosaurio INT NOT NULL,
     PRIMARY KEY (id_usuario, id_dinosaurio),
-    FOREIGN KEY (id_usuario) REFERENCES Usuario(id) ON DELETE CASCADE,
-    FOREIGN KEY (id_dinosaurio) REFERENCES Dinosaurio(id) ON DELETE CASCADE
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id) ON DELETE CASCADE,
+    FOREIGN KEY (id_dinosaurio) REFERENCES dinosaurio(id) ON DELETE CASCADE
 );
 
 ------------------INSERCION DE DATOS-------------------
-INSERT INTO Era(nombre) VALUES ("Mesozoico"),("Cenozoico");
+INSERT INTO era(nombre) VALUES ("Mesozoico"),("Cenozoico");
 INSERT INTO Periodo (nombre, id_era) VALUES 
 ('Triásico', 1), 
 ('Jurásico', 1), 
@@ -50,7 +50,7 @@ INSERT INTO Periodo (nombre, id_era) VALUES
 ('Neógeno', 2),
 ('Cuaternario', 2);
 --DINOSAURIOS--
-INSERT INTO Dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion, agresividad, familia, especie, tipo) VALUES
+INSERT INTO dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion, agresividad, familia, especie, tipo) VALUES
 -- Terrestres --
 ('Tiranosaurio Rex', 3, 'Hace 68-66 millones de años', 'Oeste de Norteamérica', 'Carnívoro', 4, 'Tyrannosauridae', 'Tyrannosaurus rex', 'Terrestre'),
 ('Triceratops', 3, 'Hace 68-66 millones de años', 'Norteamérica', 'Herbívoro', 2, 'Ceratopsidae', 'Triceratops horridus', 'Terrestre'),
@@ -92,7 +92,7 @@ INSERT INTO Dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion
 ('Nyctosaurus', 3, 'Hace 85-84 millones de años', 'Norteamérica', 'Piscívoro', 1, 'Nyctosauridae', 'Nyctosaurus gracilis', 'Volador');
 
 --MAMIFEROS--
-INSERT INTO Dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion, agresividad, familia, especie, tipo) VALUES
+INSERT INTO dinosaurio (nombre, id_periodo, tiempo_vida, ubicacion, alimentacion, agresividad, familia, especie, tipo) VALUES
 --voladores-- 
 ('Teratornítido', 6, 'Hace 1 millón – 10.000 años', 'Lagos y llanuras templadas', 'Carroñero', 2, 'Teratornithidae', 'Teratornis merriami', 'Volador'),
 ('Búho Gigante', 6, 'Hace 1 millón – 10.000 años', 'Bosques templados', 'Carnívoro', 3, 'Strigidae', 'Ornimegalonyx oteroi', 'Volador'),
