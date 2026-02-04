@@ -193,7 +193,7 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
                 <ul>
                     <li><a href="https://github.com/Eriex02">Erik Chuto</a></li>
                     <li><a href="https://github.com/Ddcq04">Diego Chauca</a></li>
-                    <li><a href="https://github.com/roaerick">Davis Rua</a></li>
+                    <li><a href="https://github.com/roadavis">Davis Rua</a></li>
                     <li><a href="https://github.com/alexitow22">Alejandro Fernández</a></li>
                 </ul>
             </div>
