@@ -191,10 +191,10 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
             <div class="content">
                 <h2>Autores</h2>
                 <ul>
-                    <li>Erik Chuto</li>
-                    <li>Diego Chauca</li>
-                    <li>Davis Rua</li>
-                    <li>Alejandro Fernández</li>
+                    <li><a href="https://github.com/Eriex02">Erik Chuto</a></li>
+                    <li><a href="https://github.com/Ddcq04">Diego Chauca</a></li>
+                    <li><a href="https://github.com/roaerick">Davis Rua</a></li>
+                    <li><a href="https://github.com/alexitow22">Alejandro Fernández</a></li>
                 </ul>
             </div>
 
@@ -209,12 +209,14 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
             </div>
 
             <div class="content">
-                <h2>Enlaces de interés</h2>
+                <h2>Contacto</h2>
                 <ul>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Novedades</a></li>
-                    <li><a href="#">Proyectos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">ReinoPrehistorico@gmail.com</a></li>
+                    <li>933 23 434 23</li>
+                
+                    <li>Mandanos tu feedback</li>
+                    
+                    
                 </ul>
             </div>
 
