@@ -10,14 +10,14 @@
 </head>
 
 <body id="eraHielo">
-
+<!--
     <div class="video-background">
         <video autoplay muted loop id="bg-video">
             <source src="../../web/videos/videologin/vid8.mp4" type="video/mp4">
             Tu navegador no soporta videos HTML5.
         </video>
     </div>
-
+-->
     <div class="image-background paleogeno-bg">
   </div>
 

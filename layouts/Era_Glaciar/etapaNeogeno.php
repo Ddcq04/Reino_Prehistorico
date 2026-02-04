@@ -54,7 +54,6 @@
         </nav>
     </header>
 
-    <!-- FALTA: Añadir subtítulo como en las otras páginas -->
     <p class="subtitu">La Era de los Mamíferos Modernos y el Enfriamiento Global</p>
 
     <main class="contenido">
