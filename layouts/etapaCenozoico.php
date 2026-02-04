@@ -12,7 +12,7 @@ require_once __DIR__ . '/../app/tiempo.php';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Línea de Tiempo - Eras Geológicas</title>
-  <link rel="stylesheet" href="../web/css/etapa.css?v=<?php echo time(); ?>">
+  <link rel="stylesheet" href="../web/css/etapa.css?>">
   <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
 
 </head>
@@ -26,42 +26,42 @@ require_once __DIR__ . '/../app/tiempo.php';
     </video>
   </div>
 
+
+  <!-- ESTA ES LA CLAVE: Checkbox al inicio del body -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
   <header class="menu-ceno">
 
 
-    <div class="logo">
-      <img src="../web/img/home/logo1.png" alt="">
-      <div class="logo-center">
-        <h1 class="ceno">Reino Prehistórico</h1>
-      </div>
-      <img src="../web/img/home/logo2.png" alt="">
-    </div>
-
-    
-    <input type="checkbox" id="menu-ancla" class="menu-ancla">
-    <label for="menu-ancla" class="hamburguesa">
+    <!-- Botón hamburguesa (label que activa el checkbox) -->
+    <label for="menu-toggle" class="hamburguesa">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="menu-text">Menú</span>
     </label>
 
-    <div class="overlay"></div>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../web/img/home/logo1.png" alt="">
+      <div class="logo-center">
+        <h1>Reino Prehistórico</h1>
+      </div>
+      <img src="../web/img/home/logo2.png" alt="">
+    </div>
 
+    <label for="menu-toggle" class="overlay"></label>
 
-    <nav >
+    <nav class="nav-desktop">
       <ul class="nav-menu">
         <li><a href="home.php">Inicio</a></li>
-        <li><a href="etapaMesozoico.php">Era Antigua</a></li>
+        <li><a href="../layouts/etapaMesozoico.php">Era Antigua</a></li>
         <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
-        <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
         <li><a href="mamiferos.php">Mamíferos</a></li>
+                        <li><a href="../layouts/extincion.php">Extinción</a></li>
+
       </ul>
     </nav>
-
-
-
-
   </header>
 
 

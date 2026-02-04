@@ -1,74 +1,60 @@
-<?php
-
-require_once __DIR__ . '/../app/tiempo.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Línea de Tiempo - Eras Geológicas</title>
   <link rel="stylesheet" href="../web/css/etapa.css">
-  <link rel="stylesheet" href="../web/css/etapasquery.css">
   <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
-
 </head>
-
 <body id="eraMesozoico">
-
 
   <div class="video-background">
     <video autoplay muted loop id="bg-video">
       <source src="../web/videos/etapa-video.mp4" type="video/mp4">
       Tu navegador no soporta videos HTML5.
     </video>
-  </div><header class="menu-mezo">
-  <!-- Mover el checkbox y el hamburguesa fuera de .header-content -->
-  <input type="checkbox" id="menu-ancla" class="menu-ancla">
-  <label for="menu-ancla" class="hamburguesa">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="menu-text">Menú</span>
-  </label>
+  </div>
 
-  <div class="overlay"></div>
+  <!-- Checkbox debe estar FUERA del header para funcionar correctamente -->
+  <input type="checkbox" id="menu-toggle">
 
-  <div class="header-content">
+  <header class="menu-mezo">
+    <!-- Botón hamburguesa -->
+    <label for="menu-toggle" class="hamburguesa">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </label>
+
+    <!-- Logo -->
     <div class="logo">
-      <img src="../web/img/home/logo1.png" alt="">
+      <img src="../web/img/home/logo1.png" alt="Logo 1">
       <div class="logo-center">
         <h1>Reino Prehistórico</h1>
       </div>
-      <img src="../web/img/home/logo2.png" alt="">
+      <img src="../web/img/home/logo2.png" alt="Logo 2">
     </div>
-  </div>
 
-  <nav>
-    <ul class="nav-menu">
-      <li><a href="home.php">Inicio</a></li>
-      <li><a href="../layouts/etapaMesozoico.php">Era Antigua</a></li>
-      <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
-      <li><a href="etapaCenozoico.php">Era Glaciar</a></li>
-      <li><a href="mamiferos.php">Mamíferos</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- Overlay para cerrar menú -->
+    <label for="menu-toggle" class="overlay"></label>
 
-
+    <!-- Navegación -->
+    <nav class="nav-desktop">
+      <ul class="nav-menu">
+        <li><a href="../home.php">Inicio</a></li>
+        <li><a href="../Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+        <li><a href="../layouts/etapaCenozoico.php">Era Glaciar</a></li>
+        <li><a href="mamiferos.php">Mamíferos</a></li>
+        <li><a href="../layouts/extincion.php">Extinción</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <p class="subtitu">Linea de Tiempo: <br> Mesozoico</p>
 
-
-
-
-
   <section class="timeline">
-
-
+    <!-- El resto de tu contenido timeline se mantiene igual -->
     <div class="timeline-content">
       <h2 class="erah2">Era Mesozoica</h2>
       <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de
@@ -78,12 +64,9 @@ require_once __DIR__ . '/../app/tiempo.php';
         <li><a href="../layouts/Etapas_Mezosoico/etapaJurasico.php">Jurásico</a></li>
         <li><a href="../layouts/Etapas_Mezosoico/etapaCretacico.php">Cretácico</a></li>
       </ul>
-      <!-- <a href="#" class="btn">Ver más</a>-->
     </div>
 
-
     <div class="timeline-item">
-
       <div class="timeline-content">
         <h2 id="triasico">Triasico</h2>
         <p>252 – 201 millones de años atrás</p>
@@ -92,16 +75,12 @@ require_once __DIR__ . '/../app/tiempo.php';
           <li>Clima caluroso y seco.</li>
           <li>Los continentes estaban unidos en Pangea.</li>
         </ul>
-
-
         <a href="../layouts/Etapas_Mezosoico/etapaTriasico.php" class="btn">Ver más</a>
       </div>
     </div>
 
     <div class="timeline-item">
-
       <div class="timeline-content">
-
         <h2 id="jurasico">Jurasico</h2>
         <p>201 – 145 millones de años atrás</p>
         <ul>
@@ -114,10 +93,7 @@ require_once __DIR__ . '/../app/tiempo.php';
     </div>
 
     <div class="timeline-item">
-
-
       <div class="timeline-content">
-
         <h2 id="cretacico">Cretacico</h2>
         <p>145 – 66 millones de años atrás</p>
         <ul>
@@ -129,15 +105,9 @@ require_once __DIR__ . '/../app/tiempo.php';
       </div>
     </div>
 
-
     <div class="timeline-item center-item btn-eras">
-
       <a href="../layouts/etapaCenozoico.php" class="btn">Era Cenozoica o Era del Hielo</a>
     </div>
-    </div>
-
   </section>
-
 </body>
-
 </html>

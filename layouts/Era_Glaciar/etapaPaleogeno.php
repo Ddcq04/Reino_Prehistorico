@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../web/css/etapa.css">
-    <link rel="stylesheet" href="paleogeno.css">
-        <link rel="stylesheet" href="../Era_Glaciar/query.css">
-  <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
-
+    <link rel="icon" href="../../web/img/home/favicon.png" type="image/x-icon">
     <title>Paleógeno - Era Cenozoica</title>
 </head>
 
@@ -21,51 +18,52 @@
         </video>
     </div>
 
-  <header class="menu-ceno">
+    <div class="image-background paleogeno-bg">
+  </div>
 
+    <!-- Checkbox para controlar el menú móvil -->
+    <input type="checkbox" id="menu-toggle" hidden>
 
-    <div class="logo">
-      <img src="../../web/img/home/logo1.png" alt="">
-      <div class="logo-center">
-        <h1 >Reino Prehistórico</h1>
-      </div>
-      <img src="../../web/img/home/logo2.png" alt="">
-    </div>
+    <header class="menu-mezo">
+        <!-- Botón hamburguesa -->
+        <label for="menu-toggle" class="hamburguesa">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="menu-text">Menú</span>
+        </label>
 
-    
-    <input type="checkbox" id="menu-ancla" class="menu-ancla">
-    <label for="menu-ancla" class="hamburguesa">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="menu-text">Menú</span>
-    </label>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="../../web/img/home/logo1.png" alt="Logo 1">
+            <div class="logo-center">
+                <h1>PALEOGENO</h1>
+            </div>
+            <img src="../../web/img/home/logo2.png" alt="Logo 2">
+        </div>
 
-    <div class="overlay"></div>
+        <!-- Overlay para cerrar menú -->
+        <label for="menu-toggle" class="overlay"></label>
 
+        <!-- Navegación -->
+        <nav class="nav-desktop">
+            <ul class="nav-menu">
+                <li><a href="../home.php">Inicio</a></li>
+                <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
+                <li><a href="../Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+                <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
+                <li><a href="../mamiferos.php">Mamíferos</a></li>
+                           <li><a href="../layouts/extincion.php">Extinción</a></li>
 
-    <nav >
-      <ul class="nav-menu">
-        <li><a href="home.php">Inicio</a></li>
-        <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
-        <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
-        <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
-        <li><a href="mamiferos.php">Mamíferos</a></li>
-      </ul>
-    </nav>
+            </ul>
+        </nav>
+    </header>
 
-
-
-
-  </header>
-
-
-    <main class="contenido" >
-
+    <main class="contenido">
         <section class="vidrio">
             <h2>Duración</h2>
             <p>
-                El Paleógeno abarcó desde hace <strong class="texto-paleogeno">66 hasta 23 millones de años</strong>,
+                El Paleógeno abarcó desde hace <strong>66 hasta 23 millones de años</strong>,
                 siendo el primer periodo de la Era Cenozoica. Comenzó inmediatamente después
                 de la extinción masiva del Cretácico-Paleógeno.
             </p>
@@ -74,16 +72,14 @@
         <section class="vidrio">
             <h2>Divisiones del Paleógeno</h2>
             <p>El Paleógeno se divide en tres épocas principales:</p>
-
             <ul>
                 <li>Paleoceno (66 - 56 Ma)</li>
                 <li>Eoceno (56 - 33.9 Ma)</li>
                 <li>Oligoceno (33.9 - 23 Ma)</li>
-
             </ul>
         </section>
 
-        <section  class="vidrio">
+        <section class="vidrio">
             <h2>Recuperación Post-Extinción</h2>
             <p>
                 Tras la extinción de los dinosaurios no avianos, el planeta experimentó
@@ -166,13 +162,12 @@
 
         <nav class="navegacion">
             <a href="../Etapas_Mezosoico/etapaCretacico.php">← Anterior: Cretácico</a>
-            <a href="../../layouts/etapaCenozoico.php">Era Cenozoica</a>
+            <a href="../../layouts/etapaCenozoico.php"> Linea Tiempo Etapa Cenozoica</a>
+                  <a href="#">Volver Arriba</a>
+
             <a href="../Era_Glaciar/etapaNeogeno.php">Siguiente: Neógeno →</a>
         </nav>
-
     </main>
 
-
 </body>
-
 </html>

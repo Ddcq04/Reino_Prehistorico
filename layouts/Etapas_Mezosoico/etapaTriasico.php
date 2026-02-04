@@ -5,57 +5,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../web/css/etapa.css">
-    <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
-
-  <title>Document</title>
+  <link rel="icon" href="../../web/img/home/favicon.png" type="image/x-icon">
+  <title>Período Triásico</title>
 </head>
 
-<body>
-
+<body id="eraMesozoico" class="etapaTriasico">
+<!--
   <div class="video-background">
     <video autoplay muted loop id="bg-video">
       <source src="../../web/videos/videologin/vid7.mp4" type="video/mp4">
       Tu navegador no soporta videos HTML5.
     </video>
   </div>
+-->
+  <div class="image-background triasico-bg">
+    <!-- Aquí no hay video, solo la imagen de fondo vía CSS -->
+  </div>
+
+  <!-- Checkbox para controlar el menú móvil -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
   <header class="menu-mezo">
-    <div class="logo">
-      <img src="../../web/img/home/logo1.png" alt="">
-      <div class="logo-center">
-        <h1>PERIODO TRIASICO</h1>
-
-      </div>
-      <img src="../../web/img/home/logo2.png" alt="">
-    </div>
-
-  
-
-    <input type="checkbox" id="menu-ancla" class="menu-ancla">
-    <label for="menu-ancla" class="hamburguesa">
+    <!-- Botón hamburguesa -->
+    <label for="menu-toggle" class="hamburguesa">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="menu-text">Menú</span>
     </label>
 
-    <div class="overlay"></div>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="../../web/img/home/logo1.png" alt="Logo 1">
+      <div class="logo-center">
+        <h1>PERIODO TRIASICO</h1>
+      </div>
+      <img src="../../web/img/home/logo2.png" alt="Logo 2">
+    </div>
 
-    <nav>
+    <!-- Overlay para cerrar menú -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Navegación -->
+    <nav class="nav-desktop">
       <ul class="nav-menu">
         <li><a href="../home.php">Inicio</a></li>
         <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
         <li><a href="../Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
         <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
         <li><a href="../mamiferos.php">Mamíferos</a></li>
+                     <li><a href="../layouts/extincion.php">Extinción</a></li>
+ 
       </ul>
     </nav>
-
-
   </header>
-    <p class="subtitu">INICIO DE LOS DINOSAURIOS</p>
+
+  <p class="subtitu">INICIO DE LOS DINOSAURIOS</p>
 
   <main class="contenido">
-
     <section class="vidrio">
       <h2>Duración</h2>
       <p>
@@ -114,13 +121,11 @@
     </section>
 
     <nav class="navegacion">
-      <a href="../../layouts/etapaMesozoico.php">← Línea de tiempo</a>
+      <a href="../../layouts/etapaMesozoico.php">← Linea Tiempo Etapa Mesozoico</a>
+      <a href="#">Volver Arriba</a>
       <a href="../Etapas_Mezosoico/etapaJurasico.php">Siguiente: Jurásico →</a>
     </nav>
-
   </main>
 
-
 </body>
-
 </html>

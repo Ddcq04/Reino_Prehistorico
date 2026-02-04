@@ -1,189 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../web/css/etapa.css">
-      <link rel="icon" href="../web/img/home/favicon.png" type="image/x-icon">
-
+    <link rel="icon" href="../../web/img/home/favicon.png" type="image/x-icon">
     <title>Neógeno - Era Cenozoica</title>
 </head>
+
 <body id="eraHielo">
-    
-<div class="video-background">
-    <video autoplay muted loop id="bg-video">
-        <source src="../../web/videos/videologin/vid9.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
-    </video>
-</div>
 
-
-
-
-  <header class="menu-ceno">
-
-
-    <div class="logo">
-      <img src="../../web/img/home/logo1.png" alt="">
-      <div class="logo-center">
-        <h1 >Reino Prehistórico</h1>
-      </div>
-      <img src="../../web/img/home/logo2.png" alt="">
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <!-- Puedes cambiar este video por uno específico para Neógeno si tienes -->
+            <source src="../../web/videos/videologin/vid8.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
     </div>
 
-    
-    <input type="checkbox" id="menu-ancla" class="menu-ancla">
-    <label for="menu-ancla" class="hamburguesa">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="menu-text">Menú</span>
-    </label>
+    <div class="image-background neogeno-bg">
+  </div>
 
-    <div class="overlay"></div>
+    <!-- Checkbox para controlar el menú móvil -->
+    <input type="checkbox" id="menu-toggle" hidden>
 
+    <header class="menu-mezo">
+        <!-- Botón hamburguesa -->
+        <label for="menu-toggle" class="hamburguesa">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="menu-text">Menú</span>
+        </label>
 
-    <nav >
-      <ul class="nav-menu">
-        <li><a href="home.php">Inicio</a></li>
-        <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
-        <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
-        <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
-        <li><a href="mamiferos.php">Mamíferos</a></li>
-      </ul>
-    </nav>
+        <!-- Logo -->
+        <div class="logo">
+            <img src="../../web/img/home/logo1.png" alt="Logo 1">
+            <div class="logo-center">
+                <h1>NEOGENO</h1>
+            </div>
+            <img src="../../web/img/home/logo2.png" alt="Logo 2">
+        </div>
 
+        <!-- Overlay para cerrar menú -->
+        <label for="menu-toggle" class="overlay"></label>
 
+        <!-- Navegación -->
+        <nav class="nav-desktop">
+            <ul class="nav-menu">
+                <li><a href="../home.php">Inicio</a></li>
+                <li><a href="../etapaMesozoico.php">Era Antigua</a></li>
+                <li><a href="../Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+                <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
+                <li><a href="../mamiferos.php">Mamíferos</a></li>
+                            <li><a href="../layouts/extincion.php">Extinción</a></li>
 
+            </ul>
+        </nav>
+    </header>
 
+    <!-- FALTA: Añadir subtítulo como en las otras páginas -->
+    <p class="subtitu">La Era de los Mamíferos Modernos y el Enfriamiento Global</p>
 
-  </header>
+    <main class="contenido">
+        <section class="vidrio">
+            <h2>Duración</h2>
+            <p>
+                El Neógeno se extendió desde hace <strong>23 hasta 2.58 millones de años</strong>,
+                siendo el segundo periodo de la Era Cenozoica. Este período presenció la 
+                diversificación de los mamíferos modernos y el enfriamiento global que 
+                condujo a las edades de hielo del Cuaternario.
+            </p>
+        </section>
 
-    <p class="subtitu">La Era de las Grandes Transformaciones y la Aparicion de los Primeros Homininos</p>
+        <section class="vidrio">
+            <h2>Divisiones del Neógeno</h2>
+            <p>El Neógeno se divide en dos épocas principales:</p>
+            <ul>
+                <li>Mioceno (23 - 5.3 Ma)</li>
+                <li>Plioceno (5.3 - 2.58 Ma)</li>
+            </ul>
+        </section>
 
+        <section class="vidrio">
+            <h2>Clima y Cambios Globales</h2>
+            <p>
+                El Neógeno se caracterizó por un <strong>enfriamiento gradual</strong> y 
+                la formación de los casquetes polares. Durante el Mioceno, los pastizales 
+                se expandieron globalmente, y en el Plioceno el clima se volvió más seco y 
+                estacional, preparando el escenario para las glaciaciones.
+            </p>
+        </section>
 
-<main class="contenido">
+        <section class="vidrio">
+            <h2>Evolución de los Mamíferos</h2>
+            <p>
+                Los mamíferos continuaron su radiación adaptativa, apareciendo muchas 
+                familias modernas:
+            </p>
+            <ul>
+                <li><strong>Grandes herbívoros</strong> como mastodontes y rinocerontes</li>
+                <li><strong>Primeros homínidos</strong> (Australopithecus)</li>
+                <li>Diversificación de los felinos, cánidos y mustélidos</li>
+                <li>Ballenas y delfines modernos</li>
+                <li>Aparecen los primeros caballos de un solo dedo (Equus)</li>
+            </ul>
+        </section>
 
-    <section class="vidrio">
-        <h2>Duración</h2>
-        <p>
-            El Neógeno abarcó desde hace <strong class="texto-neogeno">23 hasta 2.6 millones de años</strong>,
-            siendo el segundo periodo de la Era Cenozoica. Durante este tiempo, los continentes
-            adquirieron su posición actual y se produjo una notable evolución de los mamíferos.
-        </p>
-    </section>
+        <section class="vidrio">
+            <h2>Flora y Expansión de los Pastizales</h2>
+            <p>
+                La vegetación se adaptó al clima más seco y estacional:
+            </p>
+            <ul>
+                <li>Expansión global de las praderas y sabanas</li>
+                <li>Disminución de los bosques tropicales</li>
+                <li>Desarrollo de plantas adaptadas a la sequía</li>
+                <li>Primeras plantas C4 (más eficientes en condiciones de CO2 bajo)</li>
+            </ul>
+        </section>
 
-    <section class="vidrio">
-        <h2>Divisiones del Neógeno</h2>
-        <p>El Neógeno se divide en dos épocas principales:</p>
-        
-        <ul>
-            <li>Mioceno (23 - 5.3 Ma)</li>
-            <li>Plioceno (5.3 - 2.6 Ma)</li>
-        </ul>
-    </section>
+        <section class="vidrio">
+            <h2>Fauna Característica</h2>
+            <p>El Neógeno vio la aparición de muchos animales icónicos:</p>
+            <ul>
+                <li><strong>Megalodon</strong> - El tiburón más grande que ha existido</li>
+                <li><strong>Smilodon</strong> (dientes de sable) - Aunque apareció en el Plioceno tardío</li>
+                <li>Terror birds (aves del terror) en América del Sur</li>
+                <li>Grandes marsupiales en Australia</li>
+                <li>Primeros elefantes modernos</li>
+            </ul>
+        </section>
 
-    <section class="vidrio">
-        <h2>Geografía y Orogénesis</h2>
-        <p>
-            Durante el Neógeno, los continentes continuaron su deriva hacia sus posiciones actuales.
-            Se produjeron importantes eventos orogénicos (formación de montañas):
-        </p>
-        <ul>
-            <li><strong>Elevación de los Himalayas</strong> (colisión India-Asia)</li>
-            <li><strong>Formación de los Alpes</strong> y los Cárpatos</li>
-            <li><strong>Elevación de la Cordillera de los Andes</strong></li>
-            <li>Cierre del Istmo de Panamá (al final del Plioceno)</li>
-        </ul>
-    </section>
+        <section class="vidrio">
+            <h2>Eventos Geológicos Importantes</h2>
+            <ul>
+                <li>Formación del istmo de Panamá (unión de las Américas)</li>
+                <li>Elevación de los Alpes, Himalaya y Montañas Rocosas</li>
+                <li>Aislamiento de la Antártida y formación de la capa de hielo permanente</li>
+                <li>Cambios en las corrientes oceánicas que afectaron el clima global</li>
+            </ul>
+        </section>
 
-    <section class="vidrio">
-        <h2>Clima</h2>
-        <p>
-            El clima del Neógeno se caracterizó por un <strong>enfriamiento global progresivo</strong>.
-            Las temperaturas medias descendieron, lo que condujo a la expansión de las praderas
-            y a la contracción de los bosques tropicales.
-        </p>
-    </section>
+        <section class="vidrio">
+            <h2>Importancia del Neógeno</h2>
+            <p>
+                El Neógeno sentó las bases para el mundo moderno. La geografía se volvió 
+                más parecida a la actual, los ecosistemas de pastizales permitieron la 
+                evolución de herbívoros rápidos y sus depredadores, y aparecieron los 
+                primeros antepasados humanos. Este período representa la transición 
+                hacia las condiciones que eventualmente llevarían a la era de hielo 
+                del Cuaternario.
+            </p>
+        </section>
 
-    <section class="vidrio">
-        <h2>Expansión de los Pastizales</h2>
-        <p>
-            Uno de los cambios más significativos fue la <strong>expansión global de las praderas y sabanas</strong>.
-            Esto tuvo un profundo impacto en la evolución de los herbívoros, favoreciendo a los
-            animales adaptados a dietas de pasto.
-        </p>
-    </section>
+        <nav class="navegacion">
+            <a href="../Era_Glaciar/etapaPaleogeno.php">←Anterior: Paleógeno</a>
+            <a href="../../layouts/etapaCenozoico.php">LT: Etapa Mesozoico</a>
+                  <a href="#">Volver Arriba</a>
 
-    <section class="vidrio">
-        <h2>Megafauna del Neógeno</h2>
-        <p>
-            Aparecieron grandes mamíferos en todos los continentes:
-        </p>
-        <ul>
-            <li><strong>Mastodontes y Gonfoterios</strong> (primos de los elefantes)</li>
-            <li><strong>Deinotherium</strong> (elefante primitivo con colmillos curvados hacia abajo)</li>
-            <li><strong>Chalicotherium</strong> (extraño herbívoro con garras)</li>
-            <li><strong>Indricotherium</strong> (el mamífero terrestre más grande de todos los tiempos)</li>
-            <li>Primeros <strong>rinocerontes, caballos modernos y jirafas</strong></li>
-        </ul>
-    </section>
-
-    <section class="vidrio">
-        <h2>Aparición de los Homininos</h2>
-        <p>
-            A finales del Mioceno, en África, surgieron los primeros primates bípedos,
-            ancestros de los humanos modernos:
-        </p>
-        <ul>
-            <li><strong>Sahelanthropus tchadensis</strong> (hace ~7 millones de años)</li>
-            <li><strong>Orrorin tugenensis</strong> (hace ~6 millones de años)</li>
-            <li><strong>Ardipithecus</strong> (hace ~5.6-4.4 millones de años)</li>
-            <li><strong>Australopithecus</strong> (aparece a finales del Plioceno)</li>
-        </ul>
-    </section>
-
-    <section class="vidrio">
-        <h2>Vida Marina</h2>
-        <p>
-            Los océanos del Neógeno vieron la evolución de:
-        </p>
-        <ul>
-            <li><strong>Ballenas modernas</strong> (misticetos y odontocetos)</li>
-            <li><strong>Tiburones gigantes</strong> como el Megalodón (Carcharocles megalodon)</li>
-            <li><strong>Focas, leones marinos y morsas</strong> modernas</li>
-            <li>Grandes <strong>pingüinos</strong> en el hemisferio sur</li>
-        </ul>
-    </section>
-
-    <section class="vidrio">
-        <h2>Eventos Importantes</h2>
-        <ul>
-            <li><strong>Gran Intercambio Americano</strong> (cuando se unieron las Américas)</li>
-            <li><strong>Desecación del Mediterráneo</strong> (Crisis salina del Messiniense)</li>
-            <li><strong>Formación del desierto del Sahara</strong></li>
-            <li><strong>Glaciación del Pleistoceno</strong> (preparada al final del Plioceno)</li>
-        </ul>
-    </section>
-
-    <section class="vidrio">
-        <h2>Importancia del Neógeno</h2>
-        <p>
-            El Neógeno sentó las bases para el mundo moderno. La geografía, el clima y la
-            distribución de los continentes se asemejaban ya a los actuales. La evolución de
-            los homínidos marcó el inicio del linaje que eventualmente conduciría a los seres humanos.
-            Además, la megafauna característica de este periodo sería la que dominaría hasta
-            las extinciones del Cuaternario.
-        </p>
-    </section>
-
-    <nav class="navegacion">
-        <a href="../Era_Glaciar/etapaPaleogeno.php">← Anterior: Paleógeno</a>
-        <a href="../../layouts/etapaCenozoico.php">Era Cenozoica</a>
-        <a href="../Era_Glaciar/etapaCuaternaria.php">Siguiente: Cuaternario →</a>
-    </nav>
-
-</main>
+            <a href="../Era_Glaciar/etapaCuaternaria.php">Siguiente: Cuaternario →</a>
+        </nav>
+    </main>
 
 </body>
 </html>
