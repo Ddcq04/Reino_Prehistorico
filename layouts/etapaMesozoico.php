@@ -16,18 +16,15 @@
     </video>
   </div>
 
-  <!-- Checkbox debe estar FUERA del header para funcionar correctamente -->
   <input type="checkbox" id="menu-toggle">
 
   <header class="menu-mezo">
-    <!-- Botón hamburguesa -->
     <label for="menu-toggle" class="hamburguesa">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </label>
 
-    <!-- Logo -->
     <div class="logo">
       <img src="../web/img/home/logo1.png" alt="Logo 1">
       <div class="logo-center">
@@ -36,7 +33,6 @@
       <img src="../web/img/home/logo2.png" alt="Logo 2">
     </div>
 
-    <!-- Overlay para cerrar menú -->
     <label for="menu-toggle" class="overlay"></label>
 
     <!-- Navegación -->
@@ -54,8 +50,8 @@
   <p class="subtitu">Linea de Tiempo: <br> Mesozoico</p>
 
   <section class="timeline">
-    <!-- El resto de tu contenido timeline se mantiene igual -->
-    <div class="timeline-content">
+
+  <div class="timeline-content">
       <h2 class="erah2">Era Mesozoica</h2>
       <p>También conocida como "la Era de los Dinosaurios". Fue un periodo de grandes cambios climáticos, evolución de
         reptiles, aparición de mamíferos tempranos y plantas con flores. Se divide en tres periodos principales:</p>
