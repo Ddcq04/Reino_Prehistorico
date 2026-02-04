@@ -324,7 +324,6 @@ header {
         display: flex;
     }
     
-    /* Ajustar logo en móvil */
     .logo {
         order: 2;
         gap: 20px;
@@ -339,7 +338,7 @@ header {
         font-size: 2.5rem;
     }
     
-    /* Ocultar menú de escritorio por defecto en móvil */
+
     .nav-desktop {
         position: fixed;
         top: 0;
@@ -357,7 +356,6 @@ header {
         flex-basis: auto;
     }
     
-    /* Mostrar menú cuando el checkbox está marcado */
     #menu-toggle:checked ~ header .nav-desktop {
         left: 0 !important;
     }
@@ -367,7 +365,6 @@ header {
         display: block;
     }
     
-    /* Animación del botón hamburguesa a X */
     #menu-toggle:checked ~ header .hamburguesa .bar:nth-child(1) {
         transform: rotate(45deg) translate(9px);
     }
@@ -380,7 +377,6 @@ header {
         transform: rotate(-45deg) translate(9px);
     }
     
-    /* Estilos del menú móvil */
     .nav-menu {
         flex-direction: column;
         gap: 0;
@@ -415,7 +411,6 @@ header {
         background: rgba(135, 206, 235, 0.2) !important;
     }
     
-    /* Ajustes responsivos generales */
     .subtitu {
         width: 90% !important;
         font-size: 1.5rem !important;
@@ -467,7 +462,7 @@ header {
     }
 }
 
-/* ========== TIMELINE (CSS Original) ========== */
+
 .timeline {
     position: relative;
     margin: 3rem auto;
@@ -685,14 +680,12 @@ header {
     overflow: hidden;
 }
 
-/* Fondo específico para Triásico */
 .triasico-bg {
     background-image: url("../../web/img/etapas/img1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-/* Si quieres fondos específicos para otros períodos */
 .jurasico-bg {
     background-image: url("../../web/img/etapas/img11.png");
     background-size: cover;
@@ -776,157 +769,12 @@ header {
     background-repeat: no-repeat;
 }
 
-/* ========== ESTILOS ESPECÍFICOS PARA MAMÍFEROS ========== */
 
-/* Contenedor de animales */
-.contenedor-animales {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 30px;
-    margin-top: 20px;
-}
-
-/* Tarjeta de animal */
-.tarjeta-animal {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 15px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    border: 2px solid rgba(135, 206, 235, 0.3);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-.tarjeta-animal:hover {
-    transform: translateY(-10px);
-    border-color: rgba(135, 206, 235, 0.7);
-    box-shadow: 0 10px 25px rgba(135, 206, 235, 0.3);
-}
-
-.tarjeta-animal img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid rgba(135, 206, 235, 0.3);
-    transition: transform 0.3s ease;
-}
-
-.tarjeta-animal:hover img {
-    transform: scale(1.05);
-}
-
-/* Título y voto */
-.titulo-y-voto {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.titulo-y-voto h3 {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.5rem;
-    color: #87CEEB;
-    margin: 0;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-/* Botón de voto */
-.corazon {
-    background: rgba(135, 206, 235, 0.1);
-    border: 2px solid #87CEEB;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    color: #87CEEB;
-    font-size: 1.2rem;
-}
-
-.corazon:hover {
-    background: #87CEEB;
-    color: #000;
-    transform: scale(1.1);
-}
-
-.corazon i {
-    font-size: 1.5rem;
-    margin-bottom: 2px;
-}
-
-.corazon span {
-    font-size: 0.8rem;
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-    color: #87CEEB;
-    background: rgba(0, 0, 0, 0.5);
-    border-top: 3px solid rgba(135, 206, 235, 0.3);
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-
-/* Estilos específicos para eraHielo en las tarjetas */
-#eraHielo .tarjeta-animal {
-    border: 2px solid rgba(135, 206, 235, 0.3);
-}
-
-#eraHielo .tarjeta-animal:hover {
-    border-color: rgba(135, 206, 235, 0.7);
-    box-shadow: 0 10px 25px rgba(135, 206, 235, 0.3);
-}
-
-#eraHielo .titulo-y-voto h3 {
-    color: #87CEEB;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .contenedor-animales {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 20px;
-    }
-    
-    .tarjeta-animal {
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .contenedor-animales {
-        grid-template-columns: 1fr;
-    }
-    
-    .titulo-y-voto h3 {
-        font-size: 1.2rem;
-    }
-    
-    .corazon {
-        width: 45px;
-        height: 45px;
-    }
-}
-
-/* Asegurar que el menú hamburguesa funcione */
 @media screen and (max-width: 1200px) {
-    /* Mostrar hamburguesa en móvil */
     .hamburguesa {
         display: flex;
     }
     
-    /* Ocultar menú de escritorio por defecto en móvil */
     .nav-desktop {
         position: fixed;
         top: 0;
@@ -940,17 +788,14 @@ footer {
         overflow-y: auto;
     }
     
-    /* Mostrar menú cuando el checkbox está marcado */
     #menu-toggle:checked ~ header .nav-desktop {
         left: 0;
     }
     
-    /* Mostrar overlay cuando el menú está abierto */
     #menu-toggle:checked ~ header .overlay {
         display: block;
     }
     
-    /* Animación del botón hamburguesa a X */
     #menu-toggle:checked ~ header .hamburguesa .bar:nth-child(1) {
         transform: rotate(45deg) translate(6px, 6px);
     }
@@ -963,7 +808,6 @@ footer {
         transform: rotate(-45deg) translate(6px, -7px);
     }
     
-    /* Overlay */
     .overlay {
         display: none;
         position: fixed;
@@ -976,7 +820,6 @@ footer {
         cursor: pointer;
     }
     
-    /* Estilos del menú móvil */
     .nav-menu {
         flex-direction: column;
         gap: 0;
@@ -1013,16 +856,12 @@ footer {
     }
 }
 
-/* ========== CORRECCIONES MENÚ HAMBURGUESA ========== */
 
-/* Reset para el menú toggle */
 #menu-toggle {
     display: none;
 }
 
-/* Header corregido para móviles */
 @media screen and (max-width: 1200px) {
-    /* Asegurar que el header esté posicionado correctamente */
     header {
         position: relative;
         padding: 10px 15px;
@@ -1030,7 +869,6 @@ footer {
         justify-content: space-between;
     }
     
-    /* Reordenar elementos en móvil */
     .hamburguesa {
         display: flex;
         order: 1;
@@ -1039,12 +877,10 @@ footer {
         border-radius: 10px;
     }
     
-    /* Eliminar el texto "x" que está duplicando */
     .hamburguesa .menu-text {
         display: none;
     }
     
-    /* Logo ajustado */
     .logo {
         order: 2;
         flex-grow: 1;
@@ -1063,7 +899,6 @@ footer {
         letter-spacing: 1px;
     }
     
-    /* Menú móvil - posición corregida */
     .nav-desktop {
         position: fixed;
         top: 0;
@@ -1081,12 +916,10 @@ footer {
         flex-basis: auto;
     }
     
-    /* Mostrar menú cuando está activado */
     #menu-toggle:checked ~ header .nav-desktop {
         left: 0;
     }
     
-    /* Overlay mejorado */
     .overlay {
         display: none;
         position: fixed;
@@ -1104,7 +937,6 @@ footer {
         display: block;
     }
     
-    /* Animación hamburguesa a X - CORREGIDA */
     #menu-toggle:checked ~ header .hamburguesa .bar:nth-child(1) {
         transform: rotate(50deg) translate(6px, 6px);
         background: #ffffff;
@@ -1119,7 +951,6 @@ footer {
         background: #ffffff;
     }
     
-    /* Estilos del menú móvil */
     .nav-menu {
         flex-direction: column;
         gap: 0;
@@ -1160,7 +991,6 @@ footer {
         background: rgba(135, 206, 235, 0.15) !important;
     }
     
-    /* Subtítulo ajustado */
     .subtitu {
         width: 95% !important;
         font-size: 1.4rem !important;
@@ -1170,12 +1000,10 @@ footer {
     }
 }
 
-/* Para era Hielo - hamburguesa */
 #eraHielo .hamburguesa {
     border-color: rgba(135, 206, 235, 0.5);
 }
 
-/* ========== MEJORAS ESCRITORIO ========== */
 @media screen and (min-width: 1201px) {
     .hamburguesa,
     .overlay {
@@ -1203,8 +1031,7 @@ footer {
     }
 }
 
-/* ========== FIX PARA ESTRUCTURA HTML ========== */
-/* Asegurar que el body sea el contenedor principal */
+
 body {
     position: relative;
 }

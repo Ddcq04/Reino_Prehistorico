@@ -17,14 +17,11 @@
 </div>
 -->
 <div class="image-background jurasico-bg">
-    <!-- Aquí no hay video, solo la imagen de fondo vía CSS -->
   </div>
 
-<!-- Checkbox para controlar el menú móvil -->
 <input type="checkbox" id="menu-toggle" hidden>
 
 <header class="menu-mezo">
-    <!-- Botón hamburguesa -->
     <label for="menu-toggle" class="hamburguesa">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -32,7 +29,6 @@
         <span class="menu-text">Menú</span>
     </label>
 
-    <!-- Logo -->
     <div class="logo">
         <img src="../../web/img/home/logo1.png" alt="Logo 1">
         <div class="logo-center">

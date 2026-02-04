@@ -19,11 +19,9 @@
 -->
     <div class="image-background cretacico-bg">
   </div>
-    <!-- Checkbox para controlar el menú móvil -->
     <input type="checkbox" id="menu-toggle" hidden>
 
     <header class="menu-mezo">
-        <!-- Botón hamburguesa -->
         <label for="menu-toggle" class="hamburguesa">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -31,7 +29,6 @@
             <span class="menu-text">Menú</span>
         </label>
 
-        <!-- Logo -->
         <div class="logo">
             <img src="../../web/img/home/logo1.png" alt="Logo 1">
             <div class="logo-center">
@@ -40,10 +37,8 @@
             <img src="../../web/img/home/logo2.png" alt="Logo 2">
         </div>
 
-        <!-- Overlay para cerrar menú -->
         <label for="menu-toggle" class="overlay"></label>
 
-        <!-- Navegación -->
         <nav class="nav-desktop">
             <ul class="nav-menu">
                 <li><a href="../home.php">Inicio</a></li>
