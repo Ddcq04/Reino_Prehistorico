@@ -211,19 +211,10 @@ if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
             <div class="content">
                 <h2>Contacto</h2>
                 <ul>
-<<<<<<< HEAD
-                    <li><a href="#">ReinoPrehistorico@gmail.com</a></li>
-                    <li>933 23 434 23</li>
-                
-                    <li>Mandanos tu feedback</li>
-                    
-                    
-=======
                     <li><a href="https://www.instagram.com/">Sobre nosotros</a></li>
                     <li><a href="https://www.nationalgeographic.com.es/ciencia" target="_blank">Novedades</a></li>
                     <li><a href="https://github.com/Ddcq04/Gestor_biblioteca">Proyectos</a></li>
                     <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=tu-dinoConsulta@gmail.com&su=Consulta sobre Dinosaurios" target="_blank">Contacto</a></li>
->>>>>>> d1ac501022a0d42e420eddb27cd5e94580e89346
                 </ul>
             </div>
 

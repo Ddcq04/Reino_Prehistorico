@@ -48,7 +48,7 @@
                 <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
                 <li><a href="../mamiferos.php">Mamíferos</a></li>
             
-                            <li><a href="../layouts/extincion.php">Extinción</a></li>
+                            <li><a href="../extincion.php">Extinción</a></li>
 
             </ul>
         </nav>
