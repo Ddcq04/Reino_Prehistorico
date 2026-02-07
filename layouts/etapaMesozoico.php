@@ -35,11 +35,10 @@
 
     <label for="menu-toggle" class="overlay"></label>
 
-    <!-- Navegación -->
     <nav class="nav-desktop">
       <ul class="nav-menu">
-        <li><a href="../home.php">Inicio</a></li>
-        <li><a href="../Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
+        <li><a href="home.php">Inicio</a></li>
+        <li><a href="Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
         <li><a href="../layouts/etapaCenozoico.php">Era Glaciar</a></li>
         <li><a href="mamiferos.php">Mamíferos</a></li>
         <li><a href="../layouts/extincion.php">Extinción</a></li>

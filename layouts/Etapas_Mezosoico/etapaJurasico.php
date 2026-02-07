@@ -37,10 +37,8 @@
         <img src="../../web/img/home/logo2.png" alt="Logo 2">
     </div>
 
-    <!-- Overlay para cerrar menú -->
     <label for="menu-toggle" class="overlay"></label>
 
-    <!-- Navegación -->
     <nav class="nav-desktop">
         <ul class="nav-menu">
             <li><a href="../home.php">Inicio</a></li>
