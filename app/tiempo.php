@@ -4,7 +4,7 @@ session_start();
 $timeout = 600; 
 
 if (!isset($_SESSION['usuario']) && !isset($_SESSION['invitado'])) {
-    header("Location: /Reino_Prehistorico/layouts/inicioform.php");
+    header("Location: ../inicioform.php");
     exit();
 }
 
@@ -13,7 +13,7 @@ if (isset($_SESSION['ultimo_movimiento']) &&
 
     session_unset();
     session_destroy();
-    header("Location: /Reino_Prehistorico/layouts/inicioform.php?timeout=1");
+    header("Location: ../inicioform.php");
     exit();
 }
 

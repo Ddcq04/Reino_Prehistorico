@@ -46,10 +46,6 @@
                 <li><a href="../Dinosaurios/dinosaurios.php">Dinosaurios</a></li>
                 <li><a href="../etapaCenozoico.php">Era Glaciar</a></li>
                 <li><a href="../mamiferos.php">Mamíferos</a></li>
-<<<<<<< HEAD
-=======
-            
->>>>>>> 48aeb8a959ebec28bf5a85d8ceeeb53810b6a9cb
                 <li><a href="../extincion.php">Extinción</a></li>
 
             </ul>
